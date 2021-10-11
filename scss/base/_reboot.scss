@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Body
+//
+// 1. Remove the margin in all browsers.
+// 2. As a best practice, apply a default `background-color`.
+// 3. Change the default tap highlight to be completely transparent in iOS.
+html{
+    font-size: 16px;
+}
+body {
+    margin: 0; //1
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    color: $text-body;
+    font-size: $font-size-base;
+    background-color: $bg-body; //2
+    -webkit-tap-highlight-color: rgba(black, 0); // 3
+}
+// Heading
+%heading {
+    margin-top: 0; // 1
+    margin-bottom: $headings-margin-bottom;
+    font-family: $font-family-base;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $headings-color;
+  }
+  
+  h1 {
+    @extend %heading;
+    font-size:$h1-font-size;
+  }
+  
+  h2 {
+    @extend %heading;
+    font-size:$h2-font-size;
+  }
+  
+  h3 {
+    @extend %heading;
+    font-size:$h3-font-size;
+  }
+  
+  h4 {
+    @extend %heading;
+    font-size:$h4-font-size;
+  }
+  
+  h5 {
+    @extend %heading;
+    font-size:$h5-font-size;
+  }
+  
+  h6 {
+    @extend %heading;
+    font-size:$h6-font-size;
+  }
+  
