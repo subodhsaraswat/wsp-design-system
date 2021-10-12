@@ -1,0 +1,125 @@
+.wsp-text-default {
+    font-family: $font-family-base;
+}
+
+// Alignment
+.wsp-text-justify {
+    text-align: justify;
+}
+
+.wsp-text-wrap {
+    white-space: normal;
+}
+
+.wsp-text-nowrap {
+    white-space: nowrap;
+}
+
+.wsp-text-left {
+    text-align: left;
+}
+
+.wsp-text-right {
+    text-align: right;
+}
+
+.wsp-text-center {
+    text-align: center;
+}
+
+// Transformation
+.wsp-.text-lowercase {
+    text-transform: lowercase;
+}
+
+.wsp-text-uppercase {
+    text-transform: uppercase;
+}
+
+.wsp-text-capitalize {
+    text-transform: capitalize;
+}
+
+// Weight and italics
+.wsp-font-weight-light {
+    font-weight: $font-weight-light;
+}
+
+.wsp-font-weight-normal {
+    font-weight: $font-weight-normal;
+}
+
+.wsp-font-weight-medium {
+    font-weight: $font-weight-medium;
+}
+
+.wsp-font-weight-semibold {
+    font-weight: $font-weight-semibold;
+}
+
+.wsp-font-weight-bold {
+    font-weight: $font-weight-bold;
+}
+
+.wsp-font-italic {
+    font-style: italic;
+}
+
+// Contextual colors
+.wsp-text-white {
+    color: $white;
+}
+
+.wsp-text-body {
+    color: $body-color;
+}
+
+.wsp-text-muted {
+    color: $gray-light;
+}
+
+.wsp-text-black-50 {
+    color: rgba($black, .5);
+}
+
+.wsp-text-white-50 {
+    color: rgba($white, .5);
+}
+
+.wsp-text-primary {
+    color: $primary;
+}
+
+.wsp-text-seconday {
+    color: $seconday;
+}
+
+.wsp-text-success {
+    color: $success;
+}
+
+.wsp-text-danger {
+    color: $danger;
+}
+
+.wsp-text-warning {
+    color: $warning;
+}
+
+.wsp-text-info {
+    color: $info;
+}
+
+.wsp-text-dark {
+    color: $dark;
+}
+
+// Misc
+.wsp-text-decoration-none {
+    text-decoration: none;
+}
+
+.wsp-text-break {
+    word-break: break-word; // Deprecated, but avoids issues with flex containers
+    word-wrap: break-word; // Used instead of `overflow-wrap` for IE & Edge Legacy
+}
