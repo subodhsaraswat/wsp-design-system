@@ -1,0 +1,89 @@
+// Border
+.wsp-border {
+    border: $border-width solid $border-color;
+}
+
+.wsp-border-top {
+    border-top: $border-width solid $border-color;
+}
+
+.wsp-border-right {
+    border-right: $border-width solid $border-color;
+}
+
+.wsp-border-bottom {
+    border-bottom: $border-width solid $border-color;
+}
+
+.wsp-border-left {
+    border-left: $border-width solid $border-color;
+}
+
+.wsp-border-0 {
+    border: 0;
+}
+
+.wsp-border-top-0 {
+    border-top: 0;
+}
+
+.wsp-border-right-0 {
+    border-right: 0;
+}
+
+.wsp-border-bottom-0 {
+    border-bottom: 0;
+}
+
+.wsp-border-left-0 {
+    border-left: 0;
+}
+
+.wsp-border-white {
+    border-color: $white;
+}
+
+// Border-radius
+.wsp-rounded {
+    border-radius: $border-radius;
+}
+
+.wsp-rounded-sm {
+    border-radius: $border-radius-sm;
+}
+
+.wsp-rounded-lg {
+    border-radius: $border-radius-lg;
+}
+
+.wsp-rounded-top {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+}
+
+.wsp-rounded-right {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}
+
+.wsp-rounded-bottom {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+}
+
+.wsp-rounded-left {
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+}
+
+.wsp-rounded-circle {
+    border-radius: 50%;
+}
+
+.wsp-rounded-pill {
+    border-radius: $rounded-pill;
+}
+
+.wsp-rounded-0 {
+    border-radius: 0;
+}
