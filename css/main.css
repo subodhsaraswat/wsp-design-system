@@ -20,7 +20,7 @@ body {
   line-height: 1.5;
   color: #171923;
   font-size: 1rem;
-  background-color: #f8f8f8;
+  background-color: #F2F3F8;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -4039,5 +4039,52 @@ html {
 
 .demo {
   margin: 0;
+}
+
+.header {
+  background: #5156BE;
+  padding: 0.63rem 0;
+  height: 3.5rem;
+}
+
+.header .logo {
+  -webkit-column-gap: 0.75rem;
+          column-gap: 0.75rem;
+}
+
+.header .logo .wsp-icon-logo img {
+  max-width: 100%;
+}
+
+.wsp-content {
+  padding-top: 3.5rem;
+}
+
+.wsp-content .wsp-nav-wrap {
+  background: #ffffff;
+  width: 20rem;
+  height: calc(100vh - 3.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wsp-content .wsp-content-wrap {
+  width: calc(100% - 20rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
