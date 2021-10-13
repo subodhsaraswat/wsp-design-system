@@ -2,20 +2,20 @@
 @import "base/mixin";
 @import "base/reboot";
 
-@import "layout/align";
-@import "layout/background";
-@import "layout/borders";
-@import "layout/clearfix";
-@import "layout/display";
-@import "layout/flex";
-@import "layout/float";
-@import "layout/grid";
-@import "layout/position";
-@import "layout/shadows";
-@import "layout/sizing";
-@import "layout/spacing";
-@import "layout/text";
-@import "layout/visibility";
+@import "utilities/align";
+@import "utilities/background";
+@import "utilities/borders";
+@import "utilities/clearfix";
+@import "utilities/display";
+@import "utilities/flex";
+@import "utilities/float";
+@import "utilities/grid";
+@import "utilities/position";
+@import "utilities/shadows";
+@import "utilities/sizing";
+@import "utilities/spacing";
+@import "utilities/text";
+@import "utilities/visibility";
 
 @import "component/input";
 @import "component/navbar";
