@@ -1,8 +1,12 @@
 @import "base/variable";
+@import "mixins/transition";
+@import "mixins/border-radius";
+@import "mixins/hover";
 @import "base/grid";
 @import "base/reboot";
 @import "layout/align";
 @import "layout/background";
+@import "layout/border-radius";
 @import "layout/borders";
 @import "layout/clearfix";
 @import "layout/display";
@@ -15,4 +19,5 @@
 @import "layout/text";
 @import "layout/visibility";
 @import "component/navbar";
+@import "component/buttons";
 @import "pages/home";
