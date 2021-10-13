@@ -2,6 +2,7 @@
 @import "base/mixin";
 @import "base/reboot";
 
+<<<<<<< HEAD
 @import "utilities/align";
 @import "utilities/background";
 @import "utilities/borders";
@@ -16,8 +17,24 @@
 @import "utilities/spacing";
 @import "utilities/text";
 @import "utilities/visibility";
+=======
+@import "layout/align";
+@import "layout/background";
+@import "layout/border-radius";
+@import "layout/borders";
+@import "layout/clearfix";
+@import "layout/display";
+@import "layout/flex";
+@import "layout/float";
+@import "layout/grid";
+@import "layout/position";
+@import "layout/shadows";
+@import "layout/sizing";
+@import "layout/spacing";
+@import "layout/text";
+@import "layout/visibility";
+>>>>>>> a6bbd54d36c90b4c16755c1f11a7b5aebab1e6d0
 
 @import "component/input";
 @import "component/navbar";
-
 @import "pages/home";

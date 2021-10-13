@@ -22,6 +22,7 @@
         "../scss/utilities/_visibility.scss",
         "../scss/component/_input.scss",
         "../scss/component/_navbar.scss",
+        "../scss/component/_buttons.scss",
         "../scss/pages/_home.scss"
     ],
     "names": [],
