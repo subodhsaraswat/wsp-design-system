@@ -15,12 +15,14 @@
     padding-top: 3.5rem;
     .wsp-nav-wrap{
         background:$white;
+        border-right: $border-width solid $border-color;
         width: 20rem;
-        height: calc(100vh - 3.5rem);
+        min-height: calc(100vh - 3.5rem);
         @include wsp-flex-center;
     }
     .wsp-content-wrap{
         width: calc(100% - 20rem);
-        @include wsp-flex-center;
+        background:$white;
+        // @include wsp-flex-center;
     }
 }

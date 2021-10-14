@@ -1,6 +1,6 @@
 // Color
 $primary:#5156BE;
-$seconday:#74788D;
+$secondary:#74788D;
 $success:#2AB57D;
 $danger:#FD625E;
 $warning:#ffbf53;
@@ -9,7 +9,7 @@ $dark:#343a40;
 $light:#e9e9ef;
 $white:#ffffff;
 $black:#000000;
-$bg-body:#F2F3F8;
+$bg-body:#f8f8f8;
 $text-body:#171923;
 $gray-100: #EDF2F7;
 $gray-300: #CBD5E0;
@@ -17,6 +17,7 @@ $gray-400: #A0AEC0;
 $gray-700:#2D3748;
 $gray-light: #CCCCCC;
 $headings-color:#171923;
+$body-bg:$white;
 $body-color:$gray-700;
 
 // Body
@@ -27,6 +28,7 @@ $body-color:$text-body;
 $link-color:$primary;
 $link-decoration:underline;
 $link-hover-color:darken($link-color, 15%);
+$link-hover-decoration:none;
 
 // Paragraphs
 $paragraph-margin-bottom:1rem;
@@ -41,7 +43,7 @@ $font-family-base:'Barlow',
 sans-serif;
 $font-size-base:1rem;
 $font-size-sm:$font-size-base * .875;
-$font-size-lg:$font-size-base * 1.25;
+$font-size-lg:$font-size-base * 1.125;
 
 // Font-weight
 $font-weight-light:300;
@@ -69,8 +71,8 @@ $lead-font-weight:$font-weight-light;
 
 $text-muted:$gray-400;
 
+//Line-height
 $line-height-base:1.5;
-
 $dt-font-weight: $font-weight-bold;
 
 $border-width:1px;
@@ -126,14 +128,16 @@ $input-btn-line-height: $line-height-base;
 $input-btn-focus-width: .2rem;
 $input-btn-focus-color: rgba(#000, .25);
 $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
-$input-btn-padding-y-sm: .25rem;
+
+$input-btn-padding-y-sm: .375rem;
 $input-btn-padding-x-sm: .5rem;
 $input-btn-font-size-sm: $font-size-sm;
-$input-btn-line-height-sm: $line-height-base;
+$input-btn-line-height-sm: $line-height-base - 0.025;
+
 $input-btn-padding-y-lg: .5rem;
 $input-btn-padding-x-lg: 1rem;
 $input-btn-font-size-lg: $font-size-lg;
-$input-btn-line-height-lg: $line-height-base;
+$input-btn-line-height-lg: $line-height-base - 0.025;
 
 $input-btn-border-width: $border-width;
 
@@ -143,7 +147,7 @@ $btn-padding-x: $input-btn-padding-x;
 $btn-font-family: $input-btn-font-family;
 $btn-font-size: $input-btn-font-size;
 $btn-line-height: $input-btn-line-height;
-$btn-white-space: null; // Set to `nowrap` to prevent text wrapping
+$btn-white-space: nowrap; // Set to `nowrap` to prevent text wrapping
 
 $btn-padding-y-sm: $input-btn-padding-y-sm;
 $btn-padding-x-sm: $input-btn-padding-x-sm;
@@ -158,6 +162,7 @@ $btn-line-height-lg: $input-btn-line-height-lg;
 $btn-border-width: $input-btn-border-width;
 
 $btn-font-weight: $font-weight-normal;
+
 $btn-box-shadow: inset 0 1px 0 rgba($white, .15),
 0 1px 1px rgba($black, .075);
 $btn-focus-width: $input-btn-focus-width;
@@ -177,3 +182,37 @@ $btn-transition: color .15s ease-in-out,
 background-color .15s ease-in-out,
 border-color .15s ease-in-out,
 box-shadow .15s ease-in-out;
+
+$btn-primary-color: $primary;
+$btn-primary-hover-color: darken($btn-primary-color, 8%);
+$btn-primary-active-color: darken($btn-primary-color, 8%);
+$btn-primary-shadow-color: rgba($btn-primary-color, 0.5);
+
+$btn-secondary-color: $secondary;
+$btn-secondary-hover-color: darken($btn-secondary-color, 8%);
+$btn-secondary-active-color: darken($btn-secondary-color, 8%);
+$btn-secondary-shadow-color: rgba($btn-secondary-color, 0.5);
+
+$btn-success-color: $success;
+$btn-success-hover-color: darken($btn-success-color, 8%);
+$btn-success-active-color: darken($btn-success-color, 8%);
+$btn-success-shadow-color: rgba($btn-success-color, 0.5);
+
+$btn-danger-color: $danger;
+$btn-danger-hover-color: darken($btn-danger-color, 8%);
+$btn-danger-active-color: darken($btn-danger-color, 8%);
+$btn-danger-shadow-color: rgba($btn-danger-color, 0.5);
+
+$btn-warning-color: $warning;
+$btn-warning-hover-color: darken($btn-warning-color, 8%);
+$btn-warning-active-color: darken($btn-warning-color, 8%);
+$btn-warning-shadow-color: rgba($btn-warning-color, 0.5);
+
+$btn-info-color: $info;
+$btn-info-hover-color: darken($btn-info-color, 8%);
+$btn-info-active-color: darken($btn-info-color, 8%);
+$btn-info-shadow-color: rgba($btn-info-color, 0.5);
+
+
+$enable-shadows : true;
+$enable-transitions: true;
