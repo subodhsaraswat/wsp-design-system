@@ -2,6 +2,10 @@
 @import "base/mixin";
 @import "base/reboot";
 
+@import "mixins/clearfix";
+@import "mixins/hover";
+@import "mixins/button";
+
 @import "utilities/align";
 @import "utilities/background";
 @import "utilities/borders";
@@ -19,5 +23,6 @@
 
 @import "component/input";
 @import "component/navbar";
+@import "component/button";
 
 @import "pages/home";

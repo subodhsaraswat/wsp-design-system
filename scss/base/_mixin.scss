@@ -3,3 +3,51 @@
     justify-content: center;
     align-items: center;
 }
+
+// YIQ mixin
+@mixin get-color-yiq($background) {
+  $r: red($background);
+  $g: green($background);
+  $b: blue($background);
+
+  $yiq: (($r*299)+($g*587)+($b*114))/1000;
+
+  @if ($yiq >= 128) {
+    color: #000000;
+  }
+  @else {
+    color: #FFFFFF;
+  }
+}
+
+//box-shadow
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    $result: ();
+
+    @each $value in $shadow {
+      @if $value != null {
+        $result: append($result, $value, "comma");
+      }
+      @if $value == none and length($shadow) > 1 {
+        @warn "The keyword 'none' must be used as a single argument.";
+      }
+    }
+
+    @if (length($result) > 0) {
+      box-shadow: $result;
+    }
+  }
+}
+
+
+//transition
+@mixin transition($transition...) {
+      @if length($transition) == 0 {
+        transition: $transition-base;
+      } @else {
+        transition: $transition;
+      }
+  }
+
+  
