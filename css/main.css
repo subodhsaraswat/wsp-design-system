@@ -4623,4 +4623,23 @@ fieldset:disabled a.btn {
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
 }
+
+.demo {
+  margin: 0;
+}
+
+.ex-wrapper .demo {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 0.2rem;
+}
+
+.ex-wrapper .code {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  overflow: auto;
+  width: auto;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
