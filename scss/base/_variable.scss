@@ -34,6 +34,7 @@ $link-hover-decoration:none;
 $paragraph-margin-bottom:1rem;
 
 $spacer: 1rem;
+$label-margin-bottom: .5rem;
 
 // Typography
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
@@ -72,6 +73,7 @@ $text-muted:$gray-400;
 
 //Line-height
 $line-height-base:1.5;
+$dt-font-weight: $font-weight-bold;
 
 $border-width:1px;
 $border-color:$gray-light;
@@ -213,3 +215,4 @@ $btn-info-shadow-color: rgba($btn-info-color, 0.5);
 
 
 $enable-shadows : true;
+$enable-transitions: true;
