@@ -9,7 +9,7 @@ $dark:#343a40;
 $light:#e9e9ef;
 $white:#ffffff;
 $black:#000000;
-$bg-body:#F2F3F8;
+$bg-body:#f8f8f8;
 $text-body:#171923;
 $gray-100: #EDF2F7;
 $gray-300: #CBD5E0;
@@ -17,6 +17,7 @@ $gray-400: #A0AEC0;
 $gray-700:#2D3748;
 $gray-light: #CCCCCC;
 $headings-color:#171923;
+$body-bg:$white;
 $body-color:$gray-700;
 
 // Body
@@ -33,7 +34,6 @@ $link-hover-decoration:none;
 $paragraph-margin-bottom:1rem;
 
 $spacer: 1rem;
-$label-margin-bottom: .5rem;
 
 // Typography
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
@@ -70,9 +70,8 @@ $lead-font-weight:$font-weight-light;
 
 $text-muted:$gray-400;
 
+//Line-height
 $line-height-base:1.5;
-
-$dt-font-weight: $font-weight-bold;
 
 $border-width:1px;
 $border-color:$gray-light;
