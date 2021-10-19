@@ -5,6 +5,7 @@
 
     .logo {
         column-gap: 0.75rem;
+        cursor: pointer;
 
         .wsp-logo {
             img {
@@ -33,6 +34,7 @@
         width:100%;
         margin-left: 20rem;
         overflow-x: hidden;
+        background: $white;
 
         .wsp-banner {
             background: url(../../images/wsp-bg-banner.png) no-repeat;
