@@ -24,9 +24,10 @@
         "../scss/utilities/_spacing.scss",
         "../scss/utilities/_text.scss",
         "../scss/utilities/_visibility.scss",
-        "../scss/component/_input.scss",
-        "../scss/component/_navbar.scss",
         "../scss/component/_button.scss",
+        "../scss/component/_input.scss",
+        "../scss/component/_list-group.scss",
+        "../scss/component/_navbar.scss",
         "../scss/component/_table.scss",
         "../scss/pages/_home.scss",
         "../scss/pages/_page.scss"
