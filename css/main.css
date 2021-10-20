@@ -4543,7 +4543,7 @@ fieldset:disabled a.btn {
 
 .wsp-table-sm th,
 .wsp-table-sm td {
-  padding: 0.3rem;
+  padding: 0.16rem 0.625rem;
 }
 
 .wsp-table-bordered {
