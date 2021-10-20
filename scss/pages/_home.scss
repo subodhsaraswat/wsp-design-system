@@ -35,7 +35,9 @@
         margin-left: 20rem;
         overflow-x: hidden;
         background: $white;
-
+        &.wsp-home-wrap{
+            background: initial;
+        }
         .wsp-banner {
             background: url(../../images/wsp-bg-banner.png) no-repeat;
             background-size: cover;

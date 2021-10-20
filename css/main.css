@@ -4690,6 +4690,10 @@ fieldset:disabled a.btn {
   background: #ffffff;
 }
 
+.wsp-content .wsp-content-wrap.wsp-home-wrap {
+  background: initial;
+}
+
 .wsp-content .wsp-content-wrap .wsp-banner {
   background: url(../../images/wsp-bg-banner.png) no-repeat;
   background-size: cover;
