@@ -4728,6 +4728,14 @@ fieldset:disabled a.btn {
   width: auto;
   background-color: #f8f8f8;
   padding: 1.5rem;
+  position: relative;
+}
+
+.ex-wrapper .code .copy-clipboard {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .wsp-cls-text {

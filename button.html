@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Button:: WSP-Design System</title>
 </head>
@@ -111,7 +112,9 @@
                                     <button type="button" class="wsp-button button-link">Link</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(button)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="button" class="language-html">
                                         &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary"</span>&gt;Primary&lt;/button&gt;<br/>
                                         &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary"</span>&gt;Secondary&lt;/button&gt;<br/>
                                         &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-success"</span>&gt;Success&lt;/button&gt;<br/>
@@ -125,7 +128,8 @@
 
                             <div class="ex-wrapper">
                                 <h3>Sizes</h3>
-                                <p>Fancy larger or smaller buttons? Add <span class="ws-cls-name">.button-lg</span> or <span class="ws-cls-name">.button-sm</span> for additional sizes.
+                                <p>Fancy larger or smaller buttons? Add <span class="ws-cls-name">.button-lg</span> or
+                                    <span class="ws-cls-name">.button-sm</span> for additional sizes.
                                 </p>
                                 <div class="demo">
                                     <button type="button" class="wsp-button button-primary button-lg">Large
@@ -134,7 +138,9 @@
                                         button</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonSizeLarge)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonSizeLarge" class="language-html">
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary button-lg"</span>&gt;Large button&lt;/button&gt;<br/>
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary button-lg"</span>&gt;Large button&lt;/button&gt;<br/>
                                     </code>
@@ -148,7 +154,9 @@
                                         button</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonSizeSmall)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonSizeSmall" class="language-html">
                                         &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary button-sm"</span>&gt;Small button&lt;/button&gt;<br/>
                                         &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary button-sm"</span>&gt;Small button&lt;/button&gt;<br/>
                                     </code>
@@ -157,7 +165,8 @@
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Button block</h3>
                                 <p>Create block level buttons—those that span the full width of a parent—by adding
-                                    <span class="ws-cls-name">.button-block</span>.</p>
+                                    <span class="ws-cls-name">.button-block</span>.
+                                </p>
                                 <div class="demo">
                                     <button type="button" class="wsp-button button-primary button-block">Block level
                                         button</button>
@@ -165,7 +174,9 @@
                                         button</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonBlock)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonBlock" class="language-html">
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary button-block"</span>&gt;Block level&lt;/button&gt;<br/>
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary button-block"</span>&gt;Block level&lt;/button&gt;<br/>
                                         </code>
@@ -174,7 +185,8 @@
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Button Outline</h3>
                                 <p>In need of a button, but not the hefty background colors they bring? Replace the
-                                    default modifier classes with the <span class="ws-cls-name">.button-outline-*</span> ones to remove all background
+                                    default modifier classes with the <span class="ws-cls-name">.button-outline-*</span>
+                                    ones to remove all background
                                     images and colors on any button.</p>
                                 <div class="demo">
                                     <button type="button" class="wsp-button button-outline-primary">Primary</button>
@@ -185,7 +197,9 @@
                                     <button type="button" class="wsp-button button-outline-info">Info</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonOutline)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonOutline" class="language-html">
                                     &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-primary"</span>&gt;Primary&lt;/button&gt;<br/>
                                     &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-secondary"</span>&gt;Secondary&lt;/button&gt;<br/>
                                     &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-success"</span>&gt;Success&lt;/button&gt;<br/>
@@ -198,7 +212,8 @@
 
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Active State</h3>
-                                <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active.</p>
+                                <p>Buttons will appear pressed (with a darker background, darker border, and inset
+                                    shadow) when active.</p>
                                 <div class="demo">
                                     <button type="button" class="wsp-button button-primary active">Active Button
                                     </button>
@@ -206,7 +221,9 @@
                                     </button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonState)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonState" class="language-html">
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary active"</span>&gt;Active Button&lt;/button&gt;<br/>
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary active"</span>&gt;Active Button&lt;/button&gt;<br/>
                                         </code>
@@ -214,7 +231,8 @@
                             </div>
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Disable State</h3>
-                                <p>Make buttons look inactive by adding the disabled boolean attribute to any &lt;button&gt; element.</p>
+                                <p>Make buttons look inactive by adding the disabled boolean attribute to any
+                                    &lt;button&gt; element.</p>
                                 <div class="demo">
                                     <button type="button" class="wsp-button button-primary" disabled>Block level
                                         button</button>
@@ -222,7 +240,9 @@
                                         button</button>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(buttonDisableState)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="buttonDisableState" class="language-html">
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary" disabled</span>"&gt;Active Button&lt;/button&gt;<br/>
                                             &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary" disabled</span>&gt;Active Button&lt;/button&gt;<br/>
                                         </code>
@@ -235,6 +255,8 @@
         </div>
         <!-- Main content ends -->
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
