@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Table:: WSP-Design System</title>
 </head>
@@ -97,7 +98,8 @@
                     <div class="wsp-row">
                         <div class="wsp-col">
                             <h1>Table</h1>
-                            <p>Just add the base class <span class="ws-cls-name">.wsp-table</span> to any &lt;table&gt;, then extend with custom styles or
+                            <p>Just add the base class <span class="ws-cls-name">.wsp-table</span> to any &lt;table&gt;,
+                                then extend with custom styles or
                                 our various included modifier classes.</p>
                             <p>
                                 Using the most basic table markup, here’s how basic tables look in WSP design system.
@@ -137,7 +139,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(table)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="table" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -174,7 +178,8 @@
 
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Striped rows</h3>
-                                <p>Use  <span class="ws-cls-name">.wsp-table-striped </span>to add zebra-striping to any table row within the <tbody>.</p>
+                                <p>Use <span class="ws-cls-name">.wsp-table-striped </span>to add zebra-striping to any
+                                    table row within the <tbody>.</p>
                                 <div class="demo">
                                     <table class="wsp-table wsp-table-striped">
                                         <thead>
@@ -208,7 +213,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(tableStriped)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="tableStriped" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table wsp-table-striped"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -246,7 +253,8 @@
 
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Dark Header Table</h3>
-                                <p>Use <span class="ws-cls-name">.wsp-table-dark-header </span>to add dark header to any table header.</p>
+                                <p>Use <span class="ws-cls-name">.wsp-table-dark-header </span>to add dark header to any
+                                    table header.</p>
                                 <div class="demo">
                                     <table class="wsp-table wsp-table-dark-header">
                                         <thead>
@@ -280,7 +288,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(tableDarkHeader)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="tableDarkHeader" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table wsp-table-dark-header"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -318,7 +328,8 @@
 
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Bordered Table</h3>
-                                <p>Add <span class="ws-cls-name">.table-bordered </span>for borders on all sides of the table and cells.</p>
+                                <p>Add <span class="ws-cls-name">.table-bordered </span>for borders on all sides of the
+                                    table and cells.</p>
                                 <div class="demo">
                                     <table class="wsp-table wsp-table-bordered">
                                         <thead>
@@ -352,7 +363,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(tableBordered)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="tableBordered" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table wsp-table-bordered"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -389,7 +402,8 @@
                             </div>
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Borderless Table</h3>
-                                <p>Add <span class="ws-cls-name">.wsp-table-borderless</span> for a table without borders.</p>
+                                <p>Add <span class="ws-cls-name">.wsp-table-borderless</span> for a table without
+                                    borders.</p>
                                 <div class="demo">
                                     <table class="wsp-table wsp-table-borderless">
                                         <thead>
@@ -423,7 +437,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(tableBorderless)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="tableBorderless" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table wsp-table-borderless"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -494,7 +510,9 @@
                                     </table>
                                 </div>
                                 <div class="code">
-                                    <code class="language-html">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(tableSmall)"><i
+                                            class="wsp-icon wsp-icon-documents-o"></i></span>
+                                    <code id="tableSmall" class="language-html">
                                         &lt;table <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-table wsp-table-sm"</span>&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
@@ -536,6 +554,9 @@
         </div>
         <!-- Main content ends -->
     </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
