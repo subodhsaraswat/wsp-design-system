@@ -1,0 +1,93 @@
+.wsp-table {
+    width: 100%;
+    margin-bottom: $spacer;
+    color: $table-color;
+    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+    th,
+    td {
+        padding: $table-cell-padding;
+        vertical-align: top;
+        border-bottom: $table-border-width solid $table-border-color;
+    }
+
+    thead th {
+        font-size: $font-size-base;
+        font-weight: $table-th-font-weight;
+        vertical-align: bottom;
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    tbody+tbody {
+        border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+}
+
+.wsp-table-sm {
+    th,
+    td {
+        padding: $table-cell-padding-sm;
+    }
+}
+
+.wsp-table-bordered {
+    border: $table-border-width solid $table-border-color;
+
+    th,
+    td {
+        border: $table-border-width solid $table-border-color;
+    }
+
+    thead {
+        th,
+        td {
+            border-bottom-width: 2 * $table-border-width;
+        }
+    }
+}
+.wsp-table-dark-header {
+    border: 0;
+    th
+    {
+        background-color: $table-dark-bg;
+        color: $white;
+    }
+
+    th,
+    td {
+        border-top: $table-border-width solid $table-border-color;
+    }
+
+    thead {
+        th,
+        td {
+            border-bottom-width: 2 * $table-border-width;
+        }
+    }
+}
+
+.wsp-table-borderless {
+    th,
+    td,
+    thead th,
+    tbody+tbody {
+        border: 0;
+    }
+}
+
+.wsp-table-striped {
+    tbody tr:nth-of-type(#{$table-striped-order}) {
+        background-color: $table-accent-bg;
+    }
+}
+
+.wsp-table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.wsp-table-responsive>.wsp-table-bordered {
+    border: 0;
+}

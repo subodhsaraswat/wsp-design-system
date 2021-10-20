@@ -39,8 +39,7 @@ $label-margin-bottom: .5rem;
 // Typography
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap');
 
-$font-family-base:'Barlow',
-sans-serif;
+$font-family-base:'Barlow', sans-serif;
 $font-size-base:1rem;
 $font-size-sm:$font-size-base * .875;
 $font-size-lg:$font-size-base * 1.125;
@@ -93,22 +92,22 @@ $transition-collapse:height .35s ease;
 
 // Tables
 
-$table-cell-padding: .75rem;
-$table-cell-padding-sm: .3rem;
+$table-cell-padding: 0.475rem 0.625rem;
+$table-cell-padding-sm: 0.16rem 0.625rem;
 
-$table-color: $body-color;
+$table-color: #343A40;
 $table-bg: null;
-$table-accent-bg: rgba($black, .05);
+$table-accent-bg: #E9E9EF;
 $table-hover-color: $table-color;
 $table-hover-bg: rgba($black, .075);
 $table-active-bg: $table-hover-bg;
 
 $table-border-width: $border-width;
-$table-border-color: $border-color;
+$table-border-color: #E9E9E9;
 
 $table-head-bg: $gray-300;
 $table-head-color: $gray-700;
-$table-th-font-weight: null;
+$table-th-font-weight: $font-weight-medium;
 $table-dark-color: $white;
 $table-dark-bg: $gray-700;
 $table-dark-accent-bg: rgba($white, .05);
