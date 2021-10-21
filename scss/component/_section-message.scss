@@ -1,0 +1,60 @@
+.wsp-section {
+    padding: 1rem;
+    border-radius: $border-radius;
+    background: $list-group-bg;
+    position: relative;
+
+    .wsp-section-heading {
+        color: $dark;
+        font-weight: $font-weight-semibold;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    .wsp-section-cta {
+        a {
+            color: $dark;
+            text-decoration: $link-decoration;
+        }
+    }
+
+    &.wsp-section-info {
+        background-color: $info-light;
+
+        .wsp-section-heading,
+        p,
+        a {
+            color: $info;
+        }
+    }
+
+    &.wsp-section-success {
+        background-color: $success-light;
+
+        .wsp-section-heading,
+        p,
+        a {
+            color: $success;
+        }
+    }
+    &.wsp-section-warning {
+        background-color: $warning-light;
+
+        .wsp-section-heading,
+        p,
+        a {
+            color: $warning;
+        }
+    }
+    &.wsp-section-danger {
+        background-color: $danger-light;
+
+        .wsp-section-heading,
+        p,
+        a {
+            color: $danger;
+        }
+    }
+}
