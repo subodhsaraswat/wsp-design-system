@@ -244,3 +244,9 @@ $btn-info-shadow-color: rgba($btn-info-color, 0.5);
 
 $enable-shadows : true;
 $enable-transitions: true;
+
+// Navs
+
+$nav-link-padding-y: .5rem !default;
+$nav-link-padding-x: 1rem !default;
+$nav-link-disabled-color: $gray-light !default;

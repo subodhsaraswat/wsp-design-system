@@ -4652,6 +4652,87 @@ fieldset:disabled a.btn {
   border: 0;
 }
 
+.wsp-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.wsp-nav-tabs {
+  border-bottom: 1px solid #A0AEC0;
+}
+
+.wsp-nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: #343a40;
+}
+
+.wsp-nav-link:hover, .wsp-nav-link:focus {
+  text-decoration: none;
+}
+
+.wsp-nav-link.disabled {
+  color: #CCCCCC;
+  pointer-events: none;
+  cursor: default;
+}
+
+.wsp-nav-tabs {
+  border-bottom: 1px solid #e9e9ef;
+}
+
+.wsp-nav-tabs .wsp-nav-link {
+  line-height: 26px;
+  border: transparent;
+  border-radius: 0px;
+  padding-bottom: 11px;
+}
+
+.wsp-nav-tabs .wsp-nav-link.disabled {
+  color: #CCCCCC;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.wsp-nav-tabs .wsp-nav-link.active {
+  color: #5156BE;
+  border-color: #5156BE;
+  border-bottom: 2px solid #5156BE;
+}
+
+.wsp-nav-tabs .wsp-nav-item.show .wsp-nav-link {
+  color: #343a40;
+  background-color: transparent;
+}
+
+.wsp-flex-column .wsp-nav-link.active {
+  color: #5156BE;
+  border-color: #5156BE;
+  border-left: 2px solid #5156BE;
+}
+
+.wsp-nav.ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
