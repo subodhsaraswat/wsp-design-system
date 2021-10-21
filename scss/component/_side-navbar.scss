@@ -1,0 +1,62 @@
+.wsp-navbar-vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0rem;
+    .wsp-nav-link {
+        padding: 0;
+
+        a {
+            padding: 0.825rem;
+            display: flex;
+            text-decoration: none;
+            justify-content: space-between;
+
+            .wsp-link-text {
+                color: $text-body;
+            }
+
+            .dropdown-icon {
+                .wsp-icon {
+                    font-size: 1rem;
+                    color: $text-body;
+                }
+            }
+
+            &:hover {
+                background: #f6f6f6;
+            }
+
+            &.active {
+                background: #f6f6f6;
+
+                .wsp-link-text,
+                .dropdown-icon .wsp-icon {
+                    color: $primary;
+                }
+                .wsp-icon-right-o:before {
+                    content: "\e942";
+                }
+            }
+        }
+
+        .wsp-submenu {
+            margin: 0;
+            padding-left: 0.625rem;
+            border-top: 1px solid $gray-600;
+            border-bottom: 1px solid $gray-600;
+            background: #f6f6f6;
+            display: none;
+            .wsp-submenu-link {
+
+                a {
+                    color: $text-body;
+                    padding: 0.425rem 0.425rem 0.425rem 0.825rem;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
