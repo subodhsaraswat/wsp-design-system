@@ -4975,6 +4975,7 @@ fieldset:disabled a.btn {
 }
 
 .ex-wrapper .code .copy-clipboard {
+  font-size: 0.75rem;
   position: absolute;
   right: 10px;
   top: 10px;
