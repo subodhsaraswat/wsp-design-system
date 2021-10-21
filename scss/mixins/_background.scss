@@ -1,0 +1,59 @@
+@mixin bg-primary() {
+    .wsp-bg-primary {
+        background-color: $primary;
+    }
+}
+
+@mixin bg-secondary() {
+    .wsp-bg-secondary {
+        background-color: $secondary;
+    }
+}
+
+@mixin bg-success() {
+    .wsp-bg-success {
+        background-color: $success;
+    }
+}
+
+@mixin bg-danger() {
+    .wsp-bg-primary {
+        background-color: $danger;
+    }
+}
+
+@mixin bg-warning() {
+    .wsp-bg-warning {
+        background-color: $warning;
+    }
+}
+
+@mixin bg-info() {
+    .wsp-bg-info {
+        background-color: $info;
+    }
+}
+
+@mixin bg-transparent() {
+    .wsp-bg-transparent {
+        background-color: transparent;
+    }
+}
+
+@mixin bg-light() {
+    .wsp-bg-light {
+        background-color: $light;
+    }
+}
+
+@mixin bg-dark() {
+    .wsp-bg-dark {
+        background-color: $dark;
+    }
+}
+
+@mixin bg-white() {
+    .wsp-bg-white {
+        background-color: $white;
+    }
+}
