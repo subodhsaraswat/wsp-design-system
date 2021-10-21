@@ -1,0 +1,73 @@
+.wsp-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .wsp-nav-tabs {
+    border-bottom: 1px solid $gray-400;
+}
+.wsp-nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: $dark;
+  
+    @include hover-focus() {
+      text-decoration: none;
+    }
+  
+    // Disabled state lightens text
+    &.disabled {
+      color: $nav-link-disabled-color;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+//
+// Tabs
+//
+
+.wsp-nav-tabs {
+    border-bottom: 1px solid $light;
+  
+    .wsp-nav-link {
+      line-height: 26px;
+      border: transparent;
+      border-radius:0px;
+      padding-bottom: 11px;
+  
+      &.disabled {
+        color: $nav-link-disabled-color;
+        background-color: transparent;
+        border-color: transparent;
+      }
+    }
+    .wsp-nav-link.active {
+        color: $primary;
+        border-color: $primary;
+        border-bottom: 2px solid $primary;
+    }
+    .wsp-nav-item.show .wsp-nav-link {
+      color: $dark;
+      background-color: transparent;
+      
+    }
+  }
+  .wsp-flex-column {
+    .wsp-nav-link.active {
+        color: $primary;
+        border-color: $primary;
+        border-left: 2px solid $primary;
+    }
+  }
+.wsp-nav.ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
