@@ -4980,6 +4980,10 @@ fieldset:disabled a.btn {
   right: 10px;
   top: 10px;
   cursor: pointer;
+  background: #5156BE;
+  padding: 0.25rem 0.65rem;
+  color: #ffffff;
+  border-radius: 0.25rem;
 }
 
 .ex-wrapper .wsp-list-group {
