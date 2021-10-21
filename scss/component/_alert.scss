@@ -1,0 +1,78 @@
+.wsp-alert {
+    padding: 1rem;
+    border-radius: $border-radius;
+    background: $list-group-bg;
+    position: relative;
+    padding-left: 3rem;
+
+    .wsp-alert-icon {
+        position: absolute;
+        top: 1.15rem;
+        left: 1rem;
+
+        .wsp-icon {
+            font-size: 1.15rem;
+        }
+    }
+
+    .wsp-alert-heading {
+        color: $dark;
+        font-weight: $font-weight-semibold;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+
+    .wsp-close {
+        text-decoration: none;
+        position: absolute;
+        font-size: 1.5rem;
+        right: 1rem;
+        top: 0.625rem;
+    }
+
+    &.wsp-alert-info {
+        background-color: $info-light;
+
+        .wsp-alert-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $info;
+        }
+    }
+
+    &.wsp-alert-success {
+        background-color: $success-light;
+
+        .wsp-alert-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $success;
+        }
+    }
+
+    &.wsp-alert-warning {
+        background-color: $warning-light;
+
+        .wsp-alert-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $warning;
+        }
+    }
+
+    &.wsp-alert-danger {
+        background-color: $danger-light;
+
+        .wsp-alert-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $danger;
+        }
+    }
+}
