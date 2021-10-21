@@ -267,7 +267,7 @@ progress {
   background-color: #343a40;
 }
 
-.wsp-bg-info {
+.wsp-bg-light {
   background-color: #e9e9ef;
 }
 
@@ -4568,6 +4568,67 @@ fieldset:disabled a.btn {
   color: #171923;
 }
 
+.wsp-section {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: #FCFCFC;
+  position: relative;
+}
+
+.wsp-section .wsp-section-heading {
+  color: #343a40;
+  font-weight: 600;
+}
+
+.wsp-section p {
+  margin-bottom: 0.5rem;
+}
+
+.wsp-section .wsp-section-cta a {
+  color: #343a40;
+  text-decoration: underline;
+}
+
+.wsp-section.wsp-section-info {
+  background-color: #D6EDFF;
+}
+
+.wsp-section.wsp-section-info .wsp-section-heading,
+.wsp-section.wsp-section-info p,
+.wsp-section.wsp-section-info a {
+  color: #4ba6ef;
+}
+
+.wsp-section.wsp-section-success {
+  background-color: #D1FCEA;
+}
+
+.wsp-section.wsp-section-success .wsp-section-heading,
+.wsp-section.wsp-section-success p,
+.wsp-section.wsp-section-success a {
+  color: #2AB57D;
+}
+
+.wsp-section.wsp-section-warning {
+  background-color: #FFEBC9;
+}
+
+.wsp-section.wsp-section-warning .wsp-section-heading,
+.wsp-section.wsp-section-warning p,
+.wsp-section.wsp-section-warning a {
+  color: #ffbf53;
+}
+
+.wsp-section.wsp-section-danger {
+  background-color: #FFE4E3;
+}
+
+.wsp-section.wsp-section-danger .wsp-section-heading,
+.wsp-section.wsp-section-danger p,
+.wsp-section.wsp-section-danger a {
+  color: #FD625E;
+}
+
 .wsp-table {
   width: 100%;
   margin-bottom: 1rem;
@@ -4771,7 +4832,7 @@ fieldset:disabled a.btn {
 }
 
 .ex-wrapper .demo {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   margin-right: 0;
   margin-left: 0;
   border-width: 0.2rem;
