@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <title>Tab:: WSP-Design System</title>
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-4 wsp-col-lg-3">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <span class="wsp-icon wsp-logo wsp-d-inline-block">
+                                    <img src="images/icon-logo.svg" alt="logo-icon">
+                                </span>
+                                <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                            </div>
+                        </div>
+                        <div class="wsp-col-sm-12 wsp-col-md-8 wsp-col-lg-9">
+                            <!-- Header Navbar will come here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap">
+                <ul class="wsp-navbar-vertical">
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Getting started</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Customize</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Layout</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Content</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Forms</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Components</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Helpers</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Utilities</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">Extend</span>
+                        </a>
+                    </li>
+                    <li class="wsp-nav-link">
+                        <a href="#">
+                            <span class="wsp-link-text">About</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Tabs</h1>
+                            <p>Tabs are used to separate content into different panes where each pane is viewable one at a time. <br/>Just add base class <span class="ws-cls-name">.wsp-nav </span> or <span class="ws-cls-name">.wsp-nav-tabs</span> to any ul , then extend with custom styles or our various included modifier classes.</p>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Example</h3>
+                                <div class="demo">
+                                    <ul class="wsp-nav wsp-nav-tabs">
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link active" href="#">Tab1</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link" href="#">Tab2</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                            <a class="wsp-nav-link" href="#">Tab3</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link disabled" href="#">Tab4</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="code">
+                                    <code class="language-html">
+                                        &lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav wsp-nav-tabs"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link active"</span> href="#"&gt;Tab1&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab2&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab3&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link disabled"</span> href="#"&gt;Tab4&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &lt;ul&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper">
+                                <h3>Vertical Tabs</h3>
+                                <p>Add the <span class="ws-cls-name">.wsp-flex-column</span> class to create a vertical nav.
+                                </p>
+                                <div class="demo">
+                                    <ul class="wsp-nav wsp-flex-column">
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link active" href="#">Tab1</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link" href="#">Tab2</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                            <a class="wsp-nav-link" href="#">Tab3</a>
+                                        </li>
+                                        <li class="wsp-nav-item">
+                                          <a class="wsp-nav-link disabled" href="#">Tab4</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="code">
+                                    <code class="language-html">
+                                        &lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav wsp-flex-column"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link active"</span> href="#"&gt;Tab1&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab2&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab3&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link disabled"</span> href="#"&gt;Tab4&lt;/a&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
+                                        &lt;ul&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main content ends -->
+    </div>
+</body>
+
+</html>
