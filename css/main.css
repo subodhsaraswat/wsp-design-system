@@ -4551,21 +4551,66 @@ fieldset:disabled a.btn {
 .wsp-navbar-vertical {
   list-style-type: none;
   margin: 0;
-  padding: 1.875rem;
-  padding-bottom: 0;
+  padding: 0rem;
 }
 
 .wsp-navbar-vertical .wsp-nav-link {
-  margin-bottom: 1.5rem;
+  padding: 0;
 }
 
 .wsp-navbar-vertical .wsp-nav-link a {
-  display: inline-block;
+  padding: 0.825rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wsp-navbar-vertical .wsp-nav-link a .wsp-link-text {
   color: #171923;
+}
+
+.wsp-navbar-vertical .wsp-nav-link a .dropdown-icon .wsp-icon {
+  font-size: 1rem;
+  color: #171923;
+}
+
+.wsp-navbar-vertical .wsp-nav-link a:hover {
+  background: #f6f6f6;
+}
+
+.wsp-navbar-vertical .wsp-nav-link a.active {
+  background: #f6f6f6;
+}
+
+.wsp-navbar-vertical .wsp-nav-link a.active .wsp-link-text,
+.wsp-navbar-vertical .wsp-nav-link a.active .dropdown-icon .wsp-icon {
+  color: #5156BE;
+}
+
+.wsp-navbar-vertical .wsp-nav-link a.active .wsp-icon-right-o:before {
+  content: "\e942";
+}
+
+.wsp-navbar-vertical .wsp-nav-link .wsp-submenu {
+  margin: 0;
+  padding-left: 0.625rem;
+  border-top: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  background: #f6f6f6;
+  display: none;
+}
+
+.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a {
+  color: #171923;
+  padding: 0.425rem 0.425rem 0.425rem 0.825rem;
+}
+
+.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a:hover {
+  color: #5156BE;
 }
 
 .wsp-section {
@@ -4823,6 +4868,7 @@ fieldset:disabled a.btn {
   left: 0;
   top: 0;
   height: 100%;
+  margin-top: 3.5rem;
 }
 
 .wsp-content .wsp-content-wrap {
