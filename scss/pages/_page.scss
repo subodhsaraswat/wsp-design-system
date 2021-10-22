@@ -17,11 +17,17 @@
     padding: 1.5rem;
     position: relative;
     .copy-clipboard{
+      font-size: 0.75rem;
       position: absolute;
       right: 10px;
       top:10px;
       cursor: pointer;
+      background: $primary;
+      padding: 0.25rem 0.65rem;
+      color: $white;
+      border-radius: $border-radius;
     }
+   
   }
   .wsp-list-group{
     max-width: 400px;
