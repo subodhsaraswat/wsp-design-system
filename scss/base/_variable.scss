@@ -254,6 +254,11 @@ $enable-transitions: true;
 $nav-link-padding-y: .5rem;
 $nav-link-padding-x: 1rem;
 $nav-link-disabled-color: $gray-light;
+$tab-margin-block-start: 1;
+$tab-margin-block-end: 1;
+$tab-margin-inline-start: 0;
+$tab-margin-inline-end: 0;
+$tab-padding-inline-start: 2.5;
 
 /* skeleton */
 $skeleton-element-color: #E9E9EF;
@@ -280,3 +285,33 @@ $skeleton-headline-height: 1rem;
 $skeleton-square-height: 150px;
 $skeleton-rectangle-height: 400px;
 $skeleton-rectangle-width: 400px;
+
+// Grid columns
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$grid-row-columns: 6 !default;
+
+// Cards
+
+$card-spacer-y: .75rem !default;
+$card-spacer-x: 1.25rem !default;
+$card-border-width: $border-width !default;
+$card-border-radius: $border-radius !default;
+$card-border-color: rgba($black, .125) !default;
+$card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
+$card-cap-bg: rgba($light, 1) !default;
+$card-cap-color: null !default;
+$card-height: null !default;
+$card-color: null !default;
+$card-bg: $white !default;
+
+$card-img-overlay-padding: 1.25rem !default;
+
+$card-group-margin: $grid-gutter-width / 2 !default;
+$card-deck-margin: $card-group-margin !default;
+
+$card-columns-count: 3 !default;
+$card-columns-gap: 1.25rem !default;
+$card-columns-margin: $card-spacer-y !default;
+

@@ -1,0 +1,271 @@
+.wsp-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: $card-height;
+    word-wrap: break-word;
+    background-color: $card-bg;
+    background-clip: border-box;
+    border: $card-border-width solid $card-border-color;
+    border-radius: 0;
+  
+    > hr {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    > .list-group {
+      border-top: inherit;
+      border-bottom: inherit;
+  
+      &:first-child {
+        border-top-width: 0;
+        border-top-radius: $card-inner-border-radius;
+      }
+  
+      &:last-child  {
+        border-bottom-width: 0;
+        border-bottom-radius: $card-inner-border-radius;
+      }
+    }
+  
+
+    > .wsp-card-header + .wsp-list-group,
+    > .wsp-list-group + .wsp-card-footer {
+      border-top: 0;
+    }
+  }
+  
+  .wsp-card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: $card-spacer-x;
+    color: $card-color;
+  }
+  
+  .wsp-card-title {
+    margin-bottom: $card-spacer-y;
+  }
+  
+  .wsp-card-subtitle {
+    margin-top: -$card-spacer-y / 2;
+    margin-bottom: 0;
+  }
+  
+  .wsp-card-text:last-child {
+    margin-bottom: 0;
+  }
+  
+  .wsp-card-link {
+    color: $dark;
+    text-decoration: none;
+    @include hover() {
+      text-decoration: none;
+      color: $dark;
+    }
+  
+    + .wsp-card-link {
+      margin-left: $card-spacer-x;
+    }
+  }
+  
+  .wsp-card-header {
+    padding: $card-spacer-y $card-spacer-x;
+    margin-bottom: 0; 
+    color: $card-cap-color;
+    background-color: $card-cap-bg;
+    border-bottom: $card-border-width solid $card-border-color;
+  
+    &:first-child {
+      border-radius: $card-inner-border-radius $card-inner-border-radius 0 0;
+    }
+  }
+  
+  .wsp-card-footer {
+    padding: $card-spacer-y $card-spacer-x;
+    color: $card-cap-color;
+    background-color: $card-cap-bg;
+    border-top: $card-border-width solid $card-border-color;
+  
+    &:last-child {
+       border-radius: 0 0 $card-inner-border-radius $card-inner-border-radius;
+    }
+  }
+  
+  
+  //
+  // Header navs
+  //
+  
+  .wsp-card-header-tabs {
+    margin-right: -$card-spacer-x / 2;
+    margin-bottom: -$card-spacer-y;
+    margin-left: -$card-spacer-x / 2;
+    border-bottom: 0;
+  }
+  
+  .wsp-card-header-pills {
+    margin-right: -$card-spacer-x / 2;
+    margin-left: -$card-spacer-x / 2;
+  }
+  
+  // Card image
+  .wsp-card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $card-img-overlay-padding;
+    border-radius: $card-inner-border-radius;
+  }
+  
+  .wsp-card-img,
+  .wsp-card-img-top,
+  .wsp-card-img-bottom {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+  .wsp-card-img,
+  .wsp-card-img-top {
+    border-top-radius: $card-inner-border-radius;
+  }
+  
+  .wsp-card-img,
+  .wsp-card-img-bottom {
+    border-bottom-radius: $card-inner-border-radius;
+  }
+  
+  
+  // Card deck
+  
+  .wsp-card-deck {
+    .card {
+      margin-bottom: $card-deck-margin;
+    }
+  
+    // @include media-breakpoint-up(sm) {
+    //   display: flex;
+    //   flex-flow: row wrap;
+    //   margin-right: -$card-deck-margin;
+    //   margin-left: -$card-deck-margin;
+  
+    //   .wsp-card {
+    //     flex: 1 0 0%;
+    //     margin-right: $card-deck-margin;
+    //     margin-bottom: 0;
+    //     margin-left: $card-deck-margin;
+    //   }
+    // }
+  }
+  
+  
+  //
+  // Card groups
+  //
+  
+  .wsp-card-group {
+    > .wsp-card {
+      margin-bottom: $card-group-margin;
+    }
+  
+    // @include media-breakpoint-up(sm) {
+    //   display: flex;
+    //   flex-flow: row wrap;
+
+    //   > .wsp-card {
+    //     flex: 1 0 0%;
+    //     margin-bottom: 0;
+  
+    //     + .wsp-card {
+    //       margin-left: 0;
+    //       border-left: 0;
+    //     }
+  
+    //     // Handle rounded corners
+    //     @if $enable-rounded {
+    //       &:not(:last-child) {
+    //         @include border-right-radius(0);
+  
+    //         .wsp-card-img-top,
+    //         .wsp-card-header {
+    //           border-top-right-radius: 0;
+    //         }
+    //         .wsp-card-img-bottom,
+    //         .wsp-card-footer {
+    //           border-bottom-right-radius: 0;
+    //         }
+    //       }
+  
+    //       &:not(:first-child) {
+    //         @include border-left-radius(0);
+  
+    //         .wsp-card-img-top,
+    //         .wsp-card-header {
+    //           border-top-left-radius: 0;
+    //         }
+    //         .wsp-card-img-bottom,
+    //         .wsp-card-footer {
+    //           border-bottom-left-radius: 0;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  
+  
+  //
+  // Columns
+  //
+  
+  .wsp-card-columns {
+    .wsp-card {
+      margin-bottom: $card-columns-margin;
+    }
+  
+    // @include media-breakpoint-up(sm) {
+    //   column-count: $card-columns-count;
+    //   column-gap: $card-columns-gap;
+    //   orphans: 1;
+    //   widows: 1;
+  
+    //   .wsp-card {
+    //     display: inline-block;
+    //     width: 100%;
+    //   }
+    // }
+  }
+  
+  
+  //
+  // Accordion
+  //
+  
+  .wsp-accordion {
+    overflow-anchor: none;
+  
+    > .wsp-card {
+      overflow: hidden;
+  
+      &:not(:last-of-type) {
+        border-bottom: 0;
+        border-bottom-radius: 0;
+      }
+  
+      &:not(:first-of-type) {
+        border-top-radius: 0;
+      }
+  
+      > .wsp-card-header {
+         border-radius: 0;
+        margin-bottom: -$card-border-width;
+      }
+    }
+  }
+  .wsp-card-margin {
+    margin-top: $label-margin-bottom;
+  }
+  

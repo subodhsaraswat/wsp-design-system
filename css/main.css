@@ -4997,7 +4997,7 @@ fieldset:disabled a.btn {
 }
 
 .wsp-nav-tabs .wsp-nav-link {
-  line-height: 26px;
+  line-height: 1.625;
   border: transparent;
   border-radius: 0px;
   padding-bottom: 11px;
@@ -5029,16 +5029,213 @@ fieldset:disabled a.btn {
 .wsp-nav.ul {
   display: block;
   list-style-type: disc;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
+  -webkit-margin-before: 1;
+          margin-block-start: 1;
+  -webkit-margin-after: 1;
+          margin-block-end: 1;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 2.5;
+          padding-inline-start: 2.5;
+}
+
+.wsp-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+}
+
+.wsp-card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.wsp-card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+.wsp-card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-radius: subtract(0.25rem, 1px);
+}
+
+.wsp-card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-radius: subtract(0.25rem, 1px);
+}
+
+.wsp-card > .wsp-card-header + .wsp-list-group,
+.wsp-card > .wsp-list-group + .wsp-card-footer {
+  border-top: 0;
+}
+
+.wsp-card-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.wsp-card-title {
+  margin-bottom: 0.75rem;
+}
+
+.wsp-card-subtitle {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+
+.wsp-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.wsp-card-link {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.wsp-card-link:hover {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.wsp-card-link + .wsp-card-link {
+  margin-left: 1.25rem;
+}
+
+.wsp-card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #e9e9ef;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.wsp-card-header:first-child {
+  border-radius: subtract(0.25rem, 1px) subtract(0.25rem, 1px) 0 0;
+}
+
+.wsp-card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: #e9e9ef;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.wsp-card-footer:last-child {
+  border-radius: 0 0 subtract(0.25rem, 1px) subtract(0.25rem, 1px);
+}
+
+.wsp-card-header-tabs {
+  margin-right: -0.625rem;
+  margin-bottom: -0.75rem;
+  margin-left: -0.625rem;
+  border-bottom: 0;
+}
+
+.wsp-card-header-pills {
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+
+.wsp-card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  border-radius: subtract(0.25rem, 1px);
+}
+
+.wsp-card-img,
+.wsp-card-img-top,
+.wsp-card-img-bottom {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+}
+
+.wsp-card-img,
+.wsp-card-img-top {
+  border-top-radius: subtract(0.25rem, 1px);
+}
+
+.wsp-card-img,
+.wsp-card-img-bottom {
+  border-bottom-radius: subtract(0.25rem, 1px);
+}
+
+.wsp-card-deck .card {
+  margin-bottom: 15px;
+}
+
+.wsp-card-group > .wsp-card {
+  margin-bottom: 15px;
+}
+
+.wsp-card-columns .wsp-card {
+  margin-bottom: 0.75rem;
+}
+
+.wsp-accordion {
+  overflow-anchor: none;
+}
+
+.wsp-accordion > .wsp-card {
+  overflow: hidden;
+}
+
+.wsp-accordion > .wsp-card:not(:last-of-type) {
+  border-bottom: 0;
+  border-bottom-radius: 0;
+}
+
+.wsp-accordion > .wsp-card:not(:first-of-type) {
+  border-top-radius: 0;
+}
+
+.wsp-accordion > .wsp-card > .wsp-card-header {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.wsp-card-margin {
+  margin-top: 0.5rem;
+}
+
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
 }
 
 .header {

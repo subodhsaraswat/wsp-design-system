@@ -163,9 +163,14 @@
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Example</h3>
                 <div class="demo">
-                  <button type="button" class="wsp-button button-primary" data-toggle="collapse" data-target="#wsp-toggle">Toggle Button</button>
-                  <div id="wsp-toggle" class="collapse">
-                    Lorem ipsum dolor text....
+                  <button type="button" class="wsp-button button-primary" data-toggle="collapse" href="#wsp-toggle">Toggle Button</button>
+                  <div id="wsp-toggle" class="collapse show wsp-card-margin">
+                    <div class="wsp-card">
+                        <div class="wsp-card-body">
+                            <h5>Heading</h5>
+                            This is place holder text. The basic dialog for modals should contain only valuable and relevant information. Simplify dialogs by removing unnecessary elements or content that does not support user tasks. If you find that the number of required elements for your design are making the dialog excessively large, then try a different design solution.  
+                        </div>
+                    </div>
                   </div>
                 </div>
                 <div class="code">
@@ -173,63 +178,194 @@
                     Copy
                   </span>
                   <code id="horizontalTabs" class="language-html">
-                      &lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav wsp-nav-tabs"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link active"</span> href="#"&gt;Tab1&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab2&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab3&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link disabled"</span> href="#"&gt;Tab4&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &lt;ul&gt;
+                    &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary"</span>data-toggle="collapse" href="#wsp-toggle"&gt;Toggle Button&lt;/button&gt;<br/>
+                      &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-toggle"</span><span class="wsp-cls-text"> class=</span><span class="ws-cls-name">"collapse show wsp-card-margin"</span>&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                      &lt;/div&gt;
                   </code>
                 </div>
               </div>
 
-              <div class="ex-wrapper">
-                <h3>Vertical Tabs</h3>
-                <p>Add the <span class="ws-cls-name">.wsp-flex-column</span> class to create a vertical nav.
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Accordian</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
                 </p>
                 <div class="demo">
-                  <ul class="wsp-nav wsp-flex-column">
-                    <li class="wsp-nav-item">
-                      <a class="wsp-nav-link active" href="#">Tab1</a>
-                    </li>
-                    <li class="wsp-nav-item">
-                      <a class="wsp-nav-link" href="#">Tab2</a>
-                    </li>
-                    <li class="wsp-nav-item">
-                      <a class="wsp-nav-link" href="#">Tab3</a>
-                    </li>
-                    <li class="wsp-nav-item">
-                      <a class="wsp-nav-link disabled" href="#">Tab4</a>
-                    </li>
-                  </ul>
+                    <div id="wsp-accordion">
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
+                                Accordion Title #1
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
+                                Accordion Title #2
+                          </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
+                                Accordion Title #3
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="code">
                   <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
                     Copy
                   </span>
                   <code id="verticalTabs" class="language-html">
-                      &lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav wsp-flex-column"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link active"</span> href="#"&gt;Tab1&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab2&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span> href="#"&gt;Tab3&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link disabled"</span> href="#"&gt;Tab4&lt;/a&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;</br>
-                      &lt;ul&gt;
+                    &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-accordion"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper">
+                <h3>Accordian show</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
+                </p>
+                <div class="demo">
+                    <div id="wsp-accordion">
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
+                                Accordion Title #1
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              <h5>Heading</h5>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
+                                Accordion Title #2
+                          </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              <h5>Heading</h5>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wsp-card">
+                          <div class="wsp-card-header">
+                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
+                                Accordion Title #3
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="wsp-card-body">
+                              <h5>Heading</h5>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
+                    Copy
+                  </span>
+                  <code id="verticalTabs" class="language-html">
+                    &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-accordion"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse show"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;<br/>
                   </code>
                 </div>
               </div>
@@ -240,6 +376,7 @@
     </div>
     <!-- Main content ends -->
   </div>
+
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/page.js"></script>
