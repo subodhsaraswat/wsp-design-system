@@ -251,6 +251,32 @@ $enable-transitions: true;
 
 // Navs
 
-$nav-link-padding-y: .5rem !default;
-$nav-link-padding-x: 1rem !default;
-$nav-link-disabled-color: $gray-light !default;
+$nav-link-padding-y: .5rem;
+$nav-link-padding-x: 1rem;
+$nav-link-disabled-color: $gray-light;
+
+/* skeleton */
+$skeleton-element-color: #E9E9EF;
+
+$skeleton-loading-animation-time: 1.3s;
+
+$skeleton-margin-standart: 1rem;
+$skeleton-margin-small: $skeleton-margin-standart / 2;
+
+$skeleton-card-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.17);
+$skeleton-card-background-color: #ffffff;
+$skeleton-card-border-radius: 5px;
+
+$skeleton-circle-size: 100px;
+
+$skeleton-hr-height: 1px;
+
+$skeleton-line-border-radius: 15px;
+$skeleton-line-height: 16px;
+$skeleton-line-margin-bottom: 8px;
+
+$skeleton-headline-height: 1rem;
+
+$skeleton-square-height: 150px;
+$skeleton-rectangle-height: 400px;
+$skeleton-rectangle-width: 400px;

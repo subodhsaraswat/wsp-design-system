@@ -1,0 +1,110 @@
+/* Animation */
+@keyframes ssc-loading {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Animation partial */
+%ssc-animation {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        animation: ssc-loading $skeleton-loading-animation-time infinite;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(-100%);
+        z-index: 1;
+        background: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.3), transparent);
+    }
+}
+
+/** Main class */
+.wsp-ssc {
+    cursor: progress;
+    user-select: none;
+}
+
+/** Wrapper class */
+.wsp-ssc-wrapper {
+    padding: $skeleton-margin-standart;
+}
+
+/* Figures, Objects */
+.wsp-ssc-card {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: $skeleton-card-border-radius;
+    box-shadow: $skeleton-card-box-shadow;
+    background-color: $skeleton-card-background-color;
+}
+
+.wsp-ssc-circle {
+    display: block;
+    background-color: $skeleton-element-color;
+    border-radius: 50%;
+    width: $skeleton-circle-size;
+    height: $skeleton-circle-size;
+
+    @extend %ssc-animation;
+}
+
+.wsp-ssc-hr {
+    display: block;
+    width: 100%;
+    background-color: $skeleton-element-color;
+    height: $skeleton-hr-height;
+}
+
+.wsp-ssc-line {
+    display: block;
+    background-color: $skeleton-element-color;
+    margin-bottom: $skeleton-line-margin-bottom;
+    width: 100%;
+    height: $skeleton-line-height;
+
+    &:last-child {
+        margin-bottom: unset;
+    }
+
+    @extend %ssc-animation;
+}
+
+.wsp-ssc-head-line {
+    display: block;
+    background-color: $skeleton-element-color;
+    width: 100%;
+    height: $skeleton-headline-height;
+
+    @extend %ssc-animation;
+}
+
+.wsp-ssc-square {
+    display: block;
+    background-color: $skeleton-element-color;
+    width: 100%;
+    max-width: 400px;
+    height: $skeleton-square-height;
+    @extend %ssc-animation;
+}
+.wsp-ssc-rectangle {
+    display: block;
+    background-color: $skeleton-element-color;
+    width: $skeleton-rectangle-width;
+    height: $skeleton-rectangle-height;
+    @extend %ssc-animation;
+}
+.demo{
+    .wsp-ssc-card{
+        max-width: 400px;
+    }
+}
