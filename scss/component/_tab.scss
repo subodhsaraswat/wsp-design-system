@@ -33,7 +33,7 @@
     border-bottom: 1px solid $light;
   
     .wsp-nav-link {
-      line-height: 26px;
+      line-height: $line-height-base + 0.125;
       border: transparent;
       border-radius:0px;
       padding-bottom: 11px;
@@ -65,9 +65,9 @@
 .wsp-nav.ul {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    margin-block-start: $tab-margin-block-start;
+    margin-block-end: $tab-margin-block-end;
+    margin-inline-start: $tab-margin-inline-start;
+    margin-inline-end: $tab-margin-inline-end;
+    padding-inline-start: $tab-padding-inline-start;
 }
