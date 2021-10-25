@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Flag :: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-4 wsp-col-lg-3">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <span class="wsp-icon wsp-logo wsp-d-inline-block">
+                  <img src="images/icon-logo.svg" alt="logo-icon">
+                </span>
+                <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+              </div>
+            </div>
+            <div class="wsp-col-sm-12 wsp-col-md-8 wsp-col-lg-9">
+              <!-- Header Navbar will come here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap">
+        <ul class="wsp-navbar-vertical">
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Getting started</span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Customize</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Layout</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Content</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+            <ul class="wsp-submenu">
+              <li class="wsp-submenu-link">
+                <a href="table.html">Table</a>
+              </li>
+            </ul>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Forms</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Components</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+            <ul class="wsp-submenu">
+              <li class="wsp-submenu-link">
+                <a href="alert.html">Alert</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="button.html">Button</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="flag.html">Button</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="list-group.html">List Group</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="section-message.html">Section Message</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="skeleton.html">Skeleton</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="tab.html">Tabs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Helpers</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+            <ul class="wsp-submenu">
+              <li class="wsp-submenu-link">
+                <a href="#">Link-1</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="#">Link-2</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="#">Link-3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Utilities</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">Extend</span>
+              <span class="dropdown-icon">
+                <i class="wsp-icon wsp-icon-right-o"></i>
+              </span>
+            </a>
+          </li>
+          <li class="wsp-nav-link">
+            <a href="#">
+              <span class="wsp-link-text">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Flag</h1>
+              <p>Flag message are available for any length of text, as well as an dismissable cta. For
+                proper styling, use one of the required contextual classes.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Info Flag</h3>
+                <p>For info flag proper styling, use required contextual class <span
+                    class="ws-cls-name">.wsp-flag-info</span></p>
+                <div class="demo">
+                  <div class="wsp-flag wsp-flag-info">                   
+                    <span class="wsp-flag-icon">
+                      <i class="wsp-icon wsp-icon-info-circle"></i>
+                    </span>
+                    <h6 class="wsp-flag-heading">Welcome World</h6>
+                    <p class="wsp-mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.</p>
+                    <button type="button" class="wsp-button button-info">Understood</button>
+                    <button type="button" class="wsp-button button-info">No Thanks</button>
+                    <a href="#" class="wsp-close">
+                      <i class="wsp-icon wsp-icon-x-small"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(infoFlag)">
+                    Copy
+                  </span>
+                  <code id="infoFlag" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag wsp-flag-info"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag-icon"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-section-heading"</span>&gt;Welcome World&lt;/h6&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.&lt;/p&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-info"</span>&gt;Understood&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-info"</span>&gt;No Thanks&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-close"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-x-small"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+                      &lt;/div&gt;>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Success Flag</h3>
+                <p>For info flag proper styling, use required contextual class <span
+                    class="ws-cls-name">.wsp-flag-success</span></p>
+                <div class="demo">
+                  <div class="wsp-flag wsp-flag-success">              
+                    <span class="wsp-flag-icon">
+                      <i class="wsp-icon wsp-icon-tick-circle"></i>
+                    </span>
+                    <h6 class="wsp-flag-heading">Good news, everyone</h6>
+                    <p class="wsp-mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.</p>
+                    <button type="button" class="wsp-button button-success">Understood</button>
+                    <button type="button" class="wsp-button button-success">No Thanks</button>
+                    <a href="#" class="wsp-close">
+                      <i class="wsp-icon wsp-icon-x-small"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(successFlag)">
+                    Copy
+                  </span>
+                  <code id="successFlag" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag wsp-flag-success"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag-icon"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-tick-circle"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-section-heading"</span>&gt;Welcome World&lt;/h6&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.&lt;/p&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-success"</span>&gt;Understood&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-success"</span>&gt;No Thanks&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-close"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-x-small"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+                      &lt;/div&gt;>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Warning Flag</h3>
+                <p>For warning flag proper styling, use required contextual class <span
+                    class="ws-cls-name">.wsp-flag-warning</span></p>
+                <div class="demo">
+                  <div class="wsp-flag wsp-flag-warning">              
+                    <span class="wsp-flag-icon">
+                      <i class="wsp-icon wsp-icon-exclamation-circle-o"></i>
+                    </span>
+                    <h6 class="wsp-flag-heading">Good news, everyone</h6>
+                    <p class="wsp-mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.</p>
+                    <button type="button" class="wsp-button button-warning">Understood</button>
+                    <button type="button" class="wsp-button button-warning">No Thanks</button>
+                    <a href="#" class="wsp-close">
+                      <i class="wsp-icon wsp-icon-x-small"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(warningFlag)">
+                    Copy
+                  </span>
+                  <code id="warningFlag" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag wsp-flag-warning"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag-icon"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-section-heading"</span>&gt;Welcome World&lt;/h6&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.&lt;/p&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-warning"</span>&gt;Understood&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-warning"</span>&gt;No Thanks&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-close"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-x-small"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+                      &lt;/div&gt;>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Danger Flag</h3>
+                <p>For warning flag proper styling, use required contextual class <span
+                    class="ws-cls-name">.wsp-flag-danger</span></p>
+                <div class="demo">
+                  <div class="wsp-flag wsp-flag-danger">              
+                    <span class="wsp-flag-icon">
+                      <i class="wsp-icon wsp-icon-error"></i>
+                    </span>
+                    <h6 class="wsp-flag-heading">Good news, everyone</h6>
+                    <p class="wsp-mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.</p>
+                    <button type="button" class="wsp-button button-danger">Understood</button>
+                    <button type="button" class="wsp-button button-danger">No Thanks</button>
+                    <a href="#" class="wsp-close">
+                      <i class="wsp-icon wsp-icon-x-small"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(dangerFlag)">
+                    Copy
+                  </span>
+                  <code id="dangerFlag" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag wsp-flag-danger"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-flag-icon"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wwsp-icon wsp-icon-error"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-section-heading"</span>&gt;Welcome World&lt;/h6&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consectetur eros ac molestie sagittis.&lt;/p&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-danger"</span>&gt;Understood&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-danger"</span>&gt;No Thanks&lt;/button&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-close"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-x-small"</span>&gt;&lt;/i&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+                      &lt;/div&gt;>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>

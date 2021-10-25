@@ -1,0 +1,89 @@
+.wsp-flag {
+    padding: 1rem;
+    border-radius: $border-radius;
+    background: $list-group-bg;
+    position: relative;
+    padding-left: 3rem;
+
+    .wsp-flag-icon {
+        position: absolute;
+        top: 1.15rem;
+        left: 1rem;
+
+        .wsp-icon {
+            font-size: 1.15rem;
+        }
+    }
+
+    .wsp-flag-heading {
+        color: $dark;
+        font-weight: $font-weight-semibold;
+    }
+    .wsp-close {
+        text-decoration: none;
+        position: absolute;
+        font-size: 1.5rem;
+        right: 1rem;
+        top: 0.625rem;
+    }
+
+    &.wsp-flag-info {
+        background-color: $info;
+
+        .wsp-flag-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $info-light;
+        }
+        button{
+            background-color: rgba($info-light-button, .7);
+            color: $info-light;
+        }
+    }
+    
+    &.wsp-flag-success {
+        background-color: $success;
+
+        .wsp-flag-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $success-light;
+        }
+        button{
+            background-color: $success-light-button;
+            color: $success-light;
+        }
+    }
+
+    &.wsp-flag-warning {
+        background-color: $warning;
+
+        .wsp-flag-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $warning-light;
+        }
+        button{
+            background-color: $warning-light-button;
+            color: $warning-light;
+        }
+    }
+
+    &.wsp-flag-danger {
+        background-color: $danger;
+
+        .wsp-flag-heading,
+        p,
+        a,
+        .wsp-icon {
+            color: $danger-light;
+        }
+        button{
+            background-color: $danger-light-button;
+            color: $danger-light;
+        }
+    }
+}

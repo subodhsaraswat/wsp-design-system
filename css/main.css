@@ -4775,6 +4775,101 @@ fieldset:disabled a.btn {
   position: relative;
 }
 
+.wsp-flag {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: #FCFCFC;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.wsp-flag .wsp-flag-icon {
+  position: absolute;
+  top: 1.15rem;
+  left: 1rem;
+}
+
+.wsp-flag .wsp-flag-icon .wsp-icon {
+  font-size: 1.15rem;
+}
+
+.wsp-flag .wsp-flag-heading {
+  color: #343a40;
+  font-weight: 600;
+}
+
+.wsp-flag .wsp-close {
+  text-decoration: none;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 1rem;
+  top: 0.625rem;
+}
+
+.wsp-flag.wsp-flag-info {
+  background-color: #4ba6ef;
+}
+
+.wsp-flag.wsp-flag-info .wsp-flag-heading,
+.wsp-flag.wsp-flag-info p,
+.wsp-flag.wsp-flag-info a,
+.wsp-flag.wsp-flag-info .wsp-icon {
+  color: #D6EDFF;
+}
+
+.wsp-flag.wsp-flag-info button {
+  background-color: rgba(101, 183, 249, 0.7);
+  color: #D6EDFF;
+}
+
+.wsp-flag.wsp-flag-success {
+  background-color: #2AB57D;
+}
+
+.wsp-flag.wsp-flag-success .wsp-flag-heading,
+.wsp-flag.wsp-flag-success p,
+.wsp-flag.wsp-flag-success a,
+.wsp-flag.wsp-flag-success .wsp-icon {
+  color: #D1FCEA;
+}
+
+.wsp-flag.wsp-flag-success button {
+  background-color: #27bf82;
+  color: #D1FCEA;
+}
+
+.wsp-flag.wsp-flag-warning {
+  background-color: #ffbf53;
+}
+
+.wsp-flag.wsp-flag-warning .wsp-flag-heading,
+.wsp-flag.wsp-flag-warning p,
+.wsp-flag.wsp-flag-warning a,
+.wsp-flag.wsp-flag-warning .wsp-icon {
+  color: #FFEBC9;
+}
+
+.wsp-flag.wsp-flag-warning button {
+  background-color: #ebb65d;
+  color: #FFEBC9;
+}
+
+.wsp-flag.wsp-flag-danger {
+  background-color: #FD625E;
+}
+
+.wsp-flag.wsp-flag-danger .wsp-flag-heading,
+.wsp-flag.wsp-flag-danger p,
+.wsp-flag.wsp-flag-danger a,
+.wsp-flag.wsp-flag-danger .wsp-icon {
+  color: #FFE4E3;
+}
+
+.wsp-flag.wsp-flag-danger button {
+  background-color: #dd6461;
+  color: #FFE4E3;
+}
+
 .wsp-list-group {
   display: -webkit-box;
   display: -ms-flexbox;
