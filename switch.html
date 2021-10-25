@@ -8,7 +8,7 @@
   <!-- WSP CSS -->
   <link href="css/font.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <title>WSP-Design System</title>
+  <title>Switch :: WSP-Design System</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
               </div>
             </div>
             <div class="wsp-col-sm-12 wsp-col-md-8 wsp-col-lg-9">
-
+              <!-- Header Navbar will come here -->
             </div>
           </div>
         </div>
@@ -158,82 +158,82 @@
         </ul>
       </div>
       <!-- side-bar ends -->
-      <div class="wsp-content-wrap wsp-home-wrap">
-        <div class="wsp-banner wsp-position-relative">
+      <div class="wsp-content-wrap">
+        <div class="wsp-container-fluid">
           <div class="wsp-row">
-            <div class="wsp-col-sm-12 wsp-col-md-6 wsp-col-lg-6">
-              <div class="wsp-banner-logo">
-                <span class="wsp-icon wsp-logo wsp-d-inline-block">
-                  <img src="images/icon-logo.svg" alt="logo-icon">
-                </span>
-                <h1 class="wsp-text-white">WSP Design System</h1>
-                <p class="wsp-text-white">WSP design system provides a set of organized tools, patterns and practices
-                  that work as the foundation for digital products and experiences.</p>
+            <div class="wsp-col">
+              <h1>Switch</h1>
+              <p>Use the switch option, instead of a checkbox, for simple “On/Off” options.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Default Switch</h3>
+                <div class="demo">
+                  <label class="wsp-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultSwitch)">
+                    Copy
+                  </span>
+                  <code id="defaultSwitch" class="language-html">
+                      &lt;label <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-switch"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"slider"</span>&gt;&lt;/span&gt;<br>
+                      &lt;/label&gt;
+                  </code>
+                </div>
               </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-6 wsp-col-lg-6">
-              <div class="wsp-info-wrap">
-                <img src="images/wsp-banner-infograph.png" alt="info-graphic">
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Active Switch</h3>
+                <p>For active pass the checked property.</p>
+                <div class="demo">
+                  <label class="wsp-switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(activeSwitch)">
+                    Copy
+                  </span>
+                  <code id="activeSwitch" class="language-html">
+                      &lt;label <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-switch"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" <span class="ws-cls-name">checked</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"slider"</span>&gt;&lt;/span&gt;<br>
+                      &lt;/label&gt;
+                  </code>
+                </div>
               </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Disable Switch</h3>
+                <p>For active pass the disabled property.</p>
+                <div class="demo">
+                  <label class="wsp-switch">
+                    <input type="checkbox" disabled>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(disableSwitch)">
+                    Copy
+                  </span>
+                  <code id="disableSwitch" class="language-html">
+                      &lt;label <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-switch"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" <span class="ws-cls-name">disabled</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"slider"</span>&gt;&lt;/span&gt;<br>
+                      &lt;/label&gt;
+                  </code>
+                </div>
+              </div>
+              
             </div>
           </div>
-        </div>
-        <div class="wsp-card-wrap">
-          <div class="wsp-row">
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-1.svg" alt="icon">
-                  </span>
-                </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Fully tested</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>The design system has been tried and tested, it’s scalable to all devices</p>
-                </div>
-              </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-2.svg" alt="icon">
-                  </span>
-                </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Globally accepted</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>Explore our design principles, accessibility, and globalization support.</p>
-                </div>
-              </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-3.svg" alt="icon">
-                  </span>
-                </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Easy to use</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>Each designer and engineer will work with the most up to date UI patterns.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wsp-get-start">
-          <p class="wsp-mb-0">Ready to Jump in?</p>
-          <button type="button" class="wsp-button button-primary">Get started</button>
         </div>
       </div>
     </div>
-    <!-- Main content ends -->
+  </div>
+  <!-- Main content ends -->
   </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
