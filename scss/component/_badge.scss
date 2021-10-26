@@ -1,111 +1,74 @@
-.wsp-label {
+.wsp-badge {
   display: inline-block;
   margin-right: 0.5rem;
   text-align: center;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
   font-size: 13px;
-  border-radius: 2px;
+  border-radius: 1rem;
   border: 1px solid transparent;
 
   &:last-child {
     margin-right: 0;
   }
 
-  &.label-primary {
+  &.badge-primary {
     color: $white;
     background-color: $primary;
     border-color: $primary;
   }
 
-  &.label-inactive {
+  &.badge-inactive {
     color: $dark;
     background-color: $gray-light;
     border-color: $gray-light;
   }
 
-  &.label-success {
+  &.badge-success {
     color: $white;
     background-color: $success;
     border-color: $success;
   }
 
-  &.label-light-success {
+  &.badge-light-success {
     color: $success;
     background-color: $success-light;
     border-color: $success-light;
   }
 
-  &.label-danger {
+  &.badge-danger {
     color: $white;
     background-color: $danger;
     border-color: $danger;
   }
 
-  &.label-light-danger {
+  &.badge-light-danger {
     color: $danger;
     background-color: $danger-light;
     border-color: $danger-light;
   }
 
-  &.label-warning {
+  &.badge-warning {
     color: $white;
     background-color: $warning;
     border-color: $warning;
   }
 
-  &.label-light-warning {
+  &.badge-light-warning {
     color: $warning;
     background-color: $warning-light;
     border-color: $warning-light;
   }
 
-  &.label-info {
+  &.badge-info {
     color: $white;
     background-color: $info;
     border-color: $info;
   }
 
-  &.label-light-info {
+  &.badge-light-info {
     color: $info;
     background-color: $info-light;
     border-color: $info-light;
   }
-}
-
-
-.label-outline-primary {
-  color: $primary;
-  background-color: $white;
-  border-color: $primary;
-}
-
-.label-outline-inactive {
-  color: $dark;
-  background-color: $white;
-  border-color: $dark;
-}
-
-.label-outline-success {
-  color: $success;
-  background-color: $white;
-  border-color: $success;
-}
-
-.label-outline-danger {
-  color: $danger;
-  background-color: $white;
-  border-color: $danger;
-}
-
-.label-outline-warning {
-  color: $warning;
-  background-color: $white;
-  border-color: $warning;
-}
-
-.label-outline-info {
-  color: $info;
-  background-color: $white;
-  border-color: $info;
 }

@@ -32,13 +32,16 @@
     }
 
     .wsp-content-wrap {
-        width:100%;
+        width: 100%;
         margin-left: 20rem;
         overflow-x: hidden;
         background: $white;
-        &.wsp-home-wrap{
+        min-height: calc(100vh - 3.5rem);
+
+        &.wsp-home-wrap {
             background: initial;
         }
+
         .wsp-banner {
             background: url(../../images/wsp-bg-banner.png) no-repeat;
             background-size: cover;

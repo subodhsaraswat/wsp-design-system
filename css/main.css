@@ -4115,6 +4115,81 @@ h6 {
   color: #FD625E;
 }
 
+.wsp-badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.25rem 0.75rem;
+  font-size: 13px;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+.wsp-badge:last-child {
+  margin-right: 0;
+}
+
+.wsp-badge.badge-primary {
+  color: #ffffff;
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+
+.wsp-badge.badge-inactive {
+  color: #343a40;
+  background-color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+
+.wsp-badge.badge-success {
+  color: #ffffff;
+  background-color: #2AB57D;
+  border-color: #2AB57D;
+}
+
+.wsp-badge.badge-light-success {
+  color: #2AB57D;
+  background-color: #D1FCEA;
+  border-color: #D1FCEA;
+}
+
+.wsp-badge.badge-danger {
+  color: #ffffff;
+  background-color: #FD625E;
+  border-color: #FD625E;
+}
+
+.wsp-badge.badge-light-danger {
+  color: #FD625E;
+  background-color: #FFE4E3;
+  border-color: #FFE4E3;
+}
+
+.wsp-badge.badge-warning {
+  color: #ffffff;
+  background-color: #ffbf53;
+  border-color: #ffbf53;
+}
+
+.wsp-badge.badge-light-warning {
+  color: #ffbf53;
+  background-color: #FFEBC9;
+  border-color: #FFEBC9;
+}
+
+.wsp-badge.badge-info {
+  color: #ffffff;
+  background-color: #4ba6ef;
+  border-color: #4ba6ef;
+}
+
+.wsp-badge.badge-light-info {
+  color: #4ba6ef;
+  background-color: #D6EDFF;
+  border-color: #D6EDFF;
+}
+
 .wsp-button {
   display: inline-block;
   text-align: center;
@@ -4875,14 +4950,14 @@ fieldset:disabled a.btn {
   margin-right: 0.5rem;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   padding: 0.25rem 0.75rem;
   font-size: 13px;
   border-radius: 2px;
   border: 1px solid transparent;
+}
+
+.wsp-label:last-child {
+  margin-right: 0;
 }
 
 .wsp-label.label-primary {
@@ -5784,6 +5859,7 @@ fieldset:disabled a.btn {
   margin-left: 20rem;
   overflow-x: hidden;
   background: #ffffff;
+  min-height: calc(100vh - 3.5rem);
 }
 
 .wsp-content .wsp-content-wrap.wsp-home-wrap {
