@@ -8,7 +8,7 @@
   <!-- WSP CSS -->
   <link href="css/font.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <title>WSP-Design System</title>
+  <title>Badge:: WSP-Design System</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
               </div>
             </div>
             <div class="wsp-col-sm-12 wsp-col-md-8 wsp-col-lg-9">
-
+              <!-- Header Navbar will come here -->
             </div>
           </div>
         </div>
@@ -81,11 +81,6 @@
                 <i class="wsp-icon wsp-icon-right-o"></i>
               </span>
             </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="switch.html">Switch</a>
-              </li>
-            </ul>
           </li>
           <li class="wsp-nav-link">
             <a href="#">
@@ -100,9 +95,6 @@
               </li>
               <li class="wsp-submenu-link">
                 <a href="button.html">Button</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="flag.html">Button</a>
               </li>
               <li class="wsp-submenu-link">
                 <a href="list-group.html">List Group</a>
@@ -161,84 +153,50 @@
         </ul>
       </div>
       <!-- side-bar ends -->
-      <div class="wsp-content-wrap wsp-home-wrap">
-        <div class="wsp-banner wsp-position-relative">
+      <div class="wsp-content-wrap">
+        <div class="wsp-container-fluid">
           <div class="wsp-row">
-            <div class="wsp-col-sm-12 wsp-col-md-6 wsp-col-lg-6">
-              <div class="wsp-banner-logo">
-                <span class="wsp-icon wsp-logo wsp-d-inline-block">
-                  <img src="images/icon-logo.svg" alt="logo-icon">
-                </span>
-                <h1 class="wsp-text-white">WSP Design System</h1>
-                <p class="wsp-text-white">WSP design system provides a set of organized tools, patterns and practices
-                  that work as the foundation for digital products and experiences.</p>
-              </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-6 wsp-col-lg-6">
-              <div class="wsp-info-wrap">
-                <img src="images/wsp-banner-infograph.png" alt="info-graphic">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wsp-card-wrap">
-          <div class="wsp-row">
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-1.svg" alt="icon">
-                  </span>
+            <div class="wsp-col">
+              <h1>Badges</h1>
+              <p>Using the contextual <span class="ws-cls-name">.wsp-badge-*</span> classes on an <label> element quickly provide contextual badges.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Example</h3>
+                <div class="demo">
+                  <span class="wsp-badge badge-inactive">25</span>
+                  <span class="wsp-badge badge-primary">25</span>
+                  <span class="wsp-badge badge-success">+25</span>
+                  <span class="wsp-badge badge-danger">-25</span>
+                  <span class="wsp-badge badge-info">25</span>
+                  <span class="wsp-badge badge-warning">25</span>
+                  <span class="wsp-badge badge-light-success">+25</span>
+                  <span class="wsp-badge badge-light-danger">-25</span>
+                  <span class="wsp-badge badge-light-info">25</span>
+                  <span class="wsp-badge badge-light-warning">25</span>
                 </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Fully tested</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>The design system has been tried and tested, it’s scalable to all devices</p>
-                </div>
-              </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-2.svg" alt="icon">
-                  </span>
-                </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Globally accepted</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>Explore our design principles, accessibility, and globalization support.</p>
-                </div>
-              </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-4">
-              <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-3.svg" alt="icon">
-                  </span>
-                </div>
-                <div class="wsp-card-title wsp-mb-4">
-                  <h4 class="wsp-text-primary wsp-mb-0">Easy to use</h4>
-                </div>
-                <div class="wsp-card-content">
-                  <p>Each designer and engineer will work with the most up to date UI patterns.</p>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(badges)">
+                    Copy</span>
+                  <code id="badges" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-inactive"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-primary"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-success"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-danger"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-info"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-warning"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-light-success"</span>&gt;+25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-light-danger"</span>&gt;-25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-light-infoo"</span>&gt;25&lt;/span&gt;<br/>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-badge badge-light-warning"</span>&gt;25&lt;/span&gt;
+                </code>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="wsp-get-start">
-          <p class="wsp-mb-0">Ready to Jump in?</p>
-          <button type="button" class="wsp-button button-primary">Get started</button>
         </div>
       </div>
     </div>
     <!-- Main content ends -->
   </div>
-
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/page.js"></script>
