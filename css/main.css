@@ -4870,6 +4870,117 @@ fieldset:disabled a.btn {
   color: #FFE4E3;
 }
 
+.wsp-label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0.25rem 0.75rem;
+  font-size: 13px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.wsp-label.label-primary {
+  color: #ffffff;
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+
+.wsp-label.label-inactive {
+  color: #343a40;
+  background-color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+
+.wsp-label.label-success {
+  color: #ffffff;
+  background-color: #2AB57D;
+  border-color: #2AB57D;
+}
+
+.wsp-label.label-light-success {
+  color: #2AB57D;
+  background-color: #D1FCEA;
+  border-color: #D1FCEA;
+}
+
+.wsp-label.label-danger {
+  color: #ffffff;
+  background-color: #FD625E;
+  border-color: #FD625E;
+}
+
+.wsp-label.label-light-danger {
+  color: #FD625E;
+  background-color: #FFE4E3;
+  border-color: #FFE4E3;
+}
+
+.wsp-label.label-warning {
+  color: #ffffff;
+  background-color: #ffbf53;
+  border-color: #ffbf53;
+}
+
+.wsp-label.label-light-warning {
+  color: #ffbf53;
+  background-color: #FFEBC9;
+  border-color: #FFEBC9;
+}
+
+.wsp-label.label-info {
+  color: #ffffff;
+  background-color: #4ba6ef;
+  border-color: #4ba6ef;
+}
+
+.wsp-label.label-light-info {
+  color: #4ba6ef;
+  background-color: #D6EDFF;
+  border-color: #D6EDFF;
+}
+
+.label-outline-primary {
+  color: #5156BE;
+  background-color: #ffffff;
+  border-color: #5156BE;
+}
+
+.label-outline-inactive {
+  color: #343a40;
+  background-color: #ffffff;
+  border-color: #343a40;
+}
+
+.label-outline-success {
+  color: #2AB57D;
+  background-color: #ffffff;
+  border-color: #2AB57D;
+}
+
+.label-outline-danger {
+  color: #FD625E;
+  background-color: #ffffff;
+  border-color: #FD625E;
+}
+
+.label-outline-warning {
+  color: #ffbf53;
+  background-color: #ffffff;
+  border-color: #ffbf53;
+}
+
+.label-outline-info {
+  color: #4ba6ef;
+  background-color: #ffffff;
+  border-color: #4ba6ef;
+}
+
 .wsp-list-group {
   display: -webkit-box;
   display: -ms-flexbox;
