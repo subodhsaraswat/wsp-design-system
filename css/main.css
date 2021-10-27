@@ -4846,6 +4846,52 @@ fieldset:disabled a.btn {
   transition: height 0.35s ease;
 }
 
+.wsp-drawer .wsp-drawer-content {
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  width: 20rem;
+  height: 100%;
+  z-index: 1050;
+  display: none;
+}
+
+.wsp-drawer .wsp-drawer-content.wsp-drawer-left {
+  left: 0;
+  -webkit-box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wsp-drawer .wsp-drawer-content.wsp-drawer-right {
+  right: 0;
+  -webkit-box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wsp-drawer .wsp-drawer-content .wsp-drawer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0.875rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wsp-drawer .wsp-drawer-content .wsp-drawer-header h5 {
+  margin-bottom: 0;
+  color: #343a40;
+}
+
+.wsp-drawer .wsp-drawer-content .wsp-drawer-header .wsp-close-btn {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #343a40;
+}
+
 .input-group {
   position: relative;
 }
