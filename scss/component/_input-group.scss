@@ -1,0 +1,203 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.wsp-input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; // For form validation feedback
+  align-items: stretch;
+  width: 100%;
+  border: $input-border-width solid $input-border-color;
+  // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
+  @if $enable-rounded {
+    // Manually use the if/else instead of the mixin to account for iOS override
+    border-radius: $input-border-radius;
+  } @else {
+    // Otherwise undo the iOS default
+    border-radius: 0;
+  }
+  &.focused {
+    color: $input-focus-color;
+    background-color: $input-focus-bg;
+    border-color: $input-focus-border-color;
+    outline: 0;
+    // Avoid using mixin so we can pass custom focus shadow properly
+    @if $enable-shadows {
+      box-shadow: $input-box-shadow, $input-focus-box-shadow;
+    } @else {
+      box-shadow: $input-focus-box-shadow;
+    }
+  }
+  > .wsp-form-control,
+  > .custom-select,
+  > .custom-file {
+    border: none;
+    position: relative; // For focus state's z-index
+    flex: 1 1 auto;
+    // Add width 1% and flex-basis auto to ensure that button will not wrap out
+    // the column. Applies to IE Edge+ and Firefox. Chrome does not require this.
+    width: 1%;
+    margin-bottom: 0;
+
+    // Bring the "active" form control to the top of surrounding elements
+    &:focus {
+      z-index: 3;
+      box-shadow: none;
+    }
+
+    + .wsp-form-control,
+    + .custom-select,
+    + .custom-file {
+      margin-left: -$input-border-width;
+    }
+  }
+
+  > .wsp-form-control,
+  > .custom-select {
+    &:not(:last-child) {
+      @include border-right-radius(0);
+    }
+    &:not(:first-child) {
+      @include border-left-radius(0);
+    }
+  }
+
+  // Custom file inputs have more complex markup, thus requiring different
+  // border-radius overrides.
+  > .custom-file {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) .custom-file-label,
+    &:not(:last-child) .custom-file-label::before {
+      @include border-right-radius(0);
+    }
+    &:not(:first-child) .custom-file-label,
+    &:not(:first-child) .custom-file-label::before {
+      @include border-left-radius(0);
+    }
+  }
+  & + .wsp-input-group {
+    margin-top: 0.5rem;
+  }
+}
+
+// Prepend and append
+//
+// While it requires one extra layer of HTML for each, dedicated prepend and
+// append elements allow us to 1) be less clever, 2) simplify our selectors, and
+// 3) support HTML5 form validation.
+
+.wsp-input-group-prepend,
+.wsp-input-group-append {
+  display: flex;
+
+  // Ensure buttons are always above inputs for more visually pleasing borders.
+  // This isn't needed for `.wsp-input-group-text` since it shares the same border-color
+  // as our inputs.
+  .wsp-button {
+    position: relative;
+    z-index: 2;
+  }
+
+  .wsp-button + .wsp-button,
+  .wsp-button + .wsp-input-group-text,
+  .wsp-input-group-text + .wsp-input-group-text,
+  .wsp-input-group-text + .wsp-button {
+    margin-left: -$input-border-width;
+  }
+}
+
+// Textual addons
+//
+// Serves as a catch-all element for any text or radio/checkbox input you wish
+// to prepend or append to an input.
+
+.wsp-input-group-text {
+    display: flex;
+    align-items: center;
+    padding: $input-padding-y $input-padding-x;
+    margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
+    font-size: $font-size-base; // Match inputs
+    font-weight: $font-weight-normal;
+    line-height: $input-line-height;
+    color: $input-group-addon-color;
+    text-align: center;
+    white-space: nowrap;
+  
+    // Nuke default margins from checkboxes and radios to vertically center within.
+    input[type='radio'],
+    input[type='checkbox'] {
+      margin-top: 0;
+    }
+  }
+.wsp-input-group-prepend {
+  margin-right: -$input-border-width;
+}
+.wsp-input-group-append {
+  margin-left: -$input-border-width;
+  .wsp-input-group-text {
+      color:$gray-light;
+  }
+}
+
+
+// Sizing
+//
+// Remix the default form control sizing classes into new ones for easier
+// manipulation.
+
+.wsp-input-group-lg > .wsp-form-control,
+.wsp-input-group-lg > .wsp-input-group-prepend > .wsp-input-group-text,
+.wsp-input-group-lg > .wsp-input-group-append > .wsp-input-group-text,
+.wsp-input-group-lg > .wsp-input-group-prepend > .btn,
+.wsp-input-group-lg > .wsp-input-group-append > .btn {
+  @extend .wsp-form-control-lg;
+}
+
+.wsp-input-group-sm > .wsp-form-control,
+.wsp-input-group-sm > .wsp-input-group-prepend > .wsp-input-group-text,
+.wsp-input-group-sm > .wsp-input-group-append > .wsp-input-group-text,
+.wsp-input-group-sm > .wsp-input-group-prepend > .btn,
+.wsp-input-group-sm > .wsp-input-group-append > .btn {
+  @extend .wsp-form-control-sm;
+}
+
+// Prepend and append rounded corners
+//
+// These rulesets must come after the sizing ones to properly override sm and lg
+// border-radius values when extending. They're more specific than we'd like
+// with the `.wsp-input-group >` part, but without it, we cannot override the sizing.
+
+.wsp-input-group > .wsp-input-group-prepend > .btn,
+.wsp-input-group > .wsp-input-group-prepend > .wsp-input-group-text,
+.wsp-input-group > .wsp-input-group-append:not(:last-child) > .btn,
+.wsp-input-group
+  > .wsp-input-group-append:not(:last-child)
+  > .wsp-input-group-text,
+.wsp-input-group
+  > .wsp-input-group-append:last-child
+  > .btn:not(:last-child):not(.dropdown-toggle),
+.wsp-input-group
+  > .wsp-input-group-append:last-child
+  > .wsp-input-group-text:not(:last-child) {
+  @include border-right-radius(0);
+}
+
+.wsp-input-group > .wsp-input-group-append > .btn,
+.wsp-input-group > .wsp-input-group-append > .wsp-input-group-text,
+.wsp-input-group > .wsp-input-group-prepend:not(:first-child) > .btn,
+.wsp-input-group
+  > .wsp-input-group-prepend:not(:first-child)
+  > .wsp-input-group-text,
+.wsp-input-group
+  > .wsp-input-group-prepend:first-child
+  > .btn:not(:first-child),
+.wsp-input-group
+  > .wsp-input-group-prepend:first-child
+  > .wsp-input-group-text:not(:first-child) {
+  @include border-left-radius(0);
+}

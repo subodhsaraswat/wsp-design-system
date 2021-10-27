@@ -7,6 +7,9 @@
     margin-right: 0;
     margin-left: 0;
     border-width: 0.2rem;
+    .wsp-form-control + .wsp-form-control {
+      margin-top: 0.5rem;
+    }
   }
   .code {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
@@ -16,26 +19,29 @@
     background-color: $body-bg;
     padding: 1.5rem;
     position: relative;
-    .copy-clipboard{
+    .language-html {
+      white-space: nowrap;
+      
+    }
+    .copy-clipboard {
       font-size: 0.75rem;
       position: absolute;
       right: 10px;
-      top:10px;
+      top: 10px;
       cursor: pointer;
       background: $primary;
       padding: 0.25rem 0.65rem;
       color: $white;
       border-radius: $border-radius;
     }
-   
   }
-  .wsp-list-group{
+  .wsp-list-group {
     max-width: 400px;
   }
 }
-.wsp-cls-text{
+.wsp-cls-text {
   color: $primary;
 }
-.ws-cls-name{
+.ws-cls-name {
   color: $danger;
 }

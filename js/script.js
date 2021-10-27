@@ -1,15 +1,20 @@
-// Tab
+
 $(document).ready(function () {
+  // Tab
   $(".wsp-navbar-vertical li > a").on("click", function () {
     $(".wsp-navbar-vertical").find(".active").removeClass("active");
     $(this).addClass("active");
     $(".wsp-navbar-vertical").find(".wsp-submenu").slideUp(500); /* close submenu */
     $(this).next(".wsp-submenu").slideDown(500); /*display submenu */
   });
+
+  
    // close Alert
   $('.wsp-close').on("click", function () {
     $(this).parents('.wsp-alert').fadeOut(300);
   });
+
+
   // open Left Drawer
   $("#openLeftDrawer").click(function(){
     $("#leftDwawer").toggle(300);
@@ -28,5 +33,15 @@ $(document).ready(function () {
     $("#rightDwawer").hide(200);
     $("#openRightDrawer").text($("#openRightDrawer").text() == 'Open Right Drawer' ? 'Close Right Drawer' : 'Open Right Drawer');
   });
+
+
+  // Input Group focussed add class Focussed
+  $(".wsp-input-group .wsp-form-control").focus(function(){
+    $(this).parent(".wsp-input-group").addClass("focused");
+ 
+   }).blur(function(){
+        $(this).parent(".wsp-input-group").removeClass("focused");
+   })
+    
 });
 
