@@ -7,7 +7,11 @@
 @import "mixins/button";
 @import "mixins/background";
 @import "mixins/transition";
-
+@import "mixins/border-radius";
+@import "mixins/forms";
+@import "mixins/gradient";
+@import "mixins/breakpoints";
+@import "mixins/functions";
 
 @import "utilities/align";
 @import "utilities/background";
@@ -30,7 +34,6 @@
 @import "component/card";
 @import "component/collapse";
 @import "component/drawer";
-@import "component/input";
 @import "component/flag";
 @import "component/label";
 @import "component/list-group";
@@ -41,6 +44,8 @@
 @import "component/switch";
 @import "component/table";
 @import "component/tab";
+@import "component/forms";
+@import "component/input-group";
 
 
 @import "pages/home";
