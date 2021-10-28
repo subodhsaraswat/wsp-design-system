@@ -16,13 +16,6 @@
             }
         }
 
-        .wsp-toggle-icon {
-            font-size: 1.5rem;
-            display: inline-block;
-            cursor: pointer;
-            color: $white;
-            padding-left: 3.85rem;
-        }
     }
 }
 
@@ -39,15 +32,70 @@
         top: 0;
         height: 100%;
         margin-top: 3.5rem;
+        display: block;
+        z-index: 10000;
 
     }
 
     .wsp-content-wrap {
         width: 100%;
-        margin-left: 20rem;
         overflow-x: hidden;
         background: $white;
         min-height: calc(100vh - 3.5rem);
+        position: relative;
+        transition: all 0.4s ease;
+        margin-left: 20rem;
+
+        &.has-sidebar {
+            margin-left: 0rem;
+        }
+
+        .toggle-wrap {
+            position: fixed;
+            cursor: pointer;
+            color: $white;
+            top: 10px;
+            z-index: 1050;
+            display: none;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        .toggle-bar,
+        .toggle-bar::before,
+        .toggle-bar::after,
+        .toggle-wrap.active .toggle-bar,
+        .toggle-wrap.active .toggle-bar::before,
+        .toggle-wrap.active .toggle-bar::after {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .toggle-bar {
+            width: 35px;
+            margin: 10px 0;
+            position: relative;
+            border-top: 4px solid $white;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .toggle-bar::before,
+        .toggle-bar::after {
+            content: "";
+            display: block;
+            background: $white;
+            height: 4px;
+            width: 35px;
+            border-radius: 4px;
+            position: absolute;
+            top: -12px;
+            transform: rotate(0deg);
+            transform-origin: 11%;
+        }
+
+        .toggle-bar::after {
+            top: 4px;
+        }
 
         &.wsp-home-wrap {
             background: initial;
@@ -99,8 +147,9 @@
                 border-radius: 4px;
                 padding: 0.9375rem;
                 box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-                .wsp-card-icon{
-                    .wsp-icon{
+
+                .wsp-card-icon {
+                    .wsp-icon {
                         color: $primary;
                         font-size: 2.5rem;
                     }
@@ -113,5 +162,42 @@
             @include wsp-flex-center;
             column-gap: 1rem;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    #sideBar {
+        display: none;
+        width: 100%;
+        border-right: 0;
+    }
+
+    .wsp-content .wsp-content-wrap {
+        margin-left: 0;
+    }
+
+    .wsp-content .wsp-content-wrap .toggle-wrap {
+        display: block;
+    }
+
+    .wsp-content .wsp-content-wrap .wsp-banner .wsp-banner-logo {
+        padding: 1rem;
+    }
+
+    .wsp-content .wsp-content-wrap .wsp-banner .wsp-info-wrap {
+        padding: 0 1rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .wsp-content .wsp-content-wrap .wsp-card-wrap .wsp-card {
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 769px) {
+    #sideBar {
+        display: block !important;
     }
 }

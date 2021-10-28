@@ -34,14 +34,18 @@ $(document).ready(function () {
     $("#openRightDrawer").text($("#openRightDrawer").text() == 'Open Right Drawer' ? 'Close Right Drawer' : 'Open Right Drawer');
   });
 
-
+  //toggle menu
+  $('#toogleMenu').click(function(){
+    $("#sideBar").toggle(500);
+    $("#mainContent").toggleClass("has-sidebar");
+   });
+   
   // Input Group focussed add class Focussed
   $(".wsp-input-group .wsp-form-control").focus(function(){
     $(this).parent(".wsp-input-group").addClass("focused");
  
    }).blur(function(){
         $(this).parent(".wsp-input-group").removeClass("focused");
-   })
-    
+   });  
 });
 
