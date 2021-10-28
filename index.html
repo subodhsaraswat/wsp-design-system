@@ -18,16 +18,15 @@
       <div class="header wsp-fixed-top">
         <div class="wsp-container-fluid">
           <div class="wsp-row">
-            <div class="wsp-col-sm-12 wsp-col-md-4 wsp-col-lg-3">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
               <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
-                <span class="wsp-icon wsp-logo wsp-d-inline-block">
-                  <img src="images/icon-logo.svg" alt="logo-icon">
-                </span>
-                <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
               </div>
-            </div>
-            <div class="wsp-col-sm-12 wsp-col-md-8 wsp-col-lg-9">
-
             </div>
           </div>
         </div>
@@ -38,7 +37,7 @@
     <!-- Main content starts -->
     <div class="wsp-content wsp-d-flex">
       <!-- side-bar starts -->
-      <div class="wsp-nav-wrap">
+      <div class="wsp-nav-wrap" id="sideBar">
         <ul class="wsp-navbar-vertical">
           <li class="wsp-nav-link">
             <a href="#">
@@ -83,6 +82,9 @@
             </a>
             <ul class="wsp-submenu">
               <li class="wsp-submenu-link">
+                <a href="input.html">Input</a>
+              </li>
+              <li class="wsp-submenu-link">
                 <a href="switch.html">Switch</a>
               </li>
             </ul>
@@ -102,19 +104,19 @@
                 <a href="button.html">Button</a>
               </li>
               <li class="wsp-submenu-link">
-                <a href="flag.html">Button</a>
+                <a href="collapse.html">Collapse</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="flag.html">Flag</a>
               </li>
               <li class="wsp-submenu-link">
                 <a href="list-group.html">List Group</a>
               </li>
               <li class="wsp-submenu-link">
-                <a href="section-message.html">Section Message</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="skeleton.html">Skeleton</a>
-              </li>
-              <li class="wsp-submenu-link">
                 <a href="tab.html">Tabs</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="navbar.html">Navbar</a>
               </li>
             </ul>
           </li>
@@ -133,7 +135,13 @@
                 <a href="badge.html">Badge</a>
               </li>
               <li class="wsp-submenu-link">
-                <a href="#">Link-3</a>
+                <a href="drawer.html">Drawer</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="section-message.html">Section Message</a>
+              </li>
+              <li class="wsp-submenu-link">
+                <a href="skeleton.html">Skeleton</a>
               </li>
             </ul>
           </li>
@@ -161,13 +169,16 @@
         </ul>
       </div>
       <!-- side-bar ends -->
-      <div class="wsp-content-wrap wsp-home-wrap">
+      <div class="wsp-content-wrap wsp-home-wrap" id="mainContent">
         <div class="wsp-banner wsp-position-relative">
+          <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+            <span class="toggle-bar"></span>
+          </span>
           <div class="wsp-row">
             <div class="wsp-col-sm-12 wsp-col-md-6 wsp-col-lg-6">
               <div class="wsp-banner-logo">
-                <span class="wsp-icon wsp-logo wsp-d-inline-block">
-                  <img src="images/icon-logo.svg" alt="logo-icon">
+                <span class="wsp-logo-icon wsp-d-inline-block">
+                  <i class="wsp-icon wsp-icon-layers-o"></i>
                 </span>
                 <h1 class="wsp-text-white">WSP Design System</h1>
                 <p class="wsp-text-white">WSP design system provides a set of organized tools, patterns and practices
@@ -185,10 +196,8 @@
           <div class="wsp-row">
             <div class="wsp-col-sm-12 wsp-col-md-4">
               <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-1.svg" alt="icon">
-                  </span>
+                <div class="wsp-card-icon wsp-mt-3 wsp-mb-4">
+                  <i class="wsp-icon wsp-icon-grid-layout-o"></i>
                 </div>
                 <div class="wsp-card-title wsp-mb-4">
                   <h4 class="wsp-text-primary wsp-mb-0">Fully tested</h4>
@@ -200,10 +209,8 @@
             </div>
             <div class="wsp-col-sm-12 wsp-col-md-4">
               <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-2.svg" alt="icon">
-                  </span>
+                <div class="wsp-card-icon wsp-mt-3 wsp-mb-4">
+                  <i class="wsp-icon wsp-icon-artboard-o"></i>
                 </div>
                 <div class="wsp-card-title wsp-mb-4">
                   <h4 class="wsp-text-primary wsp-mb-0">Globally accepted</h4>
@@ -215,10 +222,8 @@
             </div>
             <div class="wsp-col-sm-12 wsp-col-md-4">
               <div class="wsp-card">
-                <div class="wsp-icon wsp-card-icon wsp-mt-3 wsp-mb-4">
-                  <span>
-                    <img src="images/card-icon-3.svg" alt="icon">
-                  </span>
+                <div class="wsp-card-icon wsp-mt-3 wsp-mb-4">
+                  <i class="wsp-icon wsp-icon-share-o"></i>
                 </div>
                 <div class="wsp-card-title wsp-mb-4">
                   <h4 class="wsp-text-primary wsp-mb-0">Easy to use</h4>
