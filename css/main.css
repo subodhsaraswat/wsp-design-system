@@ -6477,6 +6477,101 @@ select.wsp-form-control-lg:not([size]):not([multiple]), .wsp-input-group-lg > se
   border-bottom-left-radius: 0;
 }
 
+.wsp-form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
+}
+
+.wsp-form-check .wsp-form-check-input {
+  float: left;
+  margin-left: -1.5em;
+}
+
+.wsp-form-check-input {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color-adjust: exact;
+}
+
+.wsp-form-check-input[type="checkbox"] {
+  border-radius: 0.015em;
+}
+
+.wsp-form-check-input[type="radio"] {
+  border-radius: 50%;
+}
+
+.wsp-form-check-input:not([disabled]):hover {
+  border-color: #5156BE;
+}
+
+.wsp-form-check-input:focus {
+  border-color: #5156BE;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0.25rem rgba(81, 86, 190, 0.5);
+          box-shadow: 0 0 0.25rem rgba(81, 86, 190, 0.5);
+}
+
+.wsp-form-check-input:checked {
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+
+.wsp-form-check-input:checked[type="checkbox"] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.wsp-form-check-input:checked[type="radio"] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+
+.wsp-form-check-input[type="checkbox"]:indeterminate {
+  background-color: #5156BE;
+  border-color: #5156BE;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+
+.wsp-form-check-input:disabled {
+  pointer-events: none;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 0.5;
+}
+
+.wsp-form-check-input[disabled] ~ .wsp-form-check-label, .wsp-form-check-input:disabled ~ .wsp-form-check-label {
+  opacity: 0.5;
+}
+
+.wsp-form-check-inline {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
+  pointer-events: none;
+  -webkit-filter: none;
+          filter: none;
+  opacity: 0.65;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
