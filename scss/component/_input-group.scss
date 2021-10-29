@@ -19,7 +19,7 @@
     // Otherwise undo the iOS default
     border-radius: 0;
   }
-  &.focused {
+  &:not(.is-valid):not(.is-invalid).focused {
     color: $input-focus-color;
     background-color: $input-focus-bg;
     border-color: $input-focus-border-color;
@@ -83,6 +83,9 @@
   & + .wsp-input-group {
     margin-top: 0.5rem;
   }
+  @include form-validation-state("valid", $form-feedback-valid-color);
+  @include form-validation-state("invalid", $form-feedback-invalid-color);
+  
 }
 
 // Prepend and append
