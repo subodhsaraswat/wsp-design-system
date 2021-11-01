@@ -10,6 +10,15 @@
     .wsp-form-control + .wsp-form-control {
       margin-top: 0.5rem;
     }
+    .wsp-modal {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      z-index: 1;
+      display: block;
+    }
   }
   .code {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
@@ -44,4 +53,7 @@
 }
 .ws-cls-name {
   color: $danger;
+}
+.comment{
+  color: $gray-800;
 }

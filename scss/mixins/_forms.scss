@@ -50,15 +50,16 @@
       border-radius: .2rem;
     }
   
+    .wsp-input-group,
     .wsp-form-control,
     .custom-select {
       .was-validated &:#{$state},
       &.is-#{$state} {
         border-color: $color;
   
-        &:focus {
+        &.focused {
           border-color: $color;
-          box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
+          box-shadow: 0 0 $input-focus-width rgba($color, .25);
         }
   
         ~ .#{$state}-feedback,
