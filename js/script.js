@@ -101,5 +101,17 @@ $(document).ready(function () {
       $('.wsp-modal-backdrop').remove()
     }
   })
+
+  // Collpase
+  $('#wsp-toggle').click(function () {
+    $('#collapse').toggle(300);
+  })
+
+  // Accordian
+  $('[data-toggle="wsp-accordian"]').click(function () {
+    var targetElem = $(this).attr('href')
+    console.log(`${targetElem}`)
+    $(targetElem).addClass('toggle').toggle(500);
+  })
   
 })
