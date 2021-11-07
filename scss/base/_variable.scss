@@ -280,6 +280,11 @@ $btn-info-hover-color: darken($btn-info-color, 8%);
 $btn-info-active-color: darken($btn-info-color, 8%);
 $btn-info-shadow-color: rgba($btn-info-color, 0.5);
 
+$btn-white-color: $white;
+$btn-white-hover-color: darken($btn-white-color, 8%);
+$btn-white-active-color: darken($btn-white-color, 8%);
+$btn-white-shadow-color: rgba($btn-white-color, 0.5);
+
 
 // Options
 //
@@ -618,3 +623,4 @@ $modal-fade-transform:              translate(0, -50px) !default;
 $modal-show-transform:              none !default;
 $modal-transition:                  transform .3s ease-out !default;
 $modal-scale-transform:             scale(1.02) !default;
+$margin-avtar: auto 1rem;

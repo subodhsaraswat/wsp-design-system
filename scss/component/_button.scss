@@ -175,6 +175,28 @@
       box-shadow: 0 0 0.25rem $btn-info-shadow-color;
     }
   }
+  &.button-white {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+    &:hover {
+      color: $black;
+      background-color: $white;
+      border-color: $white;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+      color: #fff;
+      background-color: $btn-white-active-color;
+      border-color: $btn-white-active-color;
+    }
+    &.focus,
+    &:focus,
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0.25rem $btn-white-shadow-color;
+    }
+  }
   // Make a button look and behave like a link
   .button-link {
     font-weight: $font-weight-normal;
@@ -258,4 +280,7 @@ fieldset:disabled a.btn {
 }
 .button-outline-info{
     @include button-outline-variant($btn-info-color, $white, $active-background:  $btn-info-color, $active-border:  $btn-info-color);
+}
+.button-outline-white{
+  @include button-outline-variant($btn-white-color, $black, $active-background:  $btn-white-color, $active-border:  $btn-white-color);
 }

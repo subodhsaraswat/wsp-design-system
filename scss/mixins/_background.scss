@@ -57,3 +57,15 @@
         background-color: $white;
     }
 }
+
+@mixin bg-gray() {
+    .wsp-bg-gray {
+        background-color: $gray-100;
+    }
+}
+
+@mixin bg-dark-gray() {
+    .wsp-bg-dark-gray {
+        background-color: $gray-700;
+    }
+}
