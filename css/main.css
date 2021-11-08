@@ -7300,6 +7300,141 @@ button.wsp-close {
   border-radius: 50% !important;
 }
 
+.rate.star {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rate.star::before, .rate.star:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.rate.star:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate.star:not(:checked) > label {
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #CCCCCC;
+  margin: 0 0.25rem;
+}
+
+.rate.star:not(:checked) > label:before {
+  content: '\ed10';
+  font-family: 'wsp-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rate.star:not(:checked) > label:hover {
+  color: #ffbf53;
+}
+
+.rate.star:not(:checked) > label:hover ~ label {
+  color: #ffbf53;
+}
+
+.rate.star > input:checked ~ label {
+  color: #ffbf53;
+}
+
+.rate.star > input:checked ~ label:hover {
+  color: #ffbf53;
+}
+
+.rate.star > input:checked ~ label:hover ~ label {
+  color: #ffbf53;
+}
+
+.rate.star > input:checked + label:hover {
+  color: #ffbf53;
+}
+
+.rate.star > input:checked + label:hover ~ label {
+  color: #ffbf53;
+}
+
+.rate.star > label:hover ~ input:checked ~ label {
+  color: #ffbf53;
+}
+
+.rate.emoji > input[type='radio'] {
+  -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: border 0.2s ease;
+  transition: border 0.2s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  margin: 0 5px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+.rate.emoji > input[type='radio'] + label {
+  width: 60px;
+  height: 60px;
+  font-size: 3.75rem;
+  color: #CCCCCC;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.rate.emoji > input[type='radio']:hover, .rate.emoji > input[type='radio']:checked {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.rate.emoji > input[type='radio']:hover.rate1 + label, .rate.emoji > input[type='radio']:checked.rate1 + label {
+  color: #FD625E;
+}
+
+.rate.emoji > input[type='radio']:hover.rate2 + label, .rate.emoji > input[type='radio']:checked.rate2 + label {
+  color: #2D3748;
+}
+
+.rate.emoji > input[type='radio']:hover.rate3 + label, .rate.emoji > input[type='radio']:checked.rate3 + label {
+  color: #ffbf53;
+}
+
+.rate.emoji > input[type='radio']:hover.rate4 + label, .rate.emoji > input[type='radio']:checked.rate4 + label {
+  color: #5156BE;
+}
+
+.rate.emoji > input[type='radio']:hover.rate5 + label, .rate.emoji > input[type='radio']:checked.rate5 + label {
+  color: #2AB57D;
+}
+
+.rate.emoji > input[type='radio']:focus {
+  outline: 0;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
@@ -7577,7 +7712,7 @@ button.wsp-close {
   color: #5156BE;
 }
 
-.ws-cls-name {
+.wsp-cls-name {
   color: #FD625E;
 }
 
