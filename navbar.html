@@ -183,23 +183,30 @@
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Example</h3>
                 <div class="demo">
-                    <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-dark">
-                        <a class="wsp-navbar-brand" href="javascript:void(0)">Logo</a>
+                    <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-gray">
+                        <a class="wsp-navbar-brand wsp-logo wsp-black-logo" href="javascript:void(0)">Logo</a>
                           <ul class="wsp-navbar-nav wsp-mr-auto">
                             <li class="wsp-nav-item">
-                              <a class="wsp-nav-link" href="javascript:void(0)">Link</a>
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
                             </li>
                             <li class="wsp-nav-item">
-                              <a class="wsp-nav-link" href="javascript:void(0)">Link</a>
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
                             </li>
                             <li class="wsp-nav-item">
-                              <a class="wsp-nav-link disabled" href="javascript:void(0)">Disabled</a>
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
                             </li>
-                            
                           </ul>
-                          <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+                          <form class="form-inline my-2 my-lg-0 wsp-flex">
+                            <div class="wsp-search">
+                              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                              <span class="wsp-search-icon">
+                                <i class="wsp-icon wsp-icon-search-o"></i>
+                              </span>
+                            </div>
+                            <button type="button" class="wsp-button button-outline-primary button-sm">Sign In</button>
+                            <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                              <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                            </a>
                         </form>
                     </nav>
                 </div>
@@ -208,197 +215,373 @@
                     Copy
                   </span>
                   <code id="horizontalTabs" class="language-html">
-                    &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-primary"</span>data-toggle="collapse" href="#wsp-toggle"&gt;Toggle Button&lt;/button&gt;<br/>
-                      &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-toggle"</span><span class="wsp-cls-text"> class=</span><span class="ws-cls-name">"collapse show wsp-card-margin"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                      &lt;/div&gt;
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-gray"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-black-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-primary button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
                   </code>
                 </div>
               </div>
 
               <div class="ex-wrapper wsp-mb-5">
-                <h3>Accordian</h3>
-                <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
-                </p>
+                <h3>Navbar Dark</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-bg-dark-gray</span> class to create a navbar dark.</p>
                 <div class="demo">
-                    <div id="wsp-accordion">
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
-                                Accordion Title #1
-                            </a>
-                          </div>
-                          <div id="collapseOne" class="collapse" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
+                  <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-dark-gray">
+                    <a class="wsp-navbar-brand wsp-logo wsp-white-logo" href="javascript:void(0)">Logo</a>
+                      <ul class="wsp-navbar-nav wsp-mr-auto">
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 wsp-flex">
+                        <div class="wsp-search">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                          <span class="wsp-search-icon">
+                            <i class="wsp-icon wsp-icon-search-o"></i>
+                          </span>
                         </div>
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
-                                Accordion Title #2
-                          </a>
-                          </div>
-                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
-                                Accordion Title #3
-                            </a>
-                          </div>
-                          <div id="collapseThree" class="collapse" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                        <button type="button" class="wsp-button button-secondary button-sm">Sign In</button>
+                        <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                          <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                        </a>
+                    </form>
+                  </nav>
                 </div>
                 <div class="code">
                   <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
                     Copy
                   </span>
-                  <code id="verticalTabs" class="language-html">
-                    &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-accordion"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                  <code id="horizontalTabs" class="language-html">
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-dark-gray"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-white-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Navbar Primary</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-bg-primary</span> class to create a navbar primary.</p>
+                <div class="demo">
+                  <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-primary">
+                    <a class="wsp-navbar-brand wsp-logo wsp-white-logo" href="javascript:void(0)">Logo</a>
+                      <ul class="wsp-navbar-nav wsp-mr-auto">
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 wsp-flex">
+                        <div class="wsp-search">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                          <span class="wsp-search-icon">
+                            <i class="wsp-icon wsp-icon-search-o"></i>
+                          </span>
+                        </div>
+                        <button type="button" class="wsp-button button-outline-white button-sm">Sign In</button>
+                        <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                          <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                        </a>
+                    </form>
+                  </nav>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
+                    Copy
+                  </span>
+                  <code id="horizontalTabs" class="language-html">
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-primary"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-white-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-white button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Navbar Default</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-bg-dark-gray</span> class to create a navbar dark.</p>
+                <div class="demo">
+                    <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-gray">
+                        <a class="wsp-navbar-brand wsp-logo wsp-black-logo" href="javascript:void(0)">Logo</a>
+                          <ul class="wsp-navbar-nav wsp-mr-auto">
+                            <li class="wsp-nav-item">
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
+                            </li>
+                            <li class="wsp-nav-item">
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
+                            </li>
+                            <li class="wsp-nav-item">
+                              <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
+                            </li>
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0 wsp-flex">
+                            <div class="wsp-search">
+                              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                              <span class="wsp-search-icon">
+                                <i class="wsp-icon wsp-icon-search-o"></i>
+                              </span>
+                            </div>
+                            <button type="button" class="wsp-button button-outline-primary button-sm">Sign In</button>
+                            <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                              <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                            </a>
+                        </form>
+                    </nav>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(horizontalTabs)">
+                    Copy
+                  </span>
+                  <code id="horizontalTabs" class="language-html">
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-gray"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-black-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-primary button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Navbar Dark</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-bg-dark-gray</span> class to create a navbar dark.</p>
+                <div class="demo">
+                  <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-dark-gray">
+                    <a class="wsp-navbar-brand wsp-logo wsp-white-logo" href="javascript:void(0)">Logo</a>
+                      <ul class="wsp-navbar-nav wsp-mr-auto">
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 wsp-flex">
+                        <div class="wsp-search">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                          <span class="wsp-search-icon">
+                            <i class="wsp-icon wsp-icon-search-o"></i>
+                          </span>
+                        </div>
+                        <button type="button" class="wsp-button button-secondary button-sm">Sign In</button>
+                        <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                          <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                        </a>
+                    </form>
+                  </nav>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
+                    Copy
+                  </span>
+                  <code id="horizontalTabs" class="language-html">
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-dark-gray"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-white-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-secondary button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
                   </code>
                 </div>
               </div>
 
               <div class="ex-wrapper">
-                <h3>Accordian show</h3>
-                <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
-                </p>
+                <h3>Navbar Primary</h3>
+                <p>Add the <span class="ws-cls-name">.wsp-bg-primary</span> class to create a navbar primary.</p>
                 <div class="demo">
-                    <div id="wsp-accordion">
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
-                                Accordion Title #1
-                            </a>
-                          </div>
-                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              <h5>Heading</h5>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
+                  <nav class="wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-primary">
+                    <a class="wsp-navbar-brand wsp-logo wsp-white-logo" href="javascript:void(0)">Logo</a>
+                      <ul class="wsp-navbar-nav wsp-mr-auto">
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 1</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 2</a>
+                        </li>
+                        <li class="wsp-nav-item">
+                          <a class="wsp-nav-link" href="javascript:void(0)">MenuItem 3</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 wsp-flex">
+                        <div class="wsp-search">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                          <span class="wsp-search-icon">
+                            <i class="wsp-icon wsp-icon-search-o"></i>
+                          </span>
                         </div>
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
-                                Accordion Title #2
-                          </a>
-                          </div>
-                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              <h5>Heading</h5>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="wsp-card">
-                          <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
-                                Accordion Title #3
-                            </a>
-                          </div>
-                          <div id="collapseThree" class="collapse" data-parent="#accordion">
-                            <div class="wsp-card-body">
-                              <h5>Heading</h5>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                        <button type="button" class="wsp-button button-outline-white button-sm">Sign In</button>
+                        <a href="javascript:;" class="wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile">
+                          <img alt="Image placeholder" src="./images/photo/team-4.jpeg">
+                        </a>
+                    </form>
+                  </nav>
                 </div>
                 <div class="code">
                   <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
                     Copy
                   </span>
-                  <code id="verticalTabs" class="language-html">
-                    &lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"wsp-accordion"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse show"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Heading&lt;/h5&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is place holder text.<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                  <code id="horizontalTabs" class="language-html">
+                    &lt;nav <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar wsp-navbar-expand-sm wsp-navbar-light wsp-bg-primary"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-brand wsp-logo wsp-white-logo"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;Logo&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-navbar-nav wsp-mr-auto"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-nav-link"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;MenuItem 1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-inline my-2 my-lg-0 wsp-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"form-control mr-sm-2"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"text"</span><span class="wsp-cls-text"> placeholder=</span><span class="ws-cls-name">"search"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-search-icon"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-search-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-button button-outline-white button-sm"</span><span class="wsp-cls-text"> type=</span><span class="ws-cls-name">"button"</span>&gt;Sign In&lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-avatar wsp-avatar-xs rounded-circle wsp-nav-profile"</span><span class="wsp-cls-text"> href=</span><span class="ws-cls-name">"javascript:void(0)"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">src=</span><span class="ws-cls-name">"./images/photo/team-4.jpeg"</span><span class="wsp-cls-text"> alt=</span><span class="ws-cls-name">"Image placeholder"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br/>
+                    &lt;/nav&gt;<br/>
                   </code>
                 </div>
               </div>
+
+              
             </div>
           </div>
         </div>

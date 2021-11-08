@@ -185,8 +185,8 @@
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Example</h3>
                 <div class="demo">
-                  <button type="button" class="wsp-button button-primary" data-toggle="collapse" href="#wsp-toggle">Toggle Button</button>
-                  <div id="wsp-toggle" class="collapse show wsp-card-margin">
+                  <button type="button" class="wsp-button button-primary" id="wsp-toggle">Toggle Button</button>
+                  <div id="collapse" class="collapse show wsp-card-margin">
                     <div class="wsp-card">
                         <div class="wsp-card-body">
                             <h5>Heading</h5>
@@ -218,10 +218,10 @@
                 <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
                 </p>
                 <div class="demo">
-                    <div id="wsp-accordion">
+                    <div id="wsp-collapse">
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
+                            <a class="wsp-card-link" data-toggle="wsp-accordian" href="#collapseOne">
                                 Accordion Title #1
                             </a>
                           </div>
@@ -233,7 +233,7 @@
                         </div>
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
+                            <a class="collapsed wsp-card-link" data-toggle="wsp-accordian" href="#collapseTwo">
                                 Accordion Title #2
                           </a>
                           </div>
@@ -245,7 +245,7 @@
                         </div>
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
+                            <a class="collapsed wsp-card-link" data-toggle="wsp-accordian" href="#collapseThree">
                                 Accordion Title #3
                             </a>
                           </div>
@@ -276,7 +276,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseTwo"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
@@ -287,7 +287,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseThree"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
@@ -306,14 +306,14 @@
                 <p>Add the <span class="ws-cls-name">.wsp-accordion</span> class to create a collpase.
                 </p>
                 <div class="demo">
-                    <div id="wsp-accordion">
+                    <div id="wsp-collapse">
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="wsp-card-link" data-toggle="collapse" href="#collapseOne">
+                            <a class="wsp-card-link" data-toggle="wsp-accordion" href="#collapseFour">
                                 Accordion Title #1
                             </a>
                           </div>
-                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                          <div id="collapseFour" class="collapse show" data-parent="#accordion">
                             <div class="wsp-card-body">
                               <h5>Heading</h5>
                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -322,11 +322,11 @@
                         </div>
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseTwo">
+                            <a class="collapsed wsp-card-link" data-toggle="wsp-accordian" href="#collapseFive">
                                 Accordion Title #2
                           </a>
                           </div>
-                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                          <div id="collapseFive" class="collapse" data-parent="#accordion">
                             <div class="wsp-card-body">
                               <h5>Heading</h5>
                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -335,11 +335,11 @@
                         </div>
                         <div class="wsp-card">
                           <div class="wsp-card-header">
-                            <a class="collapsed wsp-card-link" data-toggle="collapse" href="#collapseThree">
+                            <a class="collapsed wsp-card-link" data-toggle="wsp-accordian" href="#collapseSix">
                                 Accordion Title #3
                             </a>
                           </div>
-                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                          <div id="collapseSix" class="collapse" data-parent="#accordion">
                             <div class="wsp-card-body">
                               <h5>Heading</h5>
                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -367,7 +367,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseTwo"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
@@ -378,7 +378,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-header"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseOne"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-link" </span>data-toggle="collapse" href="#collapseThree"&gt;Collapsible Group Item #1&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">id=</span><span class="ws-cls-name">"collapseOne" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"collapse"</span> </span>data-parent="#accordion"&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-card-body"</span>&gt;<br/>
