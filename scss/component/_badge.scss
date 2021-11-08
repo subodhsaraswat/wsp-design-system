@@ -72,3 +72,32 @@
     border-color: $info-light;
   }
 }
+
+.wsp-badge-dot {
+  z-index: auto;
+  width: 0.75em;
+  min-width: 0.75em;
+  height: 0.75em;
+  background: $danger;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.badge-warning {
+    color: $white;
+    background-color: $warning;
+  }
+  &.badge-disable {
+    color: $text-body;
+    background-color: $gray-light;
+  }
+  &.badge-success {
+    color: $white;
+    background-color: $success;
+  }
+  .wsp-icon{
+    font-size: 0.35em;
+    font-weight: bolder;
+  }
+}
