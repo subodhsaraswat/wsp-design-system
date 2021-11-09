@@ -38,124 +38,8 @@
         <!-- Main content starts -->
         <div class="wsp-content wsp-d-flex">
             <!-- side-bar starts -->
-            <div class="wsp-nav-wrap">
-                <ul class="wsp-navbar-vertical">
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Getting started</span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Customize</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Layout</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Content</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="table.html">Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Forms</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="switch.html">Switch</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Components</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="alert.html">Alert</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="button.html">Button</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="list-group.html">List Group</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="section-message.html">Section Message</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="skeleton.html">Skeleton</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="tab.html">Tabs</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Helpers</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="#">Link-1</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="#">Link-2</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="#">Link-3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Utilities</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Extend</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">About</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
             </div>
             <!-- side-bar ends -->
             <div class="wsp-content-wrap">
@@ -164,7 +48,8 @@
                         <div class="wsp-col">
                             <h1>Checks and Radio </h1>
                             <p>Browser default checkboxes and radios are replaced with the help of <span
-                                    class="wsp-cls-name">.wsp-form-check</span>, a series of classes for both input types
+                                    class="wsp-cls-name">.wsp-form-check</span>, a series of classes for both input
+                                types
                                 that improves the layout and behavior of their HTML elements, that provide greater
                                 customization and cross browser consistency. Checkboxes are for selecting one or several
                                 options in a list, while radios are for selecting one option from many.</p>
@@ -211,7 +96,8 @@
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Disabled</h3>
                                 <p>Add the <span class="wsp-cls-name">disabled</span> attribute and the associated <span
-                                        class="wsp-cls-name">&lt;label&gt;</span>s are automatically styled to match with
+                                        class="wsp-cls-name">&lt;label&gt;</span>s are automatically styled to match
+                                    with
                                     a lighter color to help indicate the input’s state.</p>
                                 <div class="demo">
                                     <div class="wsp-form-check">
@@ -320,7 +206,8 @@
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Disabled</h3>
                                 <p>Add the <span class="wsp-cls-name">disabled</span> attribute and the associated <span
-                                        class="wsp-cls-name">&lt;label&gt;</span>s are automatically styled to match with
+                                        class="wsp-cls-name">&lt;label&gt;</span>s are automatically styled to match
+                                    with
                                     a lighter color to help indicate the input’s state.</p>
                                 <div class="demo">
                                     <div class="wsp-form-check">

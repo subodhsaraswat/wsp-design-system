@@ -71,6 +71,22 @@ $(document).ready(function () {
     .parent('.wsp-input-group')
     .addClass('is-invalid')
 
+  // Input Number with Spinner 
+  $('[data-toggle="minus"]').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('[data-toggle="plus"]').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+
   // modal
 
   $('[data-toggle="modal"]').click(function () {

@@ -38,135 +38,7 @@
         <div class="wsp-content wsp-d-flex">
             <!-- side-bar starts -->
             <div class="wsp-nav-wrap" id="sideBar">
-                <ul class="wsp-navbar-vertical">
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Getting started</span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Customize</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Layout</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Content</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="table.html">Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Forms</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="input.html">Input</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="switch.html">Switch</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Components</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="alert.html">Alert</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="button.html">Button</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="collapse.html">Collapse</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="flag.html">Flag</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="list-group.html">List Group</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="tab.html">Tabs</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="navbar.html">Navbar</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Helpers</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                        <ul class="wsp-submenu">
-                            <li class="wsp-submenu-link">
-                                <a href="label.html">Label</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="badge.html">Badge</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="drawer.html">Drawer</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="section-message.html">Section Message</a>
-                            </li>
-                            <li class="wsp-submenu-link">
-                                <a href="skeleton.html">Skeleton</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Utilities</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">Extend</span>
-                            <span class="dropdown-icon">
-                                <i class="wsp-icon wsp-icon-right-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="wsp-nav-link">
-                        <a href="#">
-                            <span class="wsp-link-text">About</span>
-                        </a>
-                    </li>
-                </ul>
+                <my-sidebar></my-sidebar>
             </div>
             <!-- side-bar ends -->
             <div class="wsp-content-wrap" id="mainContent">
@@ -177,7 +49,8 @@
                     <div class="wsp-row">
                         <div class="wsp-col">
                             <h1>Table</h1>
-                            <p>Just add the base class <span class="wsp-cls-name">.wsp-table</span> to any &lt;table&gt;,
+                            <p>Just add the base class <span class="wsp-cls-name">.wsp-table</span> to any
+                                &lt;table&gt;,
                                 then extend with custom styles or
                                 our various included modifier classes.</p>
                             <p>
@@ -330,7 +203,8 @@
 
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Dark Header Table</h3>
-                                <p>Use <span class="wsp-cls-name">.wsp-table-dark-header </span>to add dark header to any
+                                <p>Use <span class="wsp-cls-name">.wsp-table-dark-header </span>to add dark header to
+                                    any
                                     table header.</p>
                                 <div class="demo">
                                     <table class="wsp-table wsp-table-dark-header">
@@ -623,7 +497,8 @@
                             <div class="ex-wrapper wsp-mb-5">
                                 <h3>Responsive Table</h3>
                                 <p>
-                                    Across every breakpoint, use <span class="wsp-cls-name">.wsp-table-responsive</span> for horizontally scrolling tables.
+                                    Across every breakpoint, use <span class="wsp-cls-name">.wsp-table-responsive</span>
+                                    for horizontally scrolling tables.
                                 </p>
                                 <div class="demo">
                                     <div class="wsp-table-responsive">
