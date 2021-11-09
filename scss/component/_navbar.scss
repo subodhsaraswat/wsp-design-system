@@ -184,10 +184,14 @@
 .wsp-bg-gray {
   .wsp-navbar-nav {
     .wsp-nav-item {
+      margin-right: 61px;
+      &:last-child {
+        margin-right: 0px;
+      }
       .wsp-nav-link {
         line-height: 26px;
-        margin-right: 61px;
         color: $black;
+        
       }
     }
   }
@@ -195,13 +199,20 @@
 .wsp-bg-dark-gray,.wsp-bg-primary {
   .wsp-navbar-nav {
     .wsp-nav-item {
+      margin-right: 61px;
+      &:last-child {
+        margin-right: 0px;
+      }
       .wsp-nav-link {
         line-height: 26px;
-        margin-right: 61px;
         color: $white;
+        
       }
     }
   }
+}
+.ml-4 {
+  margin-left:43px;
 }
 .wsp-logo {
   font-size: 28px;
@@ -239,7 +250,7 @@
   }
 }
 .wsp-nav-profile {
-  margin: $margin-avtar;
+  margin: $margin-avtar !important;
 }
 .wsp-flex {
   display: flex;

@@ -5442,16 +5442,34 @@ fieldset:disabled a.btn {
   color: #ffffff;
 }
 
+.wsp-bg-gray .wsp-navbar-nav .wsp-nav-item {
+  margin-right: 61px;
+}
+
+.wsp-bg-gray .wsp-navbar-nav .wsp-nav-item:last-child {
+  margin-right: 0px;
+}
+
 .wsp-bg-gray .wsp-navbar-nav .wsp-nav-item .wsp-nav-link {
   line-height: 26px;
-  margin-right: 61px;
   color: #000000;
+}
+
+.wsp-bg-dark-gray .wsp-navbar-nav .wsp-nav-item, .wsp-bg-primary .wsp-navbar-nav .wsp-nav-item {
+  margin-right: 61px;
+}
+
+.wsp-bg-dark-gray .wsp-navbar-nav .wsp-nav-item:last-child, .wsp-bg-primary .wsp-navbar-nav .wsp-nav-item:last-child {
+  margin-right: 0px;
 }
 
 .wsp-bg-dark-gray .wsp-navbar-nav .wsp-nav-item .wsp-nav-link, .wsp-bg-primary .wsp-navbar-nav .wsp-nav-item .wsp-nav-link {
   line-height: 26px;
-  margin-right: 61px;
   color: #ffffff;
+}
+
+.ml-4 {
+  margin-left: 43px;
 }
 
 .wsp-logo {
@@ -5494,7 +5512,7 @@ fieldset:disabled a.btn {
 }
 
 .wsp-nav-profile {
-  margin: auto 1rem;
+  margin: auto 1rem !important;
 }
 
 .wsp-flex {
