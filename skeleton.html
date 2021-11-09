@@ -36,139 +36,11 @@
 
     <!-- Main content starts -->
     <div class="wsp-content wsp-d-flex">
-      <!-- side-bar starts -->
-      <div class="wsp-nav-wrap" id="sideBar">
-        <ul class="wsp-navbar-vertical">
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Getting started</span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Customize</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Layout</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Content</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="table.html">Table</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Forms</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="input.html">Input</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="switch.html">Switch</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Components</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="alert.html">Alert</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="button.html">Button</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="collapse.html">Collapse</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="flag.html">Flag</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="list-group.html">List Group</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="tab.html">Tabs</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="navbar.html">Navbar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Helpers</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="label.html">Label</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="badge.html">Badge</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="drawer.html">Drawer</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="section-message.html">Section Message</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="skeleton.html">Skeleton</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Utilities</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Extend</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">About</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- side-bar ends -->
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
       <div class="wsp-content-wrap" id="mainContent">
         <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
           <span class="toggle-bar"></span>
@@ -187,11 +59,11 @@
                   <div class="wsp-ssc-circle"></div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(infoAlert)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(circleSkeleton)">
                     Copy
                   </span>
-                  <code id="table" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-circle"</span>&gt;&lt;/div&gt;
+                  <code id="circleSkeleton" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-circle"</span>&gt;&lt;/div&gt;
                   </code>
                 </div>
               </div>
@@ -201,11 +73,11 @@
                   <div class="wsp-ssc-head-line"></div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(infoAlert)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(headLineSkeleton)">
                     Copy
                   </span>
-                  <code id="table" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-head-line"</span>&gt;&lt;/div&gt;
+                  <code id="headLineSkeleton" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-head-line"</span>&gt;&lt;/div&gt;
                   </code>
                 </div>
               </div>
@@ -215,11 +87,11 @@
                   <div class="wsp-ssc-square"></div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(infoAlert)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(squareSkeleton)">
                     Copy
                   </span>
-                  <code id="table" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-square"</span>&gt;&lt;/div&gt;
+                  <code id="squareSkeleton" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-square"</span>&gt;&lt;/div&gt;
                   </code>
                 </div>
               </div>
@@ -229,11 +101,11 @@
                   <div class="wsp-ssc-rectangle"></div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(infoAlert)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(rectangleSkeleton)">
                     Copy
                   </span>
-                  <code id="table" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-rectangle"</span>&gt;&lt;/div&gt;
+                  <code id="rectangleSkeleton" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-rectangle"</span>&gt;&lt;/div&gt;
                   </code>
                 </div>
               </div>
@@ -257,15 +129,15 @@
                     Copy
                   </span>
                   <code id="cardSkeleton" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-card"</span>&gt; <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-wrapper"</span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-square"</span>&gt;&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-card"</span>&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-wrapper"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-square"</span>&gt;&lt;/div&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-hr"</span>&gt;&lt;/div&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-wrapper"</span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="<span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-hr"</span>&gt;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-wrapper"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ssc-line w-60 mb"</span>&gt;&lt;/div&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
                     &lt;/div>
                   </code>

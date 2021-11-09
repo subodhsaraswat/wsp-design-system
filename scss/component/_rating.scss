@@ -1,0 +1,150 @@
+.rate {
+  &.star {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    &::before,
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &:not(:checked) {
+      > input {
+        position: absolute;
+        top: -9999px;
+      }
+      > label {
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: $gray-light;
+        margin: 0 0.25rem;
+        &:before {
+          content: '\ed10';
+          font-family: 'wsp-icon' !important;
+          speak: never;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        &:hover {
+          color: $warning;
+          ~ {
+            label {
+              color: $warning;
+            }
+          }
+        }
+      }
+    }
+    > input {
+      &:checked {
+        ~ {
+          label {
+            color: $warning;
+            &:hover {
+              color: $warning;
+              ~ {
+                label {
+                  color: $warning;
+                }
+              }
+            }
+          }
+        }
+        + {
+          label {
+            &:hover {
+              color: $warning;
+              ~ {
+                label {
+                  color: $warning;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    > label {
+      &:hover {
+        ~ {
+          input {
+            &:checked {
+              ~ {
+                label {
+                  color: $warning;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.emoji {
+    & > input[type='radio'] {
+      -webkit-appearance: none;
+      border: none;
+      cursor: pointer;
+      transition: border 0.2s ease;
+      filter: grayscale(100%);
+      margin: 0 5px;
+      transition: all 0.2s ease;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      & + label {
+        width: 60px;
+        height: 60px;
+        font-size: 3.75rem;
+        color: $gray-light;
+        margin: 0 0.25rem;
+        cursor: pointer;
+        line-height: 1;
+      }
+      &:hover,
+      &:checked {
+        filter: grayscale(0);
+        &.rate1 {
+          & + label {
+            color: $danger;
+          }
+        }
+
+        &.rate2 {
+          & + label {
+            color: $gray-700;
+          }
+        }
+        &.rate3 {
+          & + label {
+            color: $warning;
+          }
+        }
+        &.rate4 {
+          & + label {
+            color: $primary;
+          }
+        }
+        &.rate5 {
+          & + label {
+            color: $success;
+          }
+        }
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

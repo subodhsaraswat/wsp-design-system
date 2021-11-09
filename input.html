@@ -36,139 +36,11 @@
 
     <!-- Main content starts -->
     <div class="wsp-content wsp-d-flex">
-      <!-- side-bar starts -->
-      <div class="wsp-nav-wrap" id="sideBar">
-        <ul class="wsp-navbar-vertical">
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Getting started</span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Customize</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Layout</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Content</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="table.html">Table</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Forms</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="input.html">Input</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="switch.html">Switch</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Components</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="alert.html">Alert</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="button.html">Button</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="collapse.html">Collapse</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="flag.html">Flag</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="list-group.html">List Group</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="tab.html">Tabs</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="navbar.html">Navbar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Helpers</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="label.html">Label</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="badge.html">Badge</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="drawer.html">Drawer</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="section-message.html">Section Message</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="skeleton.html">Skeleton</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Utilities</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Extend</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">About</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- side-bar ends -->
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
       <div class="wsp-content-wrap" id="mainContent">
         <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
           <span class="toggle-bar"></span>
@@ -176,13 +48,13 @@
         <div class="wsp-container-fluid">
           <div class="wsp-row">
             <div class="wsp-col">
-              <h1>Input Group</h1>
-              <p>Using the contextual <span class="ws-cls-name">.wsp-form-*</span> classes on an &lt;input&gt; element
+              <h1>Input</h1>
+              <p>Using the contextual <span class="wsp-cls-name">.wsp-form-*</span> classes on an &lt;input&gt; element
                 quickly provide contextual input.</p>
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Form controls</h3>
                 <p>Textual form controls—like <b>&lt;input&gt;</b>s, <b>&lt;select&gt;</b>s, and
-                  <b>&lt;textarea&gt;</b>s —are styled with the <span class="ws-cls-name">.wsp-form-control</span>
+                  <b>&lt;textarea&gt;</b>s —are styled with the <span class="wsp-cls-name">.wsp-form-control</span>
                   class. Included are styles for general appearance, focus state, sizing, and more.
                 </p>
                 <div class="demo">
@@ -193,14 +65,19 @@
                         placeholder="name@example.com">
                     </div>
                     <div class="wsp-form-group">
-                      <label for="exampleFormControlSelect1">Example select</label>
-                      <select class="wsp-form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                      <label for="exampleFormControlInputNumber1">Example Number Input</label>
+                      <div class="wsp-input-group number">
+                        <div class="wsp-input-group-prepend" data-toggle="minus">
+                          <span class="wsp-input-group-text" id="basic-addon1"><i
+                              class="wsp-icon wsp-icon-minus-small"></i></span>
+                        </div>
+                        <input type="text" class="wsp-form-control" value="1" aria-label="Username"
+                          aria-describedby="basic-addon2">
+                        <div class="wsp-input-group-append" data-toggle="plus">
+                          <span class="wsp-input-group-text" id="basic-addon2"><i
+                              class="wsp-icon wsp-icon-add-small-o"></i></span>
+                        </div>
+                      </div>
                     </div>
                     <div class="wsp-form-group">
                       <label for="exampleFormControlTextarea1">Example textarea</label>
@@ -214,25 +91,31 @@
                   </span>
                   <code id="input" class="language-html">
                 &lt;form&gt;<br/>
-                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlInput1"&gt;Email address&lt;/label&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> id="exampleFormControlInput1" placeholder="name@example.com"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="exampleFormControlInput1" placeholder="name@example.com"&gt;<br/>
                 &nbsp;&nbsp;&lt;/div&gt;<br/>
                 <br/>
-                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-group"</span>&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> id="exampleFormControlSelect1"&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlInputNumber1"&gt;Example Number Input&lt;/label&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group number"</span>&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span> data-toggle="minus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-minus-small"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;</br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> value="1" aria-label="Username" aria-describedby="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span> data-toggle="plus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-add-small-o"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                 &nbsp;&nbsp;&lt;/div&gt;<br/>
                 <br/>
-                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlTextarea1"&gt;Example textarea&lt;/label&gt;<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> id="exampleFormControlTextarea1" rows="3"&lt;&lt;/textarea&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="exampleFormControlTextarea1" rows="3"&lt;&lt;/textarea&gt;<br/>
                 &nbsp;&nbsp;&lt;/div&gt;<br/>
                 &lt;/form&gt;
                 </code>
@@ -240,8 +123,8 @@
               </div>
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Sizing</h3>
-                <p>Set heights using classes like <span class="ws-cls-name">.wsp-form-control-lg</span> and <span
-                    class="ws-cls-name">.wsp-form-control-sm</span> .</p>
+                <p>Set heights using classes like <span class="wsp-cls-name">.wsp-form-control-lg</span> and <span
+                    class="wsp-cls-name">.wsp-form-control-sm</span> .</p>
                 <div class="demo">
                   <input class="wsp-form-control wsp-form-control-lg" type="text" placeholder=".wsp-form-control-lg">
                   <input class="wsp-form-control" type="text" placeholder="Default input">
@@ -252,43 +135,101 @@
                     Copy
                   </span>
                   <code id="inputSize" class="language-html">
-                    &lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control wsp-form-control-lg"</span> type="text" placeholder=".wsp-form-control-lg"&gt;<br/>
-                    &lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> type="text" placeholder="Default input"&gt;<br/>
-                    &lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control wsp-form-control-sm"</span> type="text" placeholder=".wsp-form-control-sm"&gt;
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-lg"</span> type="text" placeholder=".wsp-form-control-lg"&gt;<br/>
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> type="text" placeholder="Default input"&gt;<br/>
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span> type="text" placeholder=".wsp-form-control-sm"&gt;
                   </code>
                 </div>
 
                 <div class="demo">
-                  <select class="wsp-form-control wsp-form-control-lg">
-                    <option>Large select</option>
-                  </select>
-                  <select class="wsp-form-control">
-                    <option>Default select</option>
-                  </select>
-                  <select class="wsp-form-control wsp-form-control-sm">
-                    <option>Small select</option>
-                  </select>
+                  <div class="wsp-input-group number">
+                    <div class="wsp-input-group-prepend" data-toggle="minus">
+                      <span class="wsp-input-group-text" id="basic-addon1"><i
+                          class="wsp-icon wsp-icon-minus-small"></i></span>
+                    </div>
+                    <input type="text" class="wsp-form-control wsp-form-control-lg" value="1" aria-label="Username"
+                      aria-describedby="basic-addon2">
+                    <div class="wsp-input-group-append" data-toggle="plus">
+                      <span class="wsp-input-group-text" id="basic-addon2"><i
+                          class="wsp-icon wsp-icon-add-small-o"></i></span>
+                    </div>
+                  </div>
+                  <div class="wsp-input-group number">
+                    <div class="wsp-input-group-prepend" data-toggle="minus">
+                      <span class="wsp-input-group-text" id="basic-addon1"><i
+                          class="wsp-icon wsp-icon-minus-small"></i></span>
+                    </div>
+                    <input type="text" class="wsp-form-control" value="1" aria-label="Username"
+                      aria-describedby="basic-addon2">
+                    <div class="wsp-input-group-append" data-toggle="plus">
+                      <span class="wsp-input-group-text" id="basic-addon2"><i
+                          class="wsp-icon wsp-icon-add-small-o"></i></span>
+                    </div>
+                  </div>
+                  <div class="wsp-input-group number">
+                    <div class="wsp-input-group-prepend" data-toggle="minus">
+                      <span class="wsp-input-group-text" id="basic-addon1"><i
+                          class="wsp-icon wsp-icon-minus-small"></i></span>
+                    </div>
+                    <input type="text" class="wsp-form-control wsp-form-control-sm" value="1" aria-label="Username"
+                      aria-describedby="basic-addon2">
+                    <div class="wsp-input-group-append" data-toggle="plus">
+                      <span class="wsp-input-group-text" id="basic-addon2"><i
+                          class="wsp-icon wsp-icon-add-small-o"></i></span>
+                    </div>
+                  </div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(selectSize)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(inputNumberSize)">
                     Copy
                   </span>
-                  <code id="selectSize" class="language-html">
-                    &lt;select <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control wsp-form-control-lg"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;option&gt;Large select&lt;/option&gt;<br/>
-                    &lt;/select&gt;<br/><br/>
-                    &lt;select <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;option&gt;Default select&lt;/option&gt;<br/>
-                    &lt;/select&gt;<br/><br/>
-                    &lt;select <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control wsp-form-control-sm"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;option&gt;Small select&lt;/option&gt;<br/>
-                    &lt;/select&gt;
-                    </code>
+                  <code id="inputNumberSize" class="language-html">
+                &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group number"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span> data-toggle="minus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-minus-small"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;</br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-lg"</span> value="1" aria-label="Username" aria-describedby="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span> data-toggle="plus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-add-small-o"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                <br/>
+                &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group number"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span> data-toggle="minus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-minus-small"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;</br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> value="1" aria-label="Username" aria-describedby="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span> data-toggle="plus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-add-small-o"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/><br/>
+                &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group number"</span>&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span> data-toggle="minus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-minus-small"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;</br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span> value="1" aria-label="Username" aria-describedby="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span> data-toggle="plus"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-add-small-o"</span>&gt;&lt;/i&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+              </code>
                 </div>
               </div>
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Disabled</h3>
-                <p>Add the <span class="ws-cls-name">Disabled</span> boolean attribute on an input to prevent
+                <p>Add the <span class="wsp-cls-name">Disabled</span> boolean attribute on an input to prevent
                   modification of the input’s value. </p>
                 <div class="demo">
                   <input class="wsp-form-control" type="text" value="Readonly input here…" disabled>
@@ -298,13 +239,13 @@
                     Copy
                   </span>
                   <code id="disabled" class="language-html">
-                    &lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> type="text" value="Readonly input here…" <span class="ws-cls-name">disabled</span>&gt;
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> type="text" value="Readonly input here…" <span class="wsp-cls-name">disabled</span>&gt;
                       </code>
                 </div>
               </div>
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Readonly</h3>
-                <p>Add the <span class="ws-cls-name">readonly</span> boolean attribute on an input to prevent
+                <p>Add the <span class="wsp-cls-name">readonly</span> boolean attribute on an input to prevent
                   modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but
                   retain the standard cursor.</p>
                 <div class="demo">
@@ -315,7 +256,7 @@
                     Copy
                   </span>
                   <code id="Readonly" class="language-html">
-                    &lt;input <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> type="text" value="Readonly input here…" <span class="ws-cls-name">readonly</span>&gt;
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> type="text" value="Readonly input here…" <span class="wsp-cls-name">readonly</span>&gt;
                       </code>
                 </div>
               </div>
@@ -362,50 +303,51 @@
                     Copy
                   </span>
                   <code id="inputGroup" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon1"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                     &nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
+                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon1"&gt;<br/>
                     &lt;/div&gt;<br/>
                     <br/>
 
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon2"&gt;<br/>
-                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-append"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                     &nbsp;&nbsp;&lt;/div&gt;<br/>
                     &lt;/div&gt;<br/>
                     <br/>
 
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon3"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon3"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                     &nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
+                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon3"&gt;<br/>
-                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-append"</span>&gt;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon3"&gt;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
+                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span>&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon3"&gt;<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                         &nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                    &lt;/div&gt;
                   </code>
                 </div>
               </div>
 
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Input Varient</h3>
-                <p>you can indicate invalid and valid form fields with <span class="ws-cls-name">.is-invalid</span> and
-                  <span class="ws-cls-name">.is-valid</span>.</p>
+                <p>you can indicate invalid and valid form fields with <span class="wsp-cls-name">.is-invalid</span> and
+                  <span class="wsp-cls-name">.is-valid</span>.
+                </p>
                 <div class="demo">
                   <input type="text" class="wsp-form-control is-valid" placeholder="Username" aria-label="Username">
                   <input type="text" class="wsp-form-control is-invalid" placeholder="Username" aria-label="Username">
@@ -416,19 +358,20 @@
                   </span>
                   <code id="inputVarient" class="language-html">
 
-                    &lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control is-valid"</span> placeholder="Username" aria-label="Username"
+                    &lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-valid"</span> placeholder="Username" aria-label="Username"
                        &gt;<br/>
                         
-                    &lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control is-invalid"</span> placeholder="Username" aria-label="Username"
-                        &gt;<br/>
+                    &lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-invalid"</span> placeholder="Username" aria-label="Username"
+                        &gt;
                   </code>
                 </div>
               </div>
 
               <div class="ex-wrapper wsp-mb-5">
                 <h3>Input Group Varient</h3>
-                <p>you can indicate invalid and valid form fields with <span class="ws-cls-name">.is-invalid</span> and
-                  <span class="ws-cls-name">.is-valid</span>.</p>
+                <p>you can indicate invalid and valid form fields with <span class="wsp-cls-name">.is-invalid</span> and
+                  <span class="wsp-cls-name">.is-valid</span>.
+                </p>
                 <div class="demo">
                   <div class="wsp-input-group">
                     <div class="wsp-input-group-prepend">
@@ -453,26 +396,26 @@
                     Copy
                   </span>
                   <code id="inputGroupVarient" class="language-html">
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon1"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-prepend"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon1"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-user-circle-o"</span>&gt;&lt;/i&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                     &nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control is-valid"</span> placeholder="Username" aria-label="Username"
+                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-valid"</span> placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon1"&gt;<br/>
                     &lt;/div&gt;<br/>
                     <br/>
 
-                    &lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group"</span>&gt;<br/>
-                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-form-control is-invalid"</span> placeholder="Username" aria-label="Username"
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-invalid"</span> placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon2"&gt;<br/>
-                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-append"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="ws-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-append"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-input-group-text"</span> id="basic-addon2"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-info-circle"</span>&gt;&lt;/i&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>
                     &nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                    &lt;/div&gt;
                   </code>
                 </div>
               </div>

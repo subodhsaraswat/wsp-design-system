@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Rating :: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Rating</h1>
+              <p>Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Default Star Rating</h3>
+                <div class="demo">
+                  <div class="rate star">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" checked />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultRating)">
+                    Copy
+                  </span>
+                  <code id="defaultRating" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate star"</span>&gt;<br>
+                      &nbsp;&nbsp;&lt;input type="radio" id="star5" name="rate" value="5" /&gt;<br>
+                      &nbsp;&nbsp;&lt;label for="star5" title="text"&gt;5 stars&lt;/label&gt;<br>
+                      &nbsp;&nbsp;&lt;input type="radio" id="star4" name="rate" value="4" /&gt;<br>
+                      &nbsp;&nbsp;&lt;label for="star4" title="text"&gt;4 stars&lt;/label&gt;<br>
+                      &nbsp;&nbsp;&lt;input type="radio" id="star3" name="rate" value="3" checked /&gt;<br>
+                      &nbsp;&nbsp;&lt;label for="star3" title="text"&gt;3 stars&lt;/label&gt;<br>
+                      &nbsp;&nbsp;&lt;input type="radio" id="star2" name="rate" value="2" /&gt;<br>
+                      &nbsp;&nbsp;&lt;label for="star2" title="text"&gt;2 stars&lt;/label&gt;<br>
+                      &nbsp;&nbsp;&lt;input type="radio" id="star1" name="rate" value="1" /&gt;<br>
+                      &nbsp;&nbsp;&lt;label for="star1" title="text"&gt;1 star&lt;/label&gt;<br>
+                      &lt;/div&gt;
+      
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Customize Rating</h3>
+                <p>Here you can use any icon to customize your rating experience.</p>
+                <div class="demo">
+                  <div class="rate emoji">
+                    <input type="radio" id="rate1" name="smiley" value="frown" class="rate1">
+                    <label for="rate1" title="text"><i class="wsp-icon-mood-frown-o"></i></label>
+
+                    <input type="radio" id="rate2" name="smiley" value="sad" class="rate2">
+                    <label for="rate2" title="text"><i class="wsp-icon-mood-sad-o"></i></label>
+
+                    <input type="radio" id="rate3" name="smiley" value="neutral" class="rate3" checked="checked">
+                    <label for="rate3" title="text"><i class="wsp-icon-mood-flat-o"></i></label>
+
+                    <input type="radio" id="rate4" name="smiley" value="smile" class="rate4">
+                    <label for="rate4" title="text"><i class=" wsp-icon-mood-smile-o"></i></label>
+
+                    <input type="radio" id="rate5" name="smiley" value="laugh" class="rate5">
+                    <label for="rate5" title="text"><i class=" wsp-icon-mood-laugh-o"></i></label>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(customizeRating)">
+                    Copy
+                  </span>
+                  <code id="customizeRating" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate emoji"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;input type="radio" id="rate1" name="smiley" value="frown" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate1"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="rate1" title="text"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon-mood-frown-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;/label&gt;<br/><br/>
+  
+                    &nbsp;&nbsp;&lt;input type="radio" id="rate2" name="smiley" value="sad" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate2"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="rate2" title="text"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon-mood-sad-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;/label&gt;<br/>
+  
+                    &nbsp;&nbsp;&lt;input type="radio" id="rate3" name="smiley" value="neutral" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate3"</span> checked="checked"&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="rate3" title="text"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon-mood-flat-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;/label&gt;<br/>
+  
+                    &nbsp;&nbsp;&lt;input type="radio" id="rate4" name="smiley" value="smile" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate4"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="rate4" title="text"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon-mood-smile-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;/label&gt;<br/>
+  
+                    &nbsp;&nbsp;&lt;input type="radio" id="rate5" name="smiley" value="laugh" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"rate5"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="rate5" title="text"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon-mood-laugh-o"</span>&gt;&lt;/i&gt;<br/>
+                    &nbsp;&nbsp;&lt;/label&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
