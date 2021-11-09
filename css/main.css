@@ -6803,6 +6803,16 @@ select.wsp-form-control-lg:not([size]):not([multiple]), .wsp-input-group-lg > se
           box-shadow: 0 0 0 0.25rem rgba(253, 98, 94, 0.25);
 }
 
+.wsp-input-group.number .wsp-input-group-prepend, .wsp-input-group.number .wsp-input-group-append {
+  background: #e9e9ef;
+  cursor: pointer;
+}
+
+.wsp-input-group.number .wsp-input-group-prepend .wsp-input-group-text, .wsp-input-group.number .wsp-input-group-append .wsp-input-group-text {
+  color: #6c757d;
+  font-size: 1.25rem;
+}
+
 .wsp-input-group-prepend,
 .wsp-input-group-append {
   display: -webkit-box;
@@ -6851,10 +6861,16 @@ select.wsp-form-control-lg:not([size]):not([multiple]), .wsp-input-group-lg > se
 
 .wsp-input-group-prepend {
   margin-right: -1px;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .wsp-input-group-append {
   margin-left: -1px;
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .wsp-input-group-append .wsp-input-group-text {
@@ -7681,15 +7697,42 @@ button.wsp-close {
 
 .ex-wrapper .code {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  overflow: auto;
-  width: auto;
-  background-color: #f8f8f8;
-  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  width: 100%;
+  background-color: #16172a;
+  color: #fff4e3;
   position: relative;
+  border-radius: 0.5rem;
+}
+
+.ex-wrapper .code .code-section {
+  padding: 1.5rem;
+  overflow: auto;
 }
 
 .ex-wrapper .code .language-html {
   white-space: nowrap;
+  direction: ltr;
+  display: inline-block;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  padding: 0 5px;
+}
+
+.ex-wrapper .code .language-html .wsp-cls-text {
+  color: #2AB57D;
+}
+
+.ex-wrapper .code .language-html .wsp-cls-name {
+  color: #FD625E;
+}
+
+.ex-wrapper .code .language-html .comment {
+  color: #6c757d;
 }
 
 .ex-wrapper .code .copy-clipboard {
@@ -7706,17 +7749,5 @@ button.wsp-close {
 
 .ex-wrapper .wsp-list-group {
   max-width: 400px;
-}
-
-.wsp-cls-text {
-  color: #5156BE;
-}
-
-.wsp-cls-name {
-  color: #FD625E;
-}
-
-.comment {
-  color: #6c757d;
 }
 /*# sourceMappingURL=main.css.map */

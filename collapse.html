@@ -36,139 +36,11 @@
 
     <!-- Main content starts -->
     <div class="wsp-content wsp-d-flex">
-      <!-- side-bar starts -->
-      <div class="wsp-nav-wrap" id="sideBar">
-        <ul class="wsp-navbar-vertical">
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Getting started</span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Customize</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Layout</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Content</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="table.html">Table</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Forms</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="input.html">Input</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="switch.html">Switch</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Components</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="alert.html">Alert</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="button.html">Button</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="collapse.html">Collapse</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="flag.html">Flag</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="list-group.html">List Group</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="tab.html">Tabs</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="navbar.html">Navbar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Helpers</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-            <ul class="wsp-submenu">
-              <li class="wsp-submenu-link">
-                <a href="label.html">Label</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="badge.html">Badge</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="drawer.html">Drawer</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="section-message.html">Section Message</a>
-              </li>
-              <li class="wsp-submenu-link">
-                <a href="skeleton.html">Skeleton</a>
-              </li>
-            </ul>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Utilities</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">Extend</span>
-              <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-              </span>
-            </a>
-          </li>
-          <li class="wsp-nav-link">
-            <a href="#">
-              <span class="wsp-link-text">About</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- side-bar ends -->
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
       <div class="wsp-content-wrap" id="mainContent">
         <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
           <span class="toggle-bar"></span>
@@ -196,10 +68,10 @@
                   </div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(horizontalTabs)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultCollapse)">
                     Copy
                   </span>
-                  <code id="horizontalTabs" class="language-html">
+                  <code id="defaultCollapse" class="language-html">
                     &lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary"</span>data-toggle="collapse" href="#wsp-toggle"&gt;Toggle Button&lt;/button&gt;<br/>
                       &lt;div <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-toggle"</span><span class="wsp-cls-text"> class=</span><span class="wsp-cls-name">"collapse show wsp-card-margin"</span>&gt;<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
@@ -258,10 +130,10 @@
                     </div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultAccordian)">
                     Copy
                   </span>
-                  <code id="verticalTabs" class="language-html">
+                  <code id="defaultAccordian" class="language-html">
                     &lt;div <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-accordion"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-header"</span>&gt;<br/>
@@ -296,7 +168,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                    &lt;/div&gt;
                   </code>
                 </div>
               </div>
@@ -349,10 +221,10 @@
                     </div>
                 </div>
                 <div class="code">
-                  <span class="copy-clipboard" onclick="copyToClipboard(verticalTabs)">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultAccordianShow)">
                     Copy
                   </span>
-                  <code id="verticalTabs" class="language-html">
+                  <code id="defaultAccordianShow" class="language-html">
                     &lt;div <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-accordion"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-header"</span>&gt;<br/>
@@ -387,7 +259,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
-                    &lt;/div&gt;<br/>
+                    &lt;/div&gt;
                   </code>
                 </div>
               </div>

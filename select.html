@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Select:: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Select</h1>
+              <p>Using the contextual <span class="wsp-cls-name">.wsp-form-*</span> classes on an &lt;select&gt; element
+                quickly provide contextual select.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Form controls</h3>
+                <p>Textual form controls—like <b>&lt;select&gt;</b>s, are styled with the <span class="wsp-cls-name">.wsp-form-control</span>
+                  class. Included are styles for general appearance, focus state, sizing, and more.
+                </p>
+                <div class="demo">
+                  <form>
+                    <div class="wsp-form-group">
+                      <label for="exampleFormControlSelect1">Example select</label>
+                      <select class="wsp-form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(input)">
+                    Copy
+                  </span>
+                  <code id="input" class="language-html">
+                &lt;form&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="exampleFormControlSelect1"&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                
+                &lt;/form&gt;
+                </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Sizing</h3>
+                <p>Set heights using classes like <span class="wsp-cls-name">.wsp-form-control-lg</span> and <span
+                    class="wsp-cls-name">.wsp-form-control-sm</span> .</p>
+
+                <div class="demo">
+                  <select class="wsp-form-control wsp-form-control-lg">
+                    <option>Large select</option>
+                  </select>
+                  <select class="wsp-form-control">
+                    <option>Default select</option>
+                  </select>
+                  <select class="wsp-form-control wsp-form-control-sm">
+                    <option>Small select</option>
+                  </select>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(selectSize)">
+                    Copy
+                  </span>
+                  <code id="selectSize" class="language-html">
+                    &lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-lg"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;option&gt;Large select&lt;/option&gt;<br/>
+                    &lt;/select&gt;<br/><br/>
+                    &lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;option&gt;Default select&lt;/option&gt;<br/>
+                    &lt;/select&gt;<br/><br/>
+                    &lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;option&gt;Small select&lt;/option&gt;<br/>
+                    &lt;/select&gt;
+                    </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Disabled</h3>
+                <p>Add the <span class="wsp-cls-name">Disabled</span> boolean attribute on an input to prevent
+                  modification of the input’s value. </p>
+                <div class="demo">
+                    <div class="wsp-form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="wsp-form-control" id="exampleFormControlSelect1" disabled>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(disabled)">
+                    Copy
+                  </span>
+                  <code id="disabled" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;label for="exampleFormControlSelect1"&gt;Example select&lt;/label&gt;<br/>
+                    &nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="exampleFormControlSelect1" <span class="wsp-cls-text">disabled</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&lt;/select&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Select Varient</h3>
+                <p>you can indicate invalid and valid form fields with <span class="wsp-cls-name">.is-invalid</span> and
+                  <span class="wsp-cls-name">.is-valid</span>.
+                </p>
+                <div class="demo">
+                    <select class="wsp-form-control is-valid">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <select class="wsp-form-control is-invalid">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(inputVarient)">
+                    Copy
+                  </span>
+                  <code id="inputVarient" class="language-html">
+                    &nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-valid"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&lt;/select&gt;<br/>
+                    <br/>
+                    &nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control is-invalid"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt;<br/>
+                    &nbsp;&nbsp;&lt;/select&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>

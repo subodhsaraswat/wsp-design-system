@@ -23,14 +23,36 @@
   .code {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    overflow: auto;
-    width: auto;
-    background-color: $body-bg;
-    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    width: 100%;
+    background-color: $code-bg;
+    color: lighten($warning-light, 5%);
     position: relative;
+    border-radius: 0.5rem;
+    .code-section {
+      padding: 1.5rem;
+      overflow: auto;
+    }
     .language-html {
       white-space: nowrap;
-      
+      direction: ltr;
+      display: inline-block;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      letter-spacing: 0;
+      -webkit-font-smoothing: subpixel-antialiased;
+      padding: 0 5px;
+      .wsp-cls-text {
+        color: $success;
+      }
+      .wsp-cls-name {
+        color: $danger;
+      }
+      .comment {
+        color: $gray-800;
+      }
     }
     .copy-clipboard {
       font-size: 0.75rem;
@@ -47,13 +69,4 @@
   .wsp-list-group {
     max-width: 400px;
   }
-}
-.wsp-cls-text {
-  color: $primary;
-}
-.wsp-cls-name {
-  color: $danger;
-}
-.comment{
-  color: $gray-800;
 }
