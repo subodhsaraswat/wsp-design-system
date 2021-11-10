@@ -79,8 +79,8 @@
 
 .wsp-navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.5rem;
+  height: 1.5rem;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -184,12 +184,12 @@
 .wsp-bg-gray {
   .wsp-navbar-nav {
     .wsp-nav-item {
-      margin-right: 61px;
+      margin-right: 4rem - 0.25rem;
       &:last-child {
         margin-right: 0px;
       }
       .wsp-nav-link {
-        line-height: 26px;
+        line-height: 1.70rem;
         color: $black;
         
       }
@@ -199,12 +199,12 @@
 .wsp-bg-dark-gray,.wsp-bg-primary {
   .wsp-navbar-nav {
     .wsp-nav-item {
-      margin-right: 61px;
+      margin-right: 4rem - 0.25rem;
       &:last-child {
         margin-right: 0px;
       }
       .wsp-nav-link {
-        line-height: 26px;
+        line-height: 1.70rem;
         color: $white;
         
       }
@@ -212,14 +212,14 @@
   }
 }
 .ml-4 {
-  margin-left:43px;
+  margin-left:3rem - 0.25rem;
 }
 .wsp-logo {
-  font-size: 28px;
-    line-height: 44px;
+  font-size: 1.75rem;
+    line-height: 3rem - 0.25rem;
     font-weight: 700;
     text-decoration: none;
-    margin-right: 57px;  
+    margin-right: 3rem + 0.5rem;
 }
 .wsp-black-logo {
   color: $dark;
@@ -229,8 +229,8 @@
 }
 .wsp-search {
   color: #ccc;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
   border: 1px solid #ccc;
   position:relative;
   background:$white;
@@ -244,8 +244,8 @@
 
   .wsp-search-icon {
     position:absolute;
-    right:8px;
-    top: 7px;
+    right:0.5rem;
+    top: 0.438rem;
     color:$black;
   }
 }
