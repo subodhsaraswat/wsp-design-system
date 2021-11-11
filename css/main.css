@@ -7469,6 +7469,86 @@ button.wsp-close {
   outline: 0;
 }
 
+.wsp-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #343a40;
+}
+
+.wsp-tooltip .wsp-tooltip-text {
+  visibility: hidden;
+  width: 12.5rem;
+  background-color: #262626;
+  color: #ffffff;
+  border-radius: 0.125rem;
+  text-align: left;
+  padding: .5rem;
+  font-size: 0.875em;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.wsp-tooltip .wsp-tooltip-text::after {
+  border-width: 0.3125rem;
+  border-style: solid;
+  content: "";
+  position: absolute;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-top {
+  bottom: 150%;
+  left: -90%;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-top::after {
+  top: 100%;
+  left: 50%;
+  border-color: #262626 transparent transparent transparent;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-right {
+  top: -0.3125rem;
+  left: 120%;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-right::after {
+  top: 50%;
+  right: 100%;
+  margin-top: -0.3125rem;
+  border-color: transparent #262626 transparent transparent;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-bottom {
+  top: 150%;
+  left: -50%;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-bottom::after {
+  bottom: 100%;
+  left: 50%;
+  border-color: transparent transparent #262626 transparent;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-left {
+  top: -0.3125rem;
+  right: 120%;
+}
+
+.wsp-tooltip .wsp-tooltip-text.wsp-tooltip-left::after {
+  top: 50%;
+  left: 100%;
+  margin-top: -0.3125rem;
+  border-color: transparent transparent transparent #262626;
+}
+
+.wsp-tooltip:hover .wsp-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
@@ -7690,6 +7770,10 @@ button.wsp-close {
 
 .demo {
   margin: 0;
+}
+
+.wsp-cls-name {
+  color: #FD625E;
 }
 
 .ex-wrapper .demo {

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Tooltip :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Tooltip</h1>
+              <p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Basic Tooltip</h3>
+                <p>A tooltip that appears when the user moves the mouse over an element</p>
+                <div class="demo">
+                  <div class="wsp-tooltip">
+                    Hover Over me
+                    <span class="wsp-tooltip-text">
+                      Hello World, this is tooltip text
+                    </span>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(basicTooltip)">
+                    Copy
+                  </span>
+                  <code id="basicTooltip" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Hover Over me <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip-text"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World, this is tooltip text<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Positioning Tooltips</h3>
+                <p>For positioning tooltip styling, use required contextual class <span class="wsp-cls-name">wsp-tooltip-*</span></p>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Top Tooltip</h4>
+                <div class="demo">
+                    <div class="wsp-text-center">
+                      <div class="wsp-tooltip">
+                        Top tooltip
+                        <span class="wsp-tooltip-text wsp-tooltip-top">
+                          Hello World, this is tooltip text
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(topTooltip)">
+                    Copy
+                  </span>
+                  <code id="topTooltip" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Hover Over me <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip-text wsp-tooltip-top"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World, this is tooltip text<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Right Tooltip</h4>
+                <div class="demo">
+                    <div class="wsp-text-center">
+                      <div class="wsp-tooltip">
+                        Right tooltip
+                        <span class="wsp-tooltip-text wsp-tooltip-right">
+                          Hello World, this is tooltip text
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(rightTooltip)">
+                    Copy
+                  </span>
+                  <code id="rightTooltip" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Hover Over me <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip-text wsp-tooltip-right"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World, this is tooltip text<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Bottom Tooltip</h4>
+                <div class="demo">
+                    <div class="wsp-text-center">
+                      <div class="wsp-tooltip">
+                        Bottom tooltip
+                        <span class="wsp-tooltip-text wsp-tooltip-bottom">
+                          Hello World, this is tooltip text
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(bottomTooltip)">
+                    Copy
+                  </span>
+                  <code id="bottomTooltip" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Hover Over me <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip-text wsp-tooltip-bottom"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World, this is tooltip text<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Left Tooltip</h4>
+                <div class="demo">
+                    <div class="wsp-text-center">
+                      <div class="wsp-tooltip">
+                        Left tooltip
+                        <span class="wsp-tooltip-text wsp-tooltip-left">
+                          Hello World, this is tooltip text
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(leftTooltip)">
+                    Copy
+                  </span>
+                  <code id="leftTooltip" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;Hover Over me <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-tooltip-text wsp-tooltip-left"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello World, this is tooltip text<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
