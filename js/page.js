@@ -97,6 +97,9 @@ class MySidebar extends HTMLElement {
                 <li class="wsp-submenu-link">
                 <a href="rating.html">Rating</a>
                 </li>
+                <li class="wsp-submenu-link">
+                <a href="tooltip.html">Tooltip</a>
+                </li>
             </ul>
             </li>
             <li class="wsp-nav-link">
