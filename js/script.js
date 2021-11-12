@@ -104,7 +104,7 @@ $(document).ready(function () {
     $('.wsp-modal-backdrop').remove()
   })
 
-  $(document).on('click', '.wsp-modal', function(e) {
+  $(document).on('click', '.wsp-modal', function (e) {
     console.log('hi')
     var clicked = $(e.target) //get the element clicked
     console.log(clicked)
@@ -129,5 +129,20 @@ $(document).ready(function () {
     console.log(`${targetElem}`)
     $(targetElem).addClass('toggle').toggle(500);
   })
+
+  // Popover
+  $('.open-popover').click(function () {
+    $(this).next('.wsp-popover-content').fadeIn(300);
+
+  });
   
 })
+
+$(document).mouseup(function (e) {
+  var container = $(".wsp-popover-content");
+
+  // if the target of the click isn't the container nor a descendant of the container
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
