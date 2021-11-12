@@ -100,6 +100,9 @@ class MySidebar extends HTMLElement {
                 <li class="wsp-submenu-link">
                 <a href="tooltip.html">Tooltip</a>
                 </li>
+                <li class="wsp-submenu-link">
+                <a href="popover.html">Popover</a>
+                </li>
             </ul>
             </li>
             <li class="wsp-nav-link">
