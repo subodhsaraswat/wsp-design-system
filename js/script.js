@@ -126,7 +126,6 @@ $(document).ready(function () {
   // Accordian
   $('[data-toggle="wsp-accordian"]').click(function () {
     var targetElem = $(this).attr('href')
-    console.log(`${targetElem}`)
     $(targetElem).addClass('toggle').toggle(500);
   })
 
@@ -136,6 +135,98 @@ $(document).ready(function () {
 
   });
   
+
+  // ------------  File upload BEGIN ------------
+  $('[data-upload="uploadButton"]').on('change', function (event) {
+    var files = event.target.files;
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
+      $("<div class='wsp-file-value'><div class='wsp-file-value-text'><i class='wsp-icon wsp-icon-attach'></i>" + file.name + "</div><div class='wsp-file-remove' data-id='" + file.name + "' ><i class='wsp-icon wsp-icon-bin-o'></i></div></div>").insertAfter($(this).closest('#fileInput'));
+    }
+  });
+
+  //Click to remove item
+  $('body').on('click', '.wsp-file-remove', function () {
+    $(this).parents('.wsp-file-value').remove();
+  });
+  // ------------ File upload END ------------ 
+
+
+  // File Upload Drag & Drop
+  document.querySelectorAll(".wsp-drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".wsp-drop-zone");
+  
+    dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+  
+    inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+  
+    dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("wsp-drop-zone--over");
+    });
+  
+    ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("wsp-drop-zone--over");
+      });
+    });
+  
+    dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+  
+      if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+  
+      dropZoneElement.classList.remove("wsp-drop-zone--over");
+    });
+  });
+  
+  /**
+   * Updates the thumbnail on a drop zone element.
+   *
+   * @param {HTMLElement} dropZoneElement
+   * @param {File} file
+   */
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".wsp-drop-zone__thumb");
+  
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".wsp-drop-zone__prompt")) {
+      dropZoneElement.querySelector(".wsp-drop-zone__prompt").remove();
+    }
+  
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("wsp-drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+  
+    thumbnailElement.dataset.label = file.name;
+  
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+  
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
+  }
+  
+
+
 })
 
 $(document).mouseup(function (e) {

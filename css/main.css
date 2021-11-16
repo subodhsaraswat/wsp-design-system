@@ -7673,6 +7673,118 @@ button.wsp-close {
   border-color: transparent transparent transparent #ffffff;
 }
 
+.wsp-file {
+  position: relative;
+  display: inline-block;
+}
+
+.wsp-file .wsp-file-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+}
+
+.wsp-file .wsp-file-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 0.15rem;
+  font-size: 0.875rem;
+}
+
+.wsp-file .wsp-file-value .wsp-file-value-text {
+  color: #5156BE;
+}
+
+.wsp-file .wsp-file-value .wsp-file-value-text .wsp-icon {
+  margin-right: 0.5rem;
+  color: #171923;
+}
+
+.wsp-file .wsp-file-value:hover {
+  background-color: #e9e9ef;
+}
+
+.wsp-file .wsp-file-value .wsp-file-remove {
+  cursor: pointer;
+  margin-left: 1rem;
+  display: block;
+  width: 20px;
+  font-size: 0.875rem;
+}
+
+.wsp-file .wsp-file-value.has-error *,
+.wsp-file .wsp-file-value.has-error .wsp-icon {
+  color: #FD625E;
+}
+
+.wsp-drop-zone {
+  max-width: 340px;
+  width: 100%;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #74788D;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  color: #171923;
+  font-size: 1rem;
+  border: 1px dashed #CCCCCC;
+  border-radius: 0.25rem;
+  background-color: #EDF2F7;
+}
+
+.wsp-drop-zone .wsp-drop-zone--over {
+  border-style: solid;
+}
+
+.wsp-drop-zone .wsp-drop-zone__input {
+  display: none;
+}
+
+.wsp-drop-zone .wsp-drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: #EDF2F7;
+  background-size: cover;
+  position: relative;
+}
+
+.wsp-drop-zone .wsp-drop-zone__thumb:after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
@@ -7934,7 +8046,7 @@ button.wsp-close {
 }
 
 .ex-wrapper .code .code-section {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   overflow: auto;
 }
 
@@ -7964,11 +8076,11 @@ button.wsp-close {
 .ex-wrapper .code .copy-clipboard {
   font-size: 0.75rem;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0.5rem;
+  top: 0.5rem;
   cursor: pointer;
   background: #5156BE;
-  padding: 0.25rem 0.65rem;
+  padding: 0.15rem 0.5rem;
   color: #ffffff;
   border-radius: 0.25rem;
 }
