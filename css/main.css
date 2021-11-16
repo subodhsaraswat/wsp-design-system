@@ -5094,6 +5094,16 @@ fieldset:disabled a.btn {
   font-size: 13px;
   border-radius: 2px;
   border: 1px solid transparent;
+  position: relative;
+}
+
+.wsp-label .wsp-close {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-right: -0.675rem;
+  margin-left: 0.25rem;
+  line-height: 0.675rem;
+  color: inherit;
 }
 
 .wsp-label:last-child {
@@ -7020,6 +7030,7 @@ select.wsp-form-control-lg:not([size]):not([multiple]), .wsp-input-group-lg > se
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: .5;
+  text-decoration: none;
 }
 
 .wsp-close:hover, .wsp-close:focus {
