@@ -11,7 +11,20 @@ $(document).ready(function () {
 
   // close Alert
   $('.wsp-close').on('click', function () {
-    $(this).parents('.wsp-alert').fadeOut(300)
+    $elem = $(this);
+    //close Alert
+    if ($elem.parents('.wsp-alert').length) {
+      $elem.parents('.wsp-alert').fadeOut(300)
+    }
+    //close Flag
+    else if ($elem.parents('.wsp-flag').length) {
+      $elem.parents('.wsp-flag').fadeOut(300)
+    }
+    //close Label
+    else if ($elem.parents('.wsp-label').length) {
+      $elem.parents('.wsp-label').fadeOut(300)
+    }
+    
   })
 
   // open Left Drawer
