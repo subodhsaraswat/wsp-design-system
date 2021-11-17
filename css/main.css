@@ -7796,6 +7796,170 @@ button.wsp-close {
   text-align: center;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  /* Pagination 2 */
+  /* Pagination 3 */
+}
+
+.pagination ul .page-number {
+  display: inline;
+}
+
+.pagination ul .page-number a {
+  text-decoration: none;
+  color: #171923;
+}
+
+.pagination ul.pagination-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination ul.pagination-steps .page-count {
+  margin: 0px 10px;
+}
+
+.pagination ul.pagination-steps .page-count .wsp-form-control {
+  width: 6.5rem;
+}
+
+.pagination ul.pagination-steps .page-goto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.pagination ul.pagination-steps .page-goto label {
+  white-space: nowrap;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.pagination ul.pagination-steps .page-goto .wsp-form-control {
+  width: 6.5rem;
+}
+
+.pagination ul.pagination-style-01 .page-number {
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 2.375rem;
+  height: 2.375rem;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+}
+
+.pagination ul.pagination-style-01 .page-number:hover {
+  background-color: #d9dcd6;
+}
+
+.pagination ul.pagination-style-01 .page-number.active {
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+
+.pagination ul.pagination-style-01 .page-number.active:hover {
+  background-color: #5156BE;
+}
+
+.pagination ul.pagination-style-01 .page-number.active a {
+  color: #f3f4f2;
+}
+
+.pagination ul.pagination-style-02 .page-number {
+  margin: 0.25em;
+}
+
+.pagination ul.pagination-style-02 .page-number a {
+  padding: 0.125em;
+}
+
+.pagination ul.pagination-style-02 .page-number:hover {
+  color: #5156BE;
+}
+
+.pagination ul.pagination-style-02 .active {
+  padding: 4px 8px;
+  border-radius: 50%;
+  background-color: #5156BE;
+  color: white;
+}
+
+.pagination ul.pagination-style-02 .active a {
+  color: white;
+}
+
+.pagination ul.pagination-jump {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination ul.pagination-jump .page-number {
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 2.375rem;
+  height: 2.375rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination ul.pagination-jump .page-goto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pagination ul.pagination-jump .page-goto .wsp-form-control {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.pagination ul.pagination-jump .page-goto .total {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;

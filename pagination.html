@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Pagination :: WSP-Design System</title>
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Pagination</h1>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Default Pagination</h3>
+                                <div class="demo">
+                                    <div class="pagination">
+                                        <ul class="pagination-style-01">
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-left-o"></i></a></li>
+                                            <li class="page-number"><a href="#">1</a></li>
+                                            <li class="page-number active"><a href="#">2</a></li>
+                                            <li class="page-number"><a href="#">3</a></li>
+                                            <li class="page-number"><a href="#">4</a></li>
+                                            <li class="page-number"><a href="#">5</a></li>
+                                            <li class="page-number"><a href="#">6</a></li>
+                                            <li class="page-number"><a href="#">7</a></li>
+                                            <li class="page-number"><a href="#">8</a></li>
+                                            <li class="page-number"><a href="#">9</a></li>
+                                            <li class="page-number"><a href="#">10</a></li>
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-right-o"></i></a></li>
+                                        </ul>
+                                        <ul class="pagination-steps">
+                                            <li class="page-count">
+                                                <select class="wsp-form-control">
+                                                    <option>10/Page</option>
+                                                    <option>25/Page</option>
+                                                    <option>50/Page</option>
+                                                    <option>100/Page</option>
+                                                </select>
+                                            </li>
+                                            <li class="page-goto">
+                                                <label>Go To</label>
+                                                <input type="text" class="wsp-form-control"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultPagination)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultPagination" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination-style-01"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-left-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number active"</span>&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+                                            &nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination-steps"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-count"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;10/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;25/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;50/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;100/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-goto"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Go To&lt;/label&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span>/&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Small Pagination</h3>
+                                <div class="demo">
+                                    <div class="pagination">
+                                        <ul class="pagination-style-02">
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-left-o"></i></a></li>
+                                            <li class="page-number"><a href="#">1</a></li>
+                                            <li class="page-number active"><a href="#">2</a></li>
+                                            <li class="page-number"><a href="#">3</a></li>
+                                            <li class="page-number"><a href="#">4</a></li>
+                                            <li class="page-number"><a href="#">5</a></li>
+                                            <li class="page-number"><a href="#">6</a></li>
+                                            <li class="page-number"><a href="#">7</a></li>
+                                            <li class="page-number"><a href="#">8</a></li>
+                                            <li class="page-number"><a href="#">9</a></li>
+                                            <li class="page-number"><a href="#">10</a></li>
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-right-o"></i></a></li>
+                                        </ul>
+                                        <ul class="pagination-steps">
+                                            <li class="page-count">
+                                                <select class="wsp-form-control wsp-form-control-sm">
+                                                    <option>10/Page</option>
+                                                    <option>25/Page</option>
+                                                    <option>50/Page</option>
+                                                    <option>100/Page</option>
+                                                </select>
+                                            </li>
+                                            <li class="page-goto">
+                                                <label>Go To</label>
+                                                <input type="text" class="wsp-form-control wsp-form-control-sm"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(smallPagination)">
+                                        Copy
+                                    </span>
+                                    <code id="smallPagination" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination-style-02"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-left-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number active"</span>&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number"</span>&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+                                            &nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination-steps"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-count"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;10/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;25/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;50/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;100/Page&lt;/option&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-goto"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Go To&lt;/label&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span>/&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Pagination Jump</h3>
+                                <div class="demo">
+                                    <div class="pagination">
+                                        <ul class="pagination-jump">
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-left-o"></i></a></li>
+                                            <li class="page-goto">
+                                                <input type="text" class="wsp-form-control wsp-form-control-sm"/> / <label class="total">5</label>
+                                            </li>
+                                            <li class="page-number prev"><a href="#"><i class="wsp-icon wsp-icon-right-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(paginationJump)">
+                                        Copy
+                                    </span>
+                                    <code id="paginationJump" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&lt;ul <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"pagination-jump"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-left-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-goto"</span>&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span>/&gt; / &lt;label <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"total"</span>&gt;5&lt;/label&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;li <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"page-number prev"</span>&gt;&lt;a href="#"&gt;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/ul&gt;<br/>
+                                            
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>

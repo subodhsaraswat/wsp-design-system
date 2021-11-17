@@ -1,0 +1,119 @@
+.pagination {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    .page-number {
+      display: inline;
+      a {
+        text-decoration: none;
+        color: $body-color;
+      }
+    }
+    &.pagination-steps {
+      display: flex;
+      align-items: center;
+      .page-count {
+        margin: 0px 10px;
+        .wsp-form-control {
+          width: 6.5rem;
+        }
+      }
+      .page-goto {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        label {
+          white-space: nowrap;
+          margin-bottom: 0;
+          margin-right: 5px;
+        }
+        .wsp-form-control {
+          width: 6.5rem;
+        }
+      }
+    }
+    /* Pagination 2 */
+    &.pagination-style-01 {
+      .page-number {
+        padding: 8px;
+        background-color: $white;
+        border-radius: 4px;
+        width: 2.375rem;
+        height: 2.375rem;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid $gray-light;
+        &:hover {
+          background-color: #d9dcd6;
+        }
+        &.active {
+          background-color: $primary;
+          border-color: $primary;
+          &:hover {
+            background-color: $primary;
+          }
+          a {
+            color: #f3f4f2;
+          }
+        }
+      }
+    }
+
+    /* Pagination 3 */
+    &.pagination-style-02 {
+      .page-number {
+        margin: 0.25em;
+        a {
+          padding: 0.125em;
+        }
+        &:hover{
+            color: $primary;
+        }
+      }
+      .active {
+        padding: 4px 8px;
+        border-radius: 50%;
+        background-color: $primary;
+        color: white;
+        a {
+          color: white;
+        }
+      }
+    }
+    &.pagination-jump{
+        display: flex;
+        align-items: center;
+        .page-number {
+            padding: 8px;
+            background-color: $white;
+            border-radius: 4px;
+            width: 2.375rem;
+            height: 2.375rem;
+            display: inline-block;
+            text-align: center;
+        }
+        .page-goto{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .wsp-form-control{
+                width: 4rem;
+                margin-right: 1rem;
+            }
+            .total{
+                padding: 8px 16px;
+                background-color: $white;
+                border-radius: 4px;
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+  }
+}
