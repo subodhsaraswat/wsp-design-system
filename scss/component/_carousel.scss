@@ -1,0 +1,14 @@
+.owl-carousel {
+  .item{height: 20rem;background : $light;padding: 1rem;display: flex;flex-direction: column;align-items: center;justify-content: center;color: $dark;}
+  h3{margin: 0;}
+  .owl-nav{position: absolute;top: 8rem;width: 100%;width: -webkit-fill-available;display: flex;flex-direction: row;justify-content: space-between;margin: 0 1.875rem;}
+  .owl-nav button span {width: 24px;font-size: 34px;background: transparent;color: $dark;}
+  .owl-dots{position: absolute;bottom: 0.25rem;display: flex;width: 100%;justify-content: center;}
+  .owl-dots span{border: 1px solid $dark;}
+  .wsp-slider-content{position: absolute;text-align: center;}
+}
+.noIndicators .owl-dots{display: none;}
+.noControls .owl-nav{display: none;}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{background: transparent !important;}
+.owl-theme .owl-nav [class*=owl-]:hover{background: transparent !important;}

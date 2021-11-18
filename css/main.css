@@ -8153,6 +8153,125 @@ button.wsp-close {
   background-color: #2AB57D;
 }
 
+.wsp-breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wsp-breadcrumb li + li::before {
+  content: var(--breadcrumbs-divider, " / ");
+  color: var(--breadcrumbs-divider-color, #ccc);
+  white-space: pre;
+}
+
+.wsp-breadcrumb a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.wsp-breadcrumb a:hover {
+  color: #5156BE;
+}
+
+.wsp-breadcrumb [aria-current=page] {
+  color: #5156BE;
+}
+
+.owl-carousel .item {
+  height: 20rem;
+  background: #e9e9ef;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343a40;
+}
+
+.owl-carousel h3 {
+  margin: 0;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  width: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1.875rem;
+}
+
+.owl-carousel .owl-nav button span {
+  width: 24px;
+  font-size: 34px;
+  background: transparent;
+  color: #343a40;
+}
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.owl-carousel .owl-dots span {
+  border: 1px solid #343a40;
+}
+
+.owl-carousel .wsp-slider-content {
+  position: absolute;
+  text-align: center;
+}
+
+.noIndicators .owl-dots {
+  display: none;
+}
+
+.noControls .owl-nav {
+  display: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: transparent !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent !important;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;

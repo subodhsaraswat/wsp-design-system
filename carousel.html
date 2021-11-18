@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="plugin/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+  <title>Carousel :: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+       <!-- side-bar starts -->
+       <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Carousel</h1>
+              <p>Use to create a slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+              <h5>How it works</h5>
+              <p>The carousel is a slideshow of a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
+                We are using owl carousel to easily customise the carousel. 
+                We are using css and javascript to easily modification. First we are discussing the css modification which you can do for controls and indicators.
+                By default this setting are visible but we want to hide then we can use class <span class="wsp-cls-name">noControls</span> for hiding controls and <span class="wsp-cls-name">noIndicators</span> for hiding the indicators.
+                You can see the examples below.
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides Only</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme noIndicators noControls">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                            <p>Some representative placeholder content for the first slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                            <p>Some representative placeholder content for the second slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                            <p>Some representative placeholder third for the second slide</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlidesOnly)">
+                    Copy
+                  </span>
+                  <code id="carouselSlidesOnly" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme noIndicators noControls"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="Second Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides with caption</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme noIndicators noControls">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                            <p>Some representative placeholder content for the first slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                            <p>Some representative placeholder content for the second slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                            <p>Some representative placeholder third for the second slide</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlideswithCaption)">
+                    Copy
+                  </span>
+                  <code id="carouselSlideswithCaption" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme noIndicators noControls"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides with controls</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme noIndicators">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlideswithControls)">
+                    Copy
+                  </span>
+                  <code id="carouselSlideswithControls" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme noIndicators"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="Second Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides with controls and indicators</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlideswithControlsandIndicators)">
+                    Copy
+                  </span>
+                  <code id="carouselSlideswithControlsandIndicators" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="Second Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides with controls and caption</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme noIndicators">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                            <p>Some representative placeholder content for the first slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                            <p>Some representative placeholder content for the second slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                            <p>Some representative placeholder third for the second slide</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlideswithControlsandCaption)">
+                    Copy
+                  </span>
+                  <code id="carouselSlideswithControlsandCaption" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme noIndicators"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Slides with controls, indicators and caption</h3>
+                <!--  Demos -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>First Slide</h3>
+                            <p>Some representative placeholder content for the first slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Second Slide</h3>
+                            <p>Some representative placeholder content for the second slide</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="wsp-slider-content">
+                            <h3>Third Slide</h3>
+                            <p>Some representative placeholder third for the second slide</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouselSlideswithControlsandCaption)">
+                    Copy
+                  </span>
+                  <code id="carouselSlideswithControlsandCaption" class="language-html">
+                    &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"owl-carousel owl-theme"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"item"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="Image path will come here" alt="First Slide"&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider-content"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;First Slide&lt;/h3&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some representative placeholder content for the first slide&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  </code>
+                </div>
+                <br>
+                <h5>Javascript</h5>
+                <p>You can change the slider parameters by this script.</p>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(carouseljs)">
+                    Copy
+                  </span>
+                  <code id="carouseljs" class="language-html">
+                    &nbsp;&nbsp;$(document).ready(function() {<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;var owl = $('.owl-carousel');<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;owl.owlCarousel({<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items: 1,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop: true,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 10,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoplay: true,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoplayTimeout: 5000,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoplayHoverPause: false,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nav: true<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;});<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.play').on('click', function() {<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;owl.trigger('play.owl.autoplay', [5000])<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;})<br/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.stop').on('click', function() {<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;owl.trigger('stop.owl.autoplay')<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;})<br/>
+                    &nbsp;&nbsp;})<br/>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+  <script src="plugin/owl-carousel/owl.carousel.js"></script>
+  <script src="plugin/owl-carousel/script.js"></script>
+</body>
+
+</html>
