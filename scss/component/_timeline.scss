@@ -1,0 +1,66 @@
+.wsp-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: $light;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+    }
+    &.wsp-right-timeline{
+        &::after {
+            left: 0;
+            margin-left: 0;
+        }
+        .wsp-timeline-container-right {
+            left: 0;
+            text-align: left;
+        }
+    }
+}
+
+.wsp-timeline-container {
+    padding: 1rem 1.5rem;
+    position: relative;
+    background: inherit;
+    width: 50%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        top: calc(50% - 0.5rem);
+        right: -0.5rem;
+        background: $white;
+        border: 2px solid $primary;
+        border-radius: 1rem;
+        z-index: 1;
+    }
+
+    &.wsp-timeline-container-left {
+        left: 0;
+        text-align: right;
+    }
+
+    &.wsp-timeline-container-right {
+        left: 50%;
+        text-align: left;
+
+        &::after {
+            left: -0.5rem;
+        }
+
+        &::before {
+            left: 0.5rem;
+        }
+    }
+}

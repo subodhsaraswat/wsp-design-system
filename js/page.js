@@ -103,6 +103,12 @@ class MySidebar extends HTMLElement {
                 <li class="wsp-submenu-link">
                 <a href="popover.html">Popover</a>
                 </li>
+                <li class="wsp-submenu-link">
+                <a href="pagination.html">Pagination</a>
+                </li>
+                <li class="wsp-submenu-link">
+                <a href="timeline.html">Timeline</a>
+                </li>
             </ul>
             </li>
             <li class="wsp-nav-link">

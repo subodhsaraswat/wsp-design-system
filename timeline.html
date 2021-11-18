@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Timeline :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Timeline</h1>
+              <p>We all are quite familiar with vertical timelines: all instant messaging applications use them. A
+                current trend in web design is to use a similar structure, but to show a process rather than a sequence
+                of events. </p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Left Aligned Timeline</h3>
+                <p>For timeline proper styling, use required contextual class <span
+                    class="wsp-cls-name">.wsp-left-timeline</span></p>
+                <div class="demo">
+                  <div class="wsp-timeline wsp-left-timeline">
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(alternateTimeline)">
+                    Copy
+                  </span>
+                  <code id="alternateTimeline" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline wsp-left-timeline"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Alternate Aligned Timeline</h3>
+                <p>For timeline proper styling, use required contextual class <span
+                    class="wsp-cls-name">.wsp-alternate-timeline</span></p>
+                <div class="demo">
+                  <div class="wsp-timeline wsp-alternate-timeline">
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-left">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(alternateTimeline)">
+                    Copy
+                  </span>
+                  <code id="alternateTimeline" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline wsp-alternate-timeline"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-left"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Right Aligned Timeline</h3>
+                <p>For timeline proper styling, use required contextual class <span
+                    class="wsp-cls-name">.wsp-right-timeline</span></p>
+                <div class="demo">
+                  <div class="wsp-timeline wsp-right-timeline">
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="wsp-timeline-container wsp-timeline-container-right">
+                      <div class="wsp-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium. 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(alternateTimeline)">
+                    Copy
+                  </span>
+                  <code id="alternateTimeline" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline wsp-left-timeline"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-timeline-container wsp-timeline-container-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-content"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nunc, finibus a vulputate sit amet, aliquet eu diam. Cras dapibus dolor et arcu laoreet, sit amet tempor massa pretium.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>

@@ -46,6 +46,8 @@
             border-bottom: 1px solid $gray-600;
             background: #f6f6f6;
             display: none;
+            overflow: auto;
+            max-height: 20rem;
             .wsp-submenu-link {
 
                 a {
