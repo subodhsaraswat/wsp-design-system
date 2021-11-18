@@ -237,8 +237,6 @@ $(document).ready(function () {
       thumbnailElement.style.backgroundImage = null;
     }
   }
-  
-
 
 })
 
