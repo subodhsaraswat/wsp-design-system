@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Stepper :: WSP-Design System</title>
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Stepper</h1>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <div class="demo">
+                                    <div class="wsp-stepper horizontal">
+                                        <div class="wsp-step done">
+                                            <div class="wsp-step-circle"><span>1</span></div>
+                                            <div class="wsp-step-title">Step1</div>
+                                            <div class="wsp-step-bar"></div>
+                                        </div>
+                                        <div class="wsp-step active ">
+                                            <div class="wsp-step-circle"><span>2</span></div>
+                                            <div class="wsp-step-title">Step2</div>
+                                            <div class="wsp-step-bar"></div>
+                                        </div>
+                                        <div class="wsp-step">
+                                            <div class="wsp-step-circle"><span>3</span></div>
+                                            <div class="wsp-step-title">Step3</div>
+                                            <div class="wsp-step-bar"></div>
+                                        </div>
+                                        <div class="wsp-step">
+                                            <div class="wsp-step-circle"><span>4</span></div>
+                                            <div class="wsp-step-title">Step4</div>
+                                            <div class="wsp-step-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultStepper)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultStepper" class="language-html">
+
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-stepper horizontal"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step done"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-circle"</span>&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-title"</span>&gt;Step1&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-bar"</span>&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step active"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-circle"</span>&gt;&lt;span&gt;2&lt;/span&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-title"</span>&gt;Step2&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-bar"</span>&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-circle"</span>&gt;&lt;span&gt;3&lt;/span&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-title"</span>&gt;Step3&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-bar"</span>&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-circle"</span>&gt;&lt;span&gt;4&lt;/span&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-title"</span>&gt;Step4&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-step-bar"</span>&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>
