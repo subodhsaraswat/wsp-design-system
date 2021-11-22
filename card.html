@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Card:: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+       <!-- side-bar starts -->
+       <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+                <h1>Card</h1>
+                <p>A card in WSp Design System is a border-less box with some padding around its content. A basic card is created with the .wsp-card class, and content inside the card has a .wsp-card-body class
+                </p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Example</h3>
+                <div class="demo">
+                    <div class="wsp-card">
+                        <img class="wsp-card-img-top" src="images/photo/wsp-card-bg.png" alt="Card image">
+                        <div class="wsp-card-body">
+                            <div class="wsp-d-flex">
+                                <h6 class="wsp-card-title wsp-mr-auto">Card title</h6>
+                                <p class="wsp-text-default wsp-float-right wsp-small-text">April 20, 2020</p>
+                            </div>
+                            
+                            <p class="wsp-card-text">Some quick example text to build on the card 
+                                title and make up the bulk of the card's and card
+                                content.<span id="wsp-dots">..</span><span id="wsp-more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span>
+                                <a href="javascript:void(0);" onclick="myFunction()" id="wsp-read-more" class="btn btn-primary stretched-link">Read more</a>
+                            </p>
+                        </div>
+                        <div class="wsp-card-footer">
+                            <p class="wsp-footer-content">By Content Type</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(navbarLight)">
+                    Copy
+                  </span>
+                  <code class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-img-top"</span><span class="wsp-cls-text"> src=</span><span class="wsp-cls-name">"images/photo/wsp-card-bg.png"</span><span class="wsp-cls-text"> alt=</span><span class="wsp-cls-name">"Card image"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-title wsp-mr-auto"</span>&gt;Card Title&lt;/h6&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-text-default wsp-float-right wsp-small-text"</span>&gt;April 20, 2020&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-text"</span>&gt;Some quick example text to build on the card 
+                    title and make up the bulk of the card's and card content.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-dots"</span>&gt;..&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-more"</span>&gt;erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"javascript:void(0);"</span><span class="wsp-cls-text"> onclick=</span><span class="wsp-cls-name">"myFunction()"</span><span class="wsp-cls-text"> class=</span><span class="wsp-cls-name">"btn btn-primary stretched-link"</span>&gt;Read more&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-footer"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-footer-content"</span>&gt;By Content Type&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Card without image</h3>
+                <p>Remove img tag here.</p>
+                <div class="demo">
+                    <div class="wsp-card">
+                        <div class="wsp-card-body">
+                            <div class="wsp-d-flex">
+                                <h6 class="wsp-card-title wsp-mr-auto">Card title</h6>
+                                <p class="wsp-text-default wsp-float-right wsp-small-text">April 20, 2020</p>
+                            </div>
+                            
+                            <p class="wsp-card-text">Some quick example text to build on the card 
+                                title and make up the bulk of the card's and card
+                                content.<span id="wsp-dots">..</span><span id="wsp-more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span>
+                                <a href="javascript:void(0);" onclick="myFunction()" id="wsp-read-more" class="btn btn-primary stretched-link">Read more</a>
+                            </p>
+                        </div>
+                        <div class="wsp-card-footer">
+                            <p class="wsp-footer-content">By Content Type</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(navbarDark)">
+                    Copy
+                  </span>
+                  <code class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-title wsp-mr-auto"</span>&gt;Card Title&lt;/h6&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-text-default wsp-float-right wsp-small-text"</span>&gt;April 20, 2020&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-text"</span>&gt;Some quick example text to build on the card 
+                    title and make up the bulk of the card's and card content.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-dots"</span>&gt;..&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-more"</span>&gt;erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"javascript:void(0);"</span><span class="wsp-cls-text"> onclick=</span><span class="wsp-cls-name">"myFunction()"</span><span class="wsp-cls-text"> class=</span><span class="wsp-cls-name">"btn btn-primary stretched-link"</span>&gt;Read more&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-footer"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-footer-content"</span>&gt;By Content Type&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Card without read more button</h3>
+                <p>Remove read more button and read more content.</p>
+                <div class="demo">
+                    <div class="wsp-card">
+                        <img class="wsp-card-img-top" src="images/photo/wsp-card-bg.png" alt="Card image">
+                        <div class="wsp-card-body">
+                            <div class="wsp-d-flex">
+                                <h6 class="wsp-card-title wsp-mr-auto">Card title</h6>
+                                <p class="wsp-text-default wsp-float-right wsp-small-text">April 20, 2020</p>
+                            </div>
+                            
+                            <p class="wsp-card-text">Some quick example text to build on the card 
+                                title and make up the bulk of the card's and card
+                                content.
+                            </p>
+                        </div>
+                        <div class="wsp-card-footer">
+                            <p class="wsp-footer-content">By Content Type</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(navbarPrimary)">
+                    Copy
+                  </span>
+                  <code class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-title wsp-mr-auto"</span>&gt;Card Title&lt;/h6&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-text-default wsp-float-right wsp-small-text"</span>&gt;April 20, 2020&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-text"</span>&gt;Some quick example text to build on the card 
+                    title and make up the bulk of the card's and card content.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-footer"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-footer-content"</span>&gt;By Content Type&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Card without footer and date</h3>
+                <p>Remove wsp-card-footer div and date tag.</p>
+                <div class="demo">
+                    <div class="wsp-card">
+                        <img class="wsp-card-img-top" src="images/photo/wsp-card-bg.png" alt="Card image">
+                        <div class="wsp-card-body">
+                            <div class="wsp-d-flex">
+                                <h6 class="wsp-card-title wsp-mr-auto">Card title</h6>
+                            </div>
+                            
+                            <p class="wsp-card-text">Some quick example text to build on the card 
+                                title and make up the bulk of the card's and card
+                                content.<span id="wsp-dots">..</span><span id="wsp-more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span>
+                                <a href="javascript:void(0);" onclick="myFunction()" id="wsp-read-more" class="btn btn-primary stretched-link">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(navbarDefault)">
+                    Copy
+                  </span>
+                  <code class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;img <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-img-top"</span><span class="wsp-cls-text"> src=</span><span class="wsp-cls-name">"images/photo/wsp-card-bg.png"</span><span class="wsp-cls-text"> alt=</span><span class="wsp-cls-name">"Card image"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-body"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6 <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-title wsp-mr-auto"</span>&gt;Card Title&lt;/h6&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-card-text"</span>&gt;Some quick example text to build on the card 
+                    title and make up the bulk of the card's and card content.<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-dots"</span>&gt;..&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"wsp-more"</span>&gt;erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"javascript:void(0);"</span><span class="wsp-cls-text"> onclick=</span><span class="wsp-cls-name">"myFunction()"</span><span class="wsp-cls-text"> class=</span><span class="wsp-cls-name">"btn btn-primary stretched-link"</span>&gt;Read more&lt;/a&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>

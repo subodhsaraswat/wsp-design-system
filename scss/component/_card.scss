@@ -9,6 +9,9 @@
     background-clip: border-box;
     border: $card-border-width solid $card-border-color;
     border-radius: 0;
+    border-color: transparent;
+    background: $list-group-bg;
+    width:22rem;
   
     > hr {
       margin-right: 0;
@@ -29,11 +32,32 @@
         border-bottom-radius: $card-inner-border-radius;
       }
     }
+
+    #wsp-more { 
+      display: none;
+    }
+
+    .wsp-small-text {
+      font-size: $font-size-sm;
+      line-height: 1rem;
+      color:$gray-dark;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
   
 
     > .wsp-card-header + .wsp-list-group,
     > .wsp-list-group + .wsp-card-footer {
       border-top: 0;
+    }
+
+    .wsp-card-footer {
+      border-top:1px solid $gray-light1;
+      background:transparent;
+    }
+    .wsp-footer-content{
+      font-size: $font-size-base;
     }
   }
   

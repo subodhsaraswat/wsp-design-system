@@ -4762,6 +4762,9 @@ fieldset:disabled a.btn {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
+  border-color: transparent;
+  background: #FCFCFC;
+  width: 22rem;
 }
 
 .wsp-card > hr {
@@ -4784,9 +4787,37 @@ fieldset:disabled a.btn {
   border-bottom-radius: subtract(0.25rem, 1px);
 }
 
+.wsp-card #wsp-more {
+  display: none;
+}
+
+.wsp-card .wsp-small-text {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #6f6f6f;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .wsp-card > .wsp-card-header + .wsp-list-group,
 .wsp-card > .wsp-list-group + .wsp-card-footer {
   border-top: 0;
+}
+
+.wsp-card .wsp-card-footer {
+  border-top: 1px solid #E7E7E7;
+  background: transparent;
+}
+
+.wsp-card .wsp-footer-content {
+  font-size: 1rem;
 }
 
 .wsp-card-body {

@@ -193,3 +193,20 @@ function copyToClipboard(element) {
     });
 }
 
+ //Card Read More
+ function myFunction() {
+    var dots = document.getElementById("wsp-dots");
+    var moreText = document.getElementById("wsp-more");
+    var btnText = document.getElementById("wsp-read-more");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+
