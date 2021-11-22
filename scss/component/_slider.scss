@@ -1,0 +1,164 @@
+// Base Colors
+$shade-0: #fff !default;
+
+// Reset
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+.range-slider {
+  margin: 60px 0 0 0%;
+}
+
+// Range Slider
+$range-width: 100% !default;
+
+$range-handle-color: $primary !default;
+$range-handle-color-hover: $primary !default;
+$range-handle-size: 20px !default;
+
+$range-track-color: $light !default;
+$range-track-height: 8px !default;
+
+$range-label-color: $primary !default;
+$range-label-width: 60px !default;
+
+.range-slider {
+  width: $range-width;
+  .range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (#{$range-label-width + 13px}));
+    height: $range-track-height;
+    border-radius: 5px;
+    background: $range-track-color;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    // Range Handle
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: $range-handle-size;
+      height: $range-handle-size;
+      border-radius: 50%;
+      background: $range-handle-color;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+    }
+
+    &::-moz-range-thumb {
+      width: $range-handle-size;
+      height: $range-handle-size;
+      border: 0;
+      border-radius: 50%;
+      background: $range-handle-color;
+      cursor: pointer;
+      transition: background 0.15s ease-in-out;
+    }
+
+    &:active::-moz-range-thumb {
+      background: $range-handle-color-hover;
+    }
+  }
+  &.vertical {
+    height: 200px;
+    width: 100px;
+    position: relative;
+    .range-slider__range {
+      width: 240px;
+      margin-top: 50px;
+      -webkit-transform: rotate(270deg) translatex(-50%);
+      transform: rotate(270deg) translatex(-50%);
+      -moz-transform: rotate(270deg) translatex(-50%);
+      transform-origin: left;
+      margin-left: 30px;
+    }
+    .range-slider__value{
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+    }
+  }
+}
+
+// Range Label
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: $range-label-width;
+  color: $shade-0;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: $range-label-color;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+
+// Firefox Overrides
+::-moz-range-track {
+  background: $range-track-color;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+.dual-range {
+	--range-size:8px;
+	--range-width:100%;
+	--handle-size:2.5;
+	height:var(--range-size);
+	width:var(--range-width);
+	background:$light;
+	border-radius:50px;
+	position:relative;
+	user-select:none;
+    margin-bottom: 30px;
+	.highlight {
+		position:absolute;
+		height:var(--range-size);
+		width:calc(calc(var(--x-2) - var(--x-1)) + calc(var(--range-size) * var(--handle-size)));
+		left:var(--x-1);
+		background:$primary;
+		z-index:1;
+		border-radius:50px;
+	}
+	
+	.handle {
+		width:calc(var(--range-size) * var(--handle-size));
+		height:calc(var(--range-size) * var(--handle-size));
+		background:$primary;
+		position:absolute;
+		box-shadow:0px 3px 6px 0px rgba(0,0,0,0.1);
+		border-radius:50%;
+		top:50%;
+		transform:translateY(-50%);
+		z-index:2;
+		cursor:grab;
+		&:active {
+			cursor:grabbing;
+		}
+		
+		&.left {
+			left:var(--x-1);
+		}
+		
+		&.right {
+			left:var(--x-2);
+		}
+		
+		&::after {
+			content:'$'attr(data-value);
+			position:absolute;
+			top:100%;
+			left:50%;
+			transform:translateX(-50%);
+		}
+	}
+}
