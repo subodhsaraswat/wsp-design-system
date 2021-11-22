@@ -1,0 +1,109 @@
+.wsp-popover {
+    position: relative;
+    display: inline-block;
+
+    .wsp-popover-content {
+        width: 14rem;
+        background-color: $white;
+        color: $white;
+        border-radius: 0.125rem;
+        text-align: left;
+        padding: 0.5rem;
+        position: absolute;
+        z-index: 1;
+        display: none;
+        top: -100%;
+        left: 120%;
+        box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+        filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.08));
+
+        .wsp-popover-header {
+            color: $dark;
+            font-size: $small-font-size;
+            font-weight: $font-weight-semibold;
+            margin-bottom: 0.5rem;
+        }
+
+        .wsp-popover-body {
+            font-size: $small-font-size;
+            color: $dark;
+            margin-bottom: 0.5rem;
+        }
+
+        .wsp-popover-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                color: $primary;
+                display: inline-block;
+                text-decoration: none;
+                font-size: $small-font-size;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+        }
+
+        &.wsp-popover-top {
+            top: auto;
+            left: -85%;
+            bottom: 140%;
+
+            &::after {
+                top: 100%;
+                left: 50%;
+                border-width: 0.3125rem;
+                border-style: solid;
+                border-color: $white transparent transparent transparent;
+            }
+        }
+
+        &.wsp-popover-right {
+            top: auto;
+            left: 120%;
+            bottom: -120%;
+
+            &::after {
+                top: 50%;
+                right: 100%;
+                border-width: 0.3125rem;
+                border-style: solid;
+                margin-top: -0.3125rem;
+                border-color: transparent $white transparent transparent;
+            }
+        }
+
+        &.wsp-popover-bottom {
+            top: 140%;
+            left: -85%;
+            bottom: auto;
+
+            &::after {
+                bottom: 100%;
+                left: 50%;
+                border-width: 0.3125rem;
+                border-style: solid;
+                border-color: transparent transparent $white transparent;
+            }
+        }
+
+        &.wsp-popover-left {
+            top: -120%;
+            left: auto;
+            right: 120%;
+
+            &::after {
+                top: 50%;
+                left: 100%;
+                border-width: 0.3125rem;
+                border-style: solid;
+                margin-top: -0.3125rem;
+                border-color: transparent transparent transparent $white;
+            }
+        }
+    }
+}

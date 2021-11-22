@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Upload :: WSP-Design System</title>
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Upload</h1>
+                            <p>Upload file by selecting or dragging.</p>
+                            <p>Uploading is the process of publishing information (web pages, text, pictures, video,
+                                etc.) to a remote server via a web page or upload tool.</p>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Default Upload</h3>
+                                <div class="demo">
+                                    <div class="wsp-file">
+                                        <div class="wsp-file-input-wrapper" id="fileInput">
+                                            <input class="wsp-file-input" data-upload="uploadButton" id="customFile1"
+                                                type="file" multiple="multiple" name="files[]" />
+                                            <label class="wsp-button button-outline-primary" for="customFile1"
+                                                data-text-btn="Upload">
+                                                <i class="wsp-icon wsp-icon-upload"></i>
+                                                Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultUpload)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultUpload" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-file"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-file-input-wrapper"</span> id="fileInput"&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-file-input"</span> <span class="wsp-cls-text">data-upload=</span><span class="wsp-cls-name">"uploadButton"</span> id="customFile1" type="file" multiple="multiple" name="files[]" /&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;label <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-outline-primary"</span> for="customFile1" data-text-btn="Upload"&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-upload"</span>&gt;&lt;/i&gt;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Upload<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br/>
+                                            &nbsp;&nbsp;&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>File Upload & Image Preview</h3>
+                                <div class="demo">
+                                    <!-- Upload  -->
+                                    <div class="wsp-drop-zone">
+                                        <span class="wsp-drop-zone__prompt">Drag and Drop files here<br />
+                                            <small>OR</small><br />
+                                            <button type="button" class="wsp-button button-outline-primary">Browse File</button>
+                                        </span>
+                                        <input type="file" name="myFile" class="wsp-drop-zone__input">
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(dragUpload)">
+                                        Copy
+                                    </span>
+                                    <code id="dragUpload" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-drop-zone"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-drop-zone__prompt"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Drag and Drop files here<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;small&gt;OR&lt;/small&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-outline-primary"</span>&gt;Browse File&lt;/button&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+                                        &nbsp;&nbsp;&lt;input type="file" name="myFile" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-drop-zone__input"</span>&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>

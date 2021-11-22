@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Slider :: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+       <!-- side-bar starts -->
+       <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Slider</h1>
+              <p>Slider method is used to create a selected element as slider in the web page. We can make slider as either horizontal or vertical.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Default Slider</h3>
+                <div class="demo">
+                  <div class="range-slider horizontal">
+                    <input class="range-slider__range " type="range" value="100" min="0" max="500">
+                    <span class="range-slider__value">100</span>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultSlider)">
+                    Copy
+                  </span>
+                  <code id="defaultSlider" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider horizontal"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider__range"</span> type="range" value="100" min="0" max="500"&gt;<br/>
+                    &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider__value"</span>&gt;100&lt;/span&gt;<br/>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Verical Slider</h3>
+                <div class="demo">
+                  <div class="range-slider vertical">
+                    <input class="range-slider__range " type="range" value="100" min="0" max="500">
+                    <span class="range-slider__value">100</span>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultSlider)">
+                    Copy
+                  </span>
+                  <code id="defaultSlider" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider vertical"</span>&gt;<br/>
+                    &nbsp;&nbsp;&lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider__range"</span> type="range" value="100" min="0" max="500"&gt;<br/>
+                    &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"range-slider__value"</span>&gt;100&lt;/span&gt;<br/>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Dual Range Slider</h3>
+                <div class="demo">
+                    <div class="dual-range" data-min="20" data-max="70">
+                        <span class="handle left"></span>
+                        <span class="highlight"></span>
+                        <span class="handle right"></span>
+                    </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(defaultSlider)">
+                    Copy
+                  </span>
+                  <code id="defaultSlider" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"dual-range"</span> data-min="20" data-max="70"&gt;<br/>
+                    &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"handle left"</span>&gt;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"highlight"</span>&gt;&lt;/span&gt;<br/>
+                    &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"handle right"</span>&gt;&lt;/span&gt;<br/>
+                    &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>

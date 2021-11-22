@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Popover :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Popover</h1>
+              <p>A popover is often used to specify extra information about something when the user click over an
+                element</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Basic Popover</h3>
+                <p>A Popover is often used to specify extra information that appears when the user click over an element
+                </p>
+                <div class="demo">
+                  <div class="wsp-popover">
+                    <button type="button" class="wsp-button button-primary open-popover">Click me</button>
+                    <div class="wsp-popover-content">
+                      <div class="wsp-popover-header">Popover Title</div>
+                      <div class="wsp-popover-body">
+                        Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.
+                      </div>
+                      <div class="wsp-popover-footer">
+                        <a href="#">Understtod</a>
+                        <a href="#">No thanks</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(basicPopover)">
+                    Copy
+                  </span>
+                  <code id="basicPopover" class="language-html">
+                      &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary open-popover"</span>&gt;Click me&lt;/button&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-content"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-header"</span>&gt;Popover Title&lt;/div&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-body"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-footer"</span>&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Understtod&lt;/a&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">No thanks&lt;/a&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                      &lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Positioning Popover</h3>
+                <p>For positioning tooltip styling, use required contextual class <span
+                    class="wsp-cls-name">wsp-popover-*</span></p>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Top Popover</h4>
+                <div class="demo">
+                  <div class="wsp-text-center">
+                    <div class="wsp-popover">
+                      <button type="button" class="wsp-button button-primary open-popover">Click me</button>
+                      <div class="wsp-popover-content wsp-popover-top">
+                        <div class="wsp-popover-header">Popover Title</div>
+                        <div class="wsp-popover-body">
+                          Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.
+                        </div>
+                        <div class="wsp-popover-footer">
+                          <a href="#">Understtod</a>
+                          <a href="#">No thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(topPopover)">
+                    Copy
+                  </span>
+                  <code id="topPopover" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary open-popover"</span>&gt;Click me&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-content wsp-popover-top"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-header"</span>&gt;Popover Title&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-body"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-footer"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Understtod&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">No thanks&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Right Popover</h4>
+                <div class="demo">
+                  <div class="wsp-text-center">
+                    <div class="wsp-popover">
+                      <button type="button" class="wsp-button button-primary open-popover">Click me</button>
+                      <div class="wsp-popover-content wsp-popover-right">
+                        <div class="wsp-popover-header">Popover Title</div>
+                        <div class="wsp-popover-body">
+                          Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.
+                        </div>
+                        <div class="wsp-popover-footer">
+                          <a href="#">Understtod</a>
+                          <a href="#">No thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(rightPopover)">
+                    Copy
+                  </span>
+                  <code id="rightPopover" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary open-popover"</span>&gt;Click me&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-content wsp-popover-right"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-header"</span>&gt;Popover Title&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-body"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-footer"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Understtod&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">No thanks&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Bottom Popover</h4>
+                <div class="demo">
+                  <div class="wsp-text-center">
+                    <div class="wsp-popover">
+                      <button type="button" class="wsp-button button-primary open-popover">Click me</button>
+                      <div class="wsp-popover-content wsp-popover-bottom">
+                        <div class="wsp-popover-header">Popover Title</div>
+                        <div class="wsp-popover-body">
+                          Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.
+                        </div>
+                        <div class="wsp-popover-footer">
+                          <a href="#">Understtod</a>
+                          <a href="#">No thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(bottomPopover)">
+                    Copy
+                  </span>
+                  <code id="bottomPopover" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary open-popover"</span>&gt;Click me&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-content wsp-popover-bottom"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-header"</span>&gt;Popover Title&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-body"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-footer"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Understtod&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">No thanks&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h4>Left Popover</h4>
+                <div class="demo">
+                  <div class="wsp-text-center">
+                    <div class="wsp-popover">
+                      <button type="button" class="wsp-button button-primary open-popover">Click me</button>
+                      <div class="wsp-popover-content wsp-popover-left">
+                        <div class="wsp-popover-header">Popover Title</div>
+                        <div class="wsp-popover-body">
+                          Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.
+                        </div>
+                        <div class="wsp-popover-footer">
+                          <a href="#">Understtod</a>
+                          <a href="#">No thanks</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(leftPopover)">
+                    Copy
+                  </span>
+                  <code id="leftPopover" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="button" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary open-popover"</span>&gt;Click me&lt;/button&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-content wsp-popover-bottom"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-header"</span>&gt;Popover Title&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-body"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nam non commodo velit, vitae suscipit est. Praesent posuere volutpat est vitae sodales.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-popover-footer"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">Understtod&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#">No thanks&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
