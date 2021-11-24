@@ -112,6 +112,9 @@ class MySidebar extends HTMLElement {
                 <li class="wsp-submenu-link">
                 <a href="stepper.html">Stepper</a>
                 </li>
+                <li class="wsp-submenu-link">
+                <a href="tree.html">Tree</a>
+                </li>
             </ul>
             </li>
             <li class="wsp-nav-link">

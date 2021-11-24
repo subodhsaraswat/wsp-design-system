@@ -6984,6 +6984,8 @@ select.wsp-form-control-lg:not([size]):not([multiple]), .wsp-input-group-lg > se
      -moz-appearance: none;
           appearance: none;
   color-adjust: exact;
+  -webkit-transition:;
+  transition:;
 }
 
 .wsp-form-check-input[type="checkbox"] {
@@ -8341,6 +8343,77 @@ input::-moz-focus-outer {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.wsp-tree-wrap .tree {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wsp-tree-wrap .tree i {
+  color: #5156BE;
+  display: inline-block;
+  padding-right: 0.25rem;
+}
+
+.wsp-tree-wrap .tree a {
+  text-decoration: none;
+  color: #5156BE;
+  display: inline-block;
+}
+
+.wsp-tree-wrap .tree ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.wsp-tree-wrap .tree ul::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #5156BE;
+}
+
+.wsp-tree-wrap .tree ul li {
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 2rem;
+  color: #343a40;
+  position: relative;
+}
+
+.wsp-tree-wrap .tree ul li::before {
+  content: "";
+  display: block;
+  width: 0.625rem;
+  height: 0;
+  border-top: 1px solid;
+  margin-top: -1px;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+
+.wsp-tree-wrap .tree ul li:last-child::before {
+  background: #ffffff;
+  height: auto;
+  top: 1rem;
+  bottom: 0;
+}
+
+.wsp-tree-wrap .tree ul ul {
+  margin-left: .5rem;
+}
+
+.wsp-tree-wrap .tree .indicator {
+  margin-right: 5px;
 }
 
 .header {

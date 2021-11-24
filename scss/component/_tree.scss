@@ -1,0 +1,74 @@
+.wsp-tree-wrap {
+    .tree {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        i {
+            color: $primary;
+            display: inline-block;
+            padding-right: 0.25rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary;
+            display: inline-block;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin-left: 1rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                border-left: 1px solid $primary;
+            }
+
+            li {
+                margin: 0;
+                padding: 0 1rem;
+                line-height: 2rem;
+                color: $dark;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 0.625rem;
+                    height: 0;
+                    border-top: 1px solid;
+                    margin-top: -1px;
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                }
+
+                &:last-child {
+                    &::before {
+                        background: $white;
+                        height: auto;
+                        top: 1rem;
+                        bottom: 0
+                    }
+                }
+            }
+
+            ul {
+                margin-left: .5rem
+            }
+        }
+
+        .indicator {
+            margin-right: 5px;
+        }
+    }
+}
