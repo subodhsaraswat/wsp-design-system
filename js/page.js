@@ -2,7 +2,17 @@
 class MySidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <ul class="wsp-navbar-vertical">
+        <div class="wsp-search-wrap">
+            <div class="wsp-input-group">
+                <div class="wsp-input-group-prepend">
+                    <span class="wsp-input-group-text" id="basic-addon1">
+                    <i class="wsp-icon wsp-icon-search-o"></i>
+                    </span>
+                </div>
+                <input type="text" id="searchInput" class="wsp-form-control" onkeyup="searchComponent()" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <ul class="wsp-navbar-vertical" id="sideMenu">
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Getting started</span>
