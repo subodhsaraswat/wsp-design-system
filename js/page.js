@@ -20,14 +20,6 @@ class MySidebar extends HTMLElement {
             </li>
             <li class="wsp-nav-link">
             <a href="#">
-                <span class="wsp-link-text">Customize</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
-            </a>
-            </li>
-            <li class="wsp-nav-link">
-            <a href="#">
                 <span class="wsp-link-text">Layout</span>
                 <span class="dropdown-icon">
                 <i class="wsp-icon wsp-icon-right-o"></i>
@@ -158,14 +150,6 @@ class MySidebar extends HTMLElement {
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Utilities</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
-            </a>
-            </li>
-            <li class="wsp-nav-link">
-            <a href="#">
-                <span class="wsp-link-text">Extend</span>
                 <span class="dropdown-icon">
                 <i class="wsp-icon wsp-icon-right-o"></i>
                 </span>

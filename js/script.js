@@ -1,13 +1,9 @@
 $(document).ready(function () {
-  // Tab
-  $('.wsp-navbar-vertical li > a').on('click', function () {
-    $('.wsp-navbar-vertical').find('.active').removeClass('active')
-    $(this).addClass('active')
-    $('.wsp-navbar-vertical')
-      .find('.wsp-submenu')
-      .slideUp(500) /* close submenu */
-    $(this).next('.wsp-submenu').slideDown(500) /*display submenu */
-  })
+  // Sidebar
+  $('.wsp-nav-link').click(function() {
+    $('.wsp-nav-link.active').removeClass('active'); // Just remove class from all folder
+    $(this).addClass('active'); // add onto current
+})
 
   // close Alert
   $('.wsp-close').on('click', function () {
