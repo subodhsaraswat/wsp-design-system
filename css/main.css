@@ -5600,6 +5600,8 @@ fieldset:disabled a.btn {
   list-style-type: none;
   margin: 0;
   padding: 0rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .wsp-navbar-vertical .wsp-nav-link {
@@ -5651,7 +5653,9 @@ fieldset:disabled a.btn {
   background: #f6f6f6;
   display: none;
   overflow: auto;
-  max-height: 20rem;
+  max-height: 12rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a {
@@ -5661,6 +5665,12 @@ fieldset:disabled a.btn {
 
 .wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a:hover {
   color: #5156BE;
+}
+
+.wsp-navbar-vertical .wsp-nav-link.active .wsp-submenu {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: block;
 }
 
 .wsp-section {
@@ -8803,6 +8813,7 @@ input::-moz-focus-outer {
   padding: 0.9375rem;
   -webkit-box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: auto;
 }
 
 .wsp-content .wsp-content-wrap .wsp-card-wrap .wsp-card .wsp-card-icon .wsp-icon {
@@ -8940,5 +8951,9 @@ input::-moz-focus-outer {
 
 .ex-wrapper .wsp-list-group {
   max-width: 400px;
+}
+
+.wsp-search-wrap {
+  margin: 0.825rem 0.825rem 0;
 }
 /*# sourceMappingURL=main.css.map */
