@@ -1,13 +1,9 @@
 $(document).ready(function () {
-  // Tab
-  $('.wsp-navbar-vertical li > a').on('click', function () {
-    $('.wsp-navbar-vertical').find('.active').removeClass('active')
-    $(this).addClass('active')
-    $('.wsp-navbar-vertical')
-      .find('.wsp-submenu')
-      .slideUp(500) /* close submenu */
-    $(this).next('.wsp-submenu').slideDown(500) /*display submenu */
-  })
+  // Sidebar
+  $('.wsp-nav-link').click(function() {
+    $('.wsp-nav-link.active').removeClass('active'); // Just remove class from all folder
+    $(this).addClass('active'); // add onto current
+})
 
   // close Alert
   $('.wsp-close').on('click', function () {
@@ -441,3 +437,21 @@ function increase() {
 
 increase();
 
+
+//Search List
+function searchComponent() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("sideMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+      } else {
+          li[i].style.display = "none";
+      }
+  }
+}
