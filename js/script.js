@@ -144,6 +144,11 @@ $(document).ready(function () {
 
   });
   
+  // Dropdown
+  $(".wsp-dropdown-toggle").click(function ()
+  {
+    $('.wsp-dropdown-menu').toggle(500);
+  });
 
   // ------------  File upload BEGIN ------------
   $('[data-upload="uploadButton"]').on('change', function (event) {
@@ -434,6 +439,26 @@ function increase() {
       }, SPEED * i);
   }
 }
+
+//Dropdown
+
+// function myFunction() {
+//   document.getElementById("wsp-drop").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.wsp-dropdown-toggle')) {
+//     let dropdowns = document.getElementsByClassName("wsp-dropdown-menu");
+//     let i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       let openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
 
 increase();
 

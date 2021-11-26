@@ -76,7 +76,13 @@ class MySidebar extends HTMLElement {
                 <a href="button.html">Button</a>
                 </li>
                 <li class="wsp-submenu-link">
+                <a href="card.html">Card</a>
+                </li>
+                <li class="wsp-submenu-link">
                 <a href="collapse.html">Collapse</a>
+                </li>
+                <li class="wsp-submenu-link">
+                <a href="dropdown.html">Dropdown</a>
                 </li>
                 <li class="wsp-submenu-link">
                 <a href="flag.html">Flag</a>

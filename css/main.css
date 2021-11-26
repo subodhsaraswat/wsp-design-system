@@ -8497,6 +8497,157 @@ input::-moz-focus-outer {
   }
 }
 
+.wsp-dropdown {
+  position: relative;
+}
+
+.wsp-dropdown-toggle {
+  white-space: nowrap;
+}
+
+.wsp-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  color: #171923;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.wsp-dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+
+.wsp-dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+@media (min-width: 576px) {
+  .wsp-dropdown-menu-sm-left {
+    right: auto;
+    left: 0;
+  }
+  .wsp-dropdown-menu-sm-right {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .wsp-dropdown-menu-md-left {
+    right: auto;
+    left: 0;
+  }
+  .wsp-dropdown-menu-md-right {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .wsp-dropdown-menu-lg-left {
+    right: auto;
+    left: 0;
+  }
+  .wsp-dropdown-menu-lg-right {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wsp-dropdown-menu-xl-left {
+    right: auto;
+    left: 0;
+  }
+  .wsp-dropdown-menu-xl-right {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wsp-dropdown-menu-xxl-left {
+    right: auto;
+    left: 0;
+  }
+  .wsp-dropdown-menu-xxl-right {
+    right: 0;
+    left: auto;
+  }
+}
+
+.wsp-dropdown-menu[x-placement^="bottom"] {
+  right: auto;
+  bottom: auto;
+}
+
+.wsp-dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.wsp-dropdown-item:hover, .wsp-dropdown-item:focus {
+  color: #60686f;
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+
+.wsp-dropdown-item.active, .wsp-dropdown-item:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #5156BE;
+}
+
+.wsp-dropdown-item.disabled, .wsp-dropdown-item:disabled {
+  color: #2D3748;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.wsp-dropdown-menu.show {
+  display: block;
+}
+
+.wsp-dropdown-header {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+  color: #A0AEC0;
+  white-space: nowrap;
+}
+
+.wsp-dropdown-item-text {
+  display: block;
+  padding: 0.25rem 1.5rem;
+  color: #6c757d;
+}
+
+.show {
+  display: block;
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;

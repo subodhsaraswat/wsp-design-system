@@ -62,6 +62,7 @@
         "../scss/component/_slider.scss",
         "../scss/component/_tree.scss",
         "../scss/component/_progress.scss",
+        "../scss/component/_dropdown.scss",
         "../scss/pages/_home.scss",
         "../scss/pages/_page.scss"
     ],
