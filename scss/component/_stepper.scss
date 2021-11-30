@@ -78,11 +78,11 @@
         border: 2px solid $success;
         color: $white;
         &:before {
+          content: '\ed44';
           background-color: inherit;
           position: static;
           font-family: 'wsp-icon';
           font-weight: 600;
-          content: '\ed44';
           line-height: 1;
         }
         * {

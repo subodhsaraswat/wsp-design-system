@@ -21,134 +21,123 @@ class MySidebar extends HTMLElement {
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Layout</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
             </li>
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Content</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
-            <ul class="wsp-submenu">
-                <li class="wsp-submenu-link">
-                <a href="table.html">Table</a>
-                </li>
-            </ul>
             </li>
-            <li class="wsp-nav-link">
+            <li class="wsp-nav-link wsp-has-dropdown">
             <a href="#">
                 <span class="wsp-link-text">Forms</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
             <ul class="wsp-submenu">
-                <li class="wsp-submenu-link">
-                    <a href="input.html">Input</a>
-                </li>
-                <li class="wsp-submenu-link">
-                    <a href="select.html">Select</a>
-                </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                     <a href="checkbox.html">Checkbox & Radio</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
+                    <a href="input.html">Input</a>
+                </li>
+                <li class="wsp-nav-link">
+                    <a href="select.html">Select</a>
+                </li>
+                <li class="wsp-nav-link">
                     <a href="switch.html">Switch</a>
                 </li>
+                <li class="wsp-nav-link">
+                    <a href="upload.html">Upload</a>
+                </li>
             </ul>
             </li>
-            <li class="wsp-nav-link">
+            <li class="wsp-nav-link wsp-has-dropdown">
             <a href="#">
                 <span class="wsp-link-text">Components</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
             <ul class="wsp-submenu">
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="alert.html">Alert</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="button.html">Button</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="card.html">Card</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="collapse.html">Collapse</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="dropdown.html">Dropdown</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="flag.html">Flag</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="list-group.html">List Group</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="tab.html">Tabs</a>
-                </li>
-                <li class="wsp-submenu-link">
-                <a href="navbar.html">Navbar</a>
-                </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="avatar.html">Avatar</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
+                <a href="button.html">Button</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="card.html">Card</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="collapse.html">Collapse</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="dropdown.html">Dropdown</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="flag.html">Flag</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="list-group.html">List Group</a>
+                </li>
+                <li class="wsp-nav-link">
                 <a href="modal.html">Modal</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="rating.html">Rating</a>
+                <li class="wsp-nav-link">
+                <a href="navbar.html">Navbar</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="tooltip.html">Tooltip</a>
+                <li class="wsp-nav-link">
+                <a href="navigation.html">Navigation</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="popover.html">Popover</a>
-                </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="pagination.html">Pagination</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="timeline.html">Timeline</a>
+                <li class="wsp-nav-link">
+                <a href="popover.html">Popover</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
+                <a href="progress.html">Progress</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="rating.html">Rating</a>
+                </li>
+                <li class="wsp-nav-link">
                 <a href="stepper.html">Stepper</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="tree.html">Tree</a>
+                <li class="wsp-nav-link">
+                <a href="table.html">Table</a>
                 </li>
-                <li class="wsp-submenu-link">
-                <a href="progress.html">Progress</a>
+                <li class="wsp-nav-link">
+                <a href="tab.html">Tabs</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="tooltip.html">Tooltip</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="tree.html">Tree</a>
                 </li>
             </ul>
             </li>
-            <li class="wsp-nav-link">
+            <li class="wsp-nav-link wsp-has-dropdown">
             <a href="#">
                 <span class="wsp-link-text">Helpers</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
             <ul class="wsp-submenu">
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="label.html">Label</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="badge.html">Badge</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="drawer.html">Drawer</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="section-message.html">Section Message</a>
                 </li>
-                <li class="wsp-submenu-link">
+                <li class="wsp-nav-link">
                 <a href="skeleton.html">Skeleton</a>
                 </li>
             </ul>
@@ -156,9 +145,6 @@ class MySidebar extends HTMLElement {
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Utilities</span>
-                <span class="dropdown-icon">
-                <i class="wsp-icon wsp-icon-right-o"></i>
-                </span>
             </a>
             </li>
             <li class="wsp-nav-link">
@@ -197,7 +183,7 @@ $(function () {
 
 // function Copy to clipboard
 function copyToClipboard(element) {
-    
+
     window.getSelection().removeAllRanges();
     let range = document.createRange();
     range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
@@ -211,20 +197,20 @@ function copyToClipboard(element) {
     });
 }
 
- //Card Read More
- function myFunction() {
+//Card Read More
+function myFunction() {
     var dots = document.getElementById("wsp-dots");
     var moreText = document.getElementById("wsp-more");
     var btnText = document.getElementById("wsp-read-more");
-  
+
     if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
     }
-  }
+}
 

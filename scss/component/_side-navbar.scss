@@ -1,75 +1,94 @@
 .wsp-navbar-vertical {
-    list-style-type: none;
-    margin: 0;
-    padding: 0rem;
-    transition: all 0.4s ease;
+  list-style-type: none;
+  margin: 0;
+  padding: 0rem;
 
-    .wsp-nav-link {
-        padding: 0;
-
-        a {
-            padding: 0.825rem;
-            display: flex;
-            text-decoration: none;
-            justify-content: space-between;
-
-            .wsp-link-text {
-                color: $text-body;
-            }
-
-            .dropdown-icon {
-                .wsp-icon {
-                    font-size: 1rem;
-                    color: $text-body;
-                }
-            }
-
-            &:hover {
-                background: #f6f6f6;
-            }
-
-            &.active {
-                background: #f6f6f6;
-
-                .wsp-link-text,
-                .dropdown-icon .wsp-icon {
-                    color: $primary;
-                }
-
-                .wsp-icon-right-o:before {
-                    content: "\e942";
-                }
-            }
-        }
-
-        .wsp-submenu {
-            margin: 0;
-            padding-left: 0.625rem;
-            border-top: 1px solid $gray-600;
-            border-bottom: 1px solid $gray-600;
-            background: #f6f6f6;
-            display: none;
-            overflow: auto;
-            max-height: 12rem;
-            transition: all 0.4s ease;
-            .wsp-submenu-link {
-
-                a {
-                    color: $text-body;
-                    padding: 0.425rem 0.425rem 0.425rem 0.825rem;
-
-                    &:hover {
-                        color: $primary;
-                    }
-                }
-            }
-        }
-
-        &.active {
-            .wsp-submenu {
-                transition: all 0.4s ease;
-                display: block;
-            }
-        }
+  .wsp-nav-link {
+    color: $text-body;
+    padding: 0;
+    &.wsp-has-dropdown {
+      position: relative;
+      &:after {
+        content: '\ec95';
+        font-family: 'wsp-icon';
+        font-size: 0.875rem;
+        font-weight: bold;
+        line-height: 1;
+        color: $gray-400;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        transition: all 0.15s ease-in-out;
+      }
     }
+    a {
+      color: $text-body;
+      padding: 0.825rem;
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      .wsp-nav-icon {
+        font-size: 1.5rem;
+        color: $text-body;
+        margin-right: 1rem;
+        color: lighten($text-body, 50%);
+      }
+      .wsp-sub-caption {
+        display: block;
+        font-size: 0.875rem;
+        color: lighten($text-body, 50%);
+      }
+
+      &:hover {
+        background: #f6f6f6;
+      }
+      &.active {
+        background: #f6f6f6;
+        .wsp-link-text,
+        .dropdown-icon .wsp-icon {
+          color: $primary;
+        }
+
+        .wsp-icon-right-o:before {
+          content: '\e942';
+        }
+      }
+    }
+
+    .wsp-submenu {
+      margin: 0;
+      padding-left: 0.625rem;
+      display: none;
+      opacity: 0;
+      transition: all 0.15s ease-in-out;
+      .wsp-nav-link {
+        a {
+          font-size: 90%;
+          padding: 0.425rem 0.425rem 0.425rem 0.825rem;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    &.active {
+      a .wsp-link-text {
+        color: $primary;
+      }
+      &.wsp-has-dropdown {
+        &::after {
+          color: $primary;
+          transition: all 0.15s ease-in-out;
+          transform: rotate(90deg);
+        }
+      }
+      .wsp-submenu {
+        display: block;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
 }

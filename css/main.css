@@ -4047,7 +4047,7 @@ h6 {
 .wsp-alert {
   padding: 1rem;
   border-radius: 0.25rem;
-  background: #FCFCFC;
+  background: #ffffff;
   position: relative;
   padding-left: 3rem;
 }
@@ -4762,8 +4762,6 @@ fieldset:disabled a.btn {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
-  border-color: transparent;
-  background: #FCFCFC;
   width: 22rem;
 }
 
@@ -5024,9 +5022,11 @@ fieldset:disabled a.btn {
 .wsp-flag {
   padding: 1rem;
   border-radius: 0.25rem;
-  background: #FCFCFC;
+  background: #ffffff;
   position: relative;
   padding-left: 3rem;
+  width: 450px;
+  max-width: 45%;
 }
 
 .wsp-flag .wsp-flag-icon {
@@ -5052,6 +5052,11 @@ fieldset:disabled a.btn {
   top: 0.625rem;
 }
 
+.wsp-flag .button-default {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
 .wsp-flag.wsp-flag-info {
   background-color: #4ba6ef;
 }
@@ -5060,11 +5065,6 @@ fieldset:disabled a.btn {
 .wsp-flag.wsp-flag-info p,
 .wsp-flag.wsp-flag-info a,
 .wsp-flag.wsp-flag-info .wsp-icon {
-  color: #D6EDFF;
-}
-
-.wsp-flag.wsp-flag-info button {
-  background-color: rgba(101, 183, 249, 0.7);
   color: #D6EDFF;
 }
 
@@ -5079,11 +5079,6 @@ fieldset:disabled a.btn {
   color: #D1FCEA;
 }
 
-.wsp-flag.wsp-flag-success button {
-  background-color: #27bf82;
-  color: #D1FCEA;
-}
-
 .wsp-flag.wsp-flag-warning {
   background-color: #ffbf53;
 }
@@ -5092,12 +5087,7 @@ fieldset:disabled a.btn {
 .wsp-flag.wsp-flag-warning p,
 .wsp-flag.wsp-flag-warning a,
 .wsp-flag.wsp-flag-warning .wsp-icon {
-  color: #FFEBC9;
-}
-
-.wsp-flag.wsp-flag-warning button {
-  background-color: #ebb65d;
-  color: #FFEBC9;
+  color: #ffffff;
 }
 
 .wsp-flag.wsp-flag-danger {
@@ -5108,11 +5098,6 @@ fieldset:disabled a.btn {
 .wsp-flag.wsp-flag-danger p,
 .wsp-flag.wsp-flag-danger a,
 .wsp-flag.wsp-flag-danger .wsp-icon {
-  color: #FFE4E3;
-}
-
-.wsp-flag.wsp-flag-danger button {
-  background-color: #dd6461;
   color: #FFE4E3;
 }
 
@@ -5255,7 +5240,7 @@ fieldset:disabled a.btn {
   position: relative;
   display: block;
   padding: 0.438rem 1.25rem;
-  background-color: #FCFCFC;
+  background-color: #ffffff;
   border-bottom: 1px solid #e9e9ef;
 }
 
@@ -5273,7 +5258,7 @@ fieldset:disabled a.btn {
 .wsp-list-group .wsp-list-group-item.disabled, .wsp-list-group .wsp-list-group-item:disabled {
   color: #6c757d;
   pointer-events: none;
-  background-color: #FCFCFC;
+  background-color: #ffffff;
 }
 
 .wsp-list-group .wsp-list-group-item.active {
@@ -5600,32 +5585,54 @@ fieldset:disabled a.btn {
   list-style-type: none;
   margin: 0;
   padding: 0rem;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .wsp-navbar-vertical .wsp-nav-link {
+  color: #171923;
   padding: 0;
 }
 
+.wsp-navbar-vertical .wsp-nav-link.wsp-has-dropdown {
+  position: relative;
+}
+
+.wsp-navbar-vertical .wsp-nav-link.wsp-has-dropdown:after {
+  content: '\ec95';
+  font-family: 'wsp-icon';
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #A0AEC0;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
 .wsp-navbar-vertical .wsp-nav-link a {
+  color: #171923;
   padding: 0.825rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wsp-navbar-vertical .wsp-nav-link a .wsp-link-text {
+.wsp-navbar-vertical .wsp-nav-link a .wsp-nav-icon {
+  font-size: 1.5rem;
   color: #171923;
+  margin-right: 1rem;
+  color: #888fb1;
 }
 
-.wsp-navbar-vertical .wsp-nav-link a .dropdown-icon .wsp-icon {
-  font-size: 1rem;
-  color: #171923;
+.wsp-navbar-vertical .wsp-nav-link a .wsp-sub-caption {
+  display: block;
+  font-size: 0.875rem;
+  color: #888fb1;
 }
 
 .wsp-navbar-vertical .wsp-nav-link a:hover {
@@ -5642,41 +5649,50 @@ fieldset:disabled a.btn {
 }
 
 .wsp-navbar-vertical .wsp-nav-link a.active .wsp-icon-right-o:before {
-  content: "\e942";
+  content: '\e942';
 }
 
 .wsp-navbar-vertical .wsp-nav-link .wsp-submenu {
   margin: 0;
   padding-left: 0.625rem;
-  border-top: 1px solid #ced4da;
-  border-bottom: 1px solid #ced4da;
-  background: #f6f6f6;
   display: none;
-  overflow: auto;
-  max-height: 12rem;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
-.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a {
-  color: #171923;
+.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-nav-link a {
+  font-size: 90%;
   padding: 0.425rem 0.425rem 0.425rem 0.825rem;
 }
 
-.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-submenu-link a:hover {
+.wsp-navbar-vertical .wsp-nav-link .wsp-submenu .wsp-nav-link a:hover {
   color: #5156BE;
 }
 
+.wsp-navbar-vertical .wsp-nav-link.active a .wsp-link-text {
+  color: #5156BE;
+}
+
+.wsp-navbar-vertical .wsp-nav-link.active.wsp-has-dropdown::after {
+  color: #5156BE;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .wsp-navbar-vertical .wsp-nav-link.active .wsp-submenu {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   display: block;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .wsp-section {
   padding: 1rem;
   border-radius: 0.25rem;
-  background: #FCFCFC;
+  background: #ffffff;
   position: relative;
 }
 
@@ -8174,11 +8190,11 @@ button.wsp-close {
 }
 
 .wsp-stepper.horizontal .wsp-step.done .wsp-step-circle:before {
+  content: '\ed44';
   background-color: inherit;
   position: static;
   font-family: 'wsp-icon';
   font-weight: 600;
-  content: '\ed44';
   line-height: 1;
 }
 
@@ -8648,6 +8664,13 @@ input::-moz-focus-outer {
   display: block;
 }
 
+.wsp-navigation-panel {
+  width: 300px;
+  border: 1px solid #e9e9ef;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
 .header {
   background: #5156BE;
   padding: 0.63rem 0;
@@ -8686,6 +8709,11 @@ input::-moz-focus-outer {
   margin-top: 3.5rem;
   display: block;
   z-index: 1030;
+}
+
+.wsp-content .wsp-nav-wrap .wsp-navbar-vertical {
+  max-height: calc(100vh - 105px);
+  overflow: auto;
 }
 
 .wsp-content .wsp-content-wrap {

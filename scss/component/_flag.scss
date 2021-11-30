@@ -4,6 +4,8 @@
     background: $list-group-bg;
     position: relative;
     padding-left: 3rem;
+    width: 450px;
+    max-width: 45%;
 
     .wsp-flag-icon {
         position: absolute;
@@ -27,6 +29,10 @@
         top: 0.625rem;
     }
 
+    .button-default{
+        background-color: rgba($white, .2);
+        color: $white;
+    }
     &.wsp-flag-info {
         background-color: $info;
 
@@ -34,10 +40,6 @@
         p,
         a,
         .wsp-icon {
-            color: $info-light;
-        }
-        button{
-            background-color: rgba($info-light-button, .7);
             color: $info-light;
         }
     }
@@ -51,10 +53,6 @@
         .wsp-icon {
             color: $success-light;
         }
-        button{
-            background-color: $success-light-button;
-            color: $success-light;
-        }
     }
 
     &.wsp-flag-warning {
@@ -64,11 +62,7 @@
         p,
         a,
         .wsp-icon {
-            color: $warning-light;
-        }
-        button{
-            background-color: $warning-light-button;
-            color: $warning-light;
+            color: $white;
         }
     }
 
@@ -79,10 +73,6 @@
         p,
         a,
         .wsp-icon {
-            color: $danger-light;
-        }
-        button{
-            background-color: $danger-light-button;
             color: $danger-light;
         }
     }

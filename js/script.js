@@ -1,9 +1,14 @@
 $(document).ready(function () {
   // Sidebar
-  $('.wsp-nav-link').click(function() {
-    $('.wsp-nav-link.active').removeClass('active'); // Just remove class from all folder
-    $(this).addClass('active'); // add onto current
-})
+  var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+  $('.wsp-navbar-vertical .wsp-nav-link').click(function() {
+    // Check to see the initial state of the element
+    var isActive = $(this).hasClass('active');
+    $(this).parents(".wsp-navbar-vertical").find('.wsp-nav-link').removeClass('active'); // Just remove class from all folder  
+      isActive ? $(this).removeClass('active') : $(this).addClass('active')
+  })
+
+  
 
   // close Alert
   $('.wsp-close').on('click', function () {
@@ -289,9 +294,12 @@ function applyFill(slider) {
 
 
 /* multiple range slider */
-window.addEventListener('DOMContentLoaded', () => {
-	new dualRangeSlider(document.querySelector(".dual-range"))
-})
+  window.addEventListener('DOMContentLoaded', () => {
+    var dualRange = document.querySelector(".dual-range");
+    if ( dualRange != null ){
+      new dualRangeSlider(dualRange)
+    }
+  })
 
 /* Tree */
 $.fn.extend({
@@ -423,6 +431,7 @@ class dualRangeSlider {
 		window.removeEventListener("mousemove", this.moveListener);
 		window.removeEventListener("touchmove", this.moveTouchListener);
 	}
+
 }
 
 //Progress-bar
