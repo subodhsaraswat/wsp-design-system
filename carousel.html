@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Carousel :: WSP-Design System</title>
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Carousel</h1>
+                            <p>A slideshow component for cycling through elements—images or slides of text—like a
+                                carousel.</p>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Slides only</h3>
+                                <div class="demo">
+                                    <!-- Slider 1 -->
+                                    <div class="wsp-slider" id="slider1">
+                                        <!-- Slides -->
+                                        <div style="background-image:url(images/slider/slide1.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide2.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide3.svg)"></div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultSlider)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultSlider" class="language-html">
+                                        <span class="comment">&lt;!-- Slider 1 --&gt;</span><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider"</span> <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"slider1"</span>&gt;<br/>
+                                        <span class="comment">&lt;!-- Slides --&gt;</span><br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide1.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide2.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide3.svg)"&gt;&lt;/div&gt;<br/>
+                                        &lt;/div&gt;<br/><br/>
+
+                                        <span class="comment">&lt;!-- &lt;Script&gt; --&gt;</span><br/>
+                                        $("#slider1").sliderResponsive({<br/>
+                                            &nbsp;&nbsp;fadeSpeed: 300,<br/>
+                                            &nbsp;&nbsp;autoPlay: "on",<br/>
+                                            &nbsp;&nbsp;hideDots: "on"<br/>
+                                        });<br/>
+                                        <span class="comment">&lt;!-- &lt;/Script&gt; --&gt;</span><br/>
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Slides with controls</h3>
+                                <div class="demo">
+                                    <!-- Slider 2 -->
+                                    <div class="wsp-slider" id="slider2">
+                                        <!-- Slides -->
+                                        <div style="background-image:url(images/slider/slide1.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide2.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide3.svg)"></div>
+
+                                        <span class="arrow left">
+                                            <i class="wsp-icon wsp-icon-left-o"></i>
+                                        </span>
+                                        <span class="arrow right">
+                                            <i class="wsp-icon wsp-icon-right-o"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(slidesControls)">
+                                        Copy
+                                    </span>
+                                    <code id="slidesControls" class="language-html">
+                                        <span class="comment">&lt;!-- Slider 2 --&gt;</span><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider"</span> <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"slider2"</span>&gt;<br/>
+                                        <span class="comment">&lt;!-- Slides --&gt;</span><br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide1.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide2.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide3.svg)"&gt;&lt;/div&gt;<br/><br/>
+                                        &nbsp;&nbsp;<span class="comment">&lt;!-- Arrows --&gt;<br/></span>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow left"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow right"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/><br/>
+                                        &lt;/div&gt;<br/><br/>
+
+                                        <span class="comment">&lt;!-- &lt;Script&gt; --&gt;</span><br/>
+                                        $("#slider2").sliderResponsive({<br/>
+                                            &nbsp;&nbsp;fadeSpeed: 300,<br/>
+                                            &nbsp;&nbsp;autoPlay: "on",<br/>
+                                            &nbsp;&nbsp;hideDots: "on"<br/>
+                                            &nbsp;&nbsp;showArrows: "on"<br/>
+                                        });<br/>
+                                        <span class="comment">&lt;!-- &lt;/Script&gt; --&gt;</span><br/>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Slides with controls and indicators</h3>
+                                <div class="demo">
+                                    <!-- Slider 3 -->
+                                    <div class="wsp-slider" id="slider3">
+                                        <!-- Slides -->
+                                        <div style="background-image:url(images/slider/slide1.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide2.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide3.svg)"></div>
+
+                                        <span class="arrow left">
+                                            <i class="wsp-icon wsp-icon-left-o"></i>
+                                        </span>
+                                        <span class="arrow right">
+                                            <i class="wsp-icon wsp-icon-right-o"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultSwitch)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultSwitch" class="language-html">
+                                        <span class="comment">&lt;!-- Slider 3 --&gt;</span><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider"</span> <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"slider3"</span>&gt;<br/>
+                                        <span class="comment">&lt;!-- Slides --&gt;</span><br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide1.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide2.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide3.svg)"&gt;&lt;/div&gt;<br/><br/>
+
+                                        &nbsp;&nbsp;<span class="comment">&lt;!-- Arrows --&gt;<br/></span>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow left"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow right"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+                                        &lt;/div&gt;<br/><br/>
+
+                                        <span class="comment">&lt;!-- &lt;Script&gt; --&gt;</span><br/>
+                                        $("#slider3").sliderResponsive({<br/>
+                                            &nbsp;&nbsp;fadeSpeed: 300,<br/>
+                                            &nbsp;&nbsp;autoPlay: "on",<br/>
+                                            &nbsp;&nbsp;showArrows: "on"<br/>
+                                            &nbsp;&nbsp;hideDots: "off"<br/>
+                                        });<br/>
+                                        <span class="comment">&lt;!-- &lt;/Script&gt; --&gt;</span><br/>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Slides with controls, indicators and caption</h3>
+                                <div class="demo">
+                                    <!-- Slider 4 -->
+                                    <div class="wsp-slider" id="slider4">
+                                        <!-- Slides -->
+                                        <div style="background-image:url(images/slider/slide1.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide2.svg)"></div>
+                                        <div style="background-image:url(images/slider/slide3.svg)"></div>
+                                        <!-- Arrows -->
+                                        <span class="arrow left">
+                                            <i class="wsp-icon wsp-icon-left-o"></i>
+                                        </span>
+                                        <span class="arrow right">
+                                            <i class="wsp-icon wsp-icon-right-o"></i>
+                                        </span>
+                                        <!-- Title Bar -->
+                                        <span class="titleBar">
+                                            <h1>I am like a leaf in the wind.</h1> 
+                                            <p>Watch me soar!</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultSwitch)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultSwitch" class="language-html">
+                                        <span class="comment">&lt;!-- Slider 4 --&gt;</span><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-slider"</span> <span class="wsp-cls-text">id=</span><span class="wsp-cls-name">"slider4"</span>&gt;<br/>
+                                        &nbsp;&nbsp;<span class="comment">&lt;!-- Slides --&gt;</span><br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide1.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide2.svg)"&gt;&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div style="background-image:url(images/slider/slide3.svg)"&gt;&lt;/div&gt;<br/><br/>
+
+                                        &nbsp;&nbsp;<span class="comment">&lt;!-- Arrows --&gt;<br/></span>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow left"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"arrow right"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-icon wsp-icon-right-o"</span>&gt;&lt;/i&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/><br/>
+
+                                        &nbsp;&nbsp;<span class="comment">&lt;!-- Title Bar --&gt;<br/></span>
+                                        &nbsp;&nbsp;&lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"titleBar"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;I am like a leaf in the wind.&lt;/h1&gt; <br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Watch me soar!&lt;/p&gt;<br/>
+                                        &nbsp;&nbsp;&lt;/span&gt;<br/>
+
+                                        &lt;/div&gt;<br/><br/>
+
+                                        <span class="comment">&lt;!-- &lt;Script&gt; --&gt;</span><br/>
+                                        $("#slider4").sliderResponsive({<br/>
+                                            &nbsp;&nbsp;fadeSpeed: 300,<br/>
+                                            &nbsp;&nbsp;autoPlay: "on",<br/>
+                                            &nbsp;&nbsp;showArrows: "on"<br/>
+                                            &nbsp;&nbsp;hideDots: "off"<br/>
+                                        });<br/>
+                                        <span class="comment">&lt;!-- &lt;/Script&gt; --&gt;</span><br/>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>
