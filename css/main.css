@@ -9002,4 +9002,18 @@ input::-moz-focus-outer {
 .wsp-search-wrap {
   margin: 0.825rem 0.825rem 0;
 }
+
+.wsp-intro {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -.01rem;
+}
+
+.wsp-team-wrap img {
+  max-width: 100%;
+  max-height: 700px;
+}
 /*# sourceMappingURL=main.css.map */
