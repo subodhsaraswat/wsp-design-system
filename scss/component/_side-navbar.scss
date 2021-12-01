@@ -27,6 +27,10 @@
       display: flex;
       text-decoration: none;
       align-items: center;
+      &.active{
+        color: $primary;
+        background: #f6f6f6;
+      }
       .wsp-nav-icon {
         font-size: 1.5rem;
         color: $text-body;
