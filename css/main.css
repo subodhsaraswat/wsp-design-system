@@ -4238,6 +4238,46 @@ h6 {
   font-weight: bolder;
 }
 
+.wsp-breadcrumb {
+  margin: 10px 0;
+}
+
+.wsp-breadcrumb ol,
+.wsp-breadcrumb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.wsp-breadcrumb ol li a,
+.wsp-breadcrumb ul li a {
+  text-decoration: none;
+  color: #171923;
+}
+
+.wsp-breadcrumb ol li a:hover,
+.wsp-breadcrumb ul li a:hover {
+  color: #5156BE;
+}
+
+.wsp-breadcrumb ol li a[aria-current='page'],
+.wsp-breadcrumb ul li a[aria-current='page'] {
+  color: #5156BE;
+}
+
+.wsp-breadcrumb ol li + li::before,
+.wsp-breadcrumb ul li + li::before {
+  content: ' / ';
+  color: #171923;
+  white-space: pre;
+}
+
 .wsp-button {
   display: inline-block;
   text-align: center;
@@ -4950,6 +4990,267 @@ fieldset:disabled a.btn {
 
 .wsp-card-margin {
   margin-top: 0.5rem;
+}
+
+.wsp-slider {
+  /* Images default to Center Center. Maybe try 'center top'? */
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 500px;
+  /* height: 100vh; */
+  /* If you want fullscreen */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow: hidden;
+  -webkit-transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.wsp-slider > div {
+  /* Images default to Center Center. Maybe try 'center top'? */
+  background-position: center center;
+  display: block;
+  width: 100%;
+  height: 500px;
+  /* height: 100vh; */
+  /* If you want fullscreen */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  overflow: hidden;
+  -webkit-transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  position: absolute;
+}
+
+.wsp-slider > .arrow {
+  position: absolute;
+  font-size: 1.5rem;
+  margin: 20px;
+  top: 40%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 30px;
+  padding: 10px 13px;
+  cursor: pointer;
+  line-height: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 3px;
+  z-index: 4;
+}
+
+.wsp-slider > .arrow.left {
+  left: -100px;
+}
+
+.wsp-slider > .arrow.right {
+  right: -100px;
+}
+
+.wsp-slider:hover > .arrow.left {
+  left: 0;
+}
+
+.wsp-slider:hover > .arrow.right {
+  right: 0;
+}
+
+.wsp-slider:hover > div {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.wsp-slider > i:hover {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+
+.wsp-slider > i.right:hover {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+.wsp-slider > i.right:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.wsp-slider > i.left:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.hoverZoomOff:hover > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wsp-slider > ul {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wsp-slider > ul > li {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  list-style: none;
+  float: left;
+  margin: 10px 5px;
+  cursor: pointer;
+  border: 1px solid #171923;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wsp-slider > ul > .showli {
+  background-color: #171923;
+  -webkit-animation: boing 0.5s forwards;
+  animation: boing 0.5s forwards;
+}
+
+.wsp-slider > ul > li:hover {
+  background-color: #171923;
+}
+
+.wsp-slider > .show {
+  z-index: 1;
+}
+
+.hideDots > ul {
+  display: none;
+}
+
+.showArrows > .left {
+  left: 0;
+}
+
+.showArrows > .right {
+  right: 0;
+}
+
+.titleBar {
+  z-index: 2;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  padding: 20px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.titleBar * {
+  -webkit-transform: translate(-20px, 30px);
+          transform: translate(-20px, 30px);
+  -webkit-transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+  transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+  opacity: 0;
+}
+
+.titleBarTop .titleBar * {
+  -webkit-transform: translate(-20px, -30px);
+          transform: translate(-20px, -30px);
+}
+
+.wsp-slider:hover .titleBar {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+.wsp-slider:hover .titleBar * {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+.titleBarTop .titleBar {
+  top: 0;
+  bottom: initial;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.wsp-slider > div span {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+@-webkit-keyframes boing {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  40% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  80% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes boing {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  40% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  60% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  80% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .fade {
@@ -8674,267 +8975,6 @@ input::-moz-focus-outer {
   border: 1px solid #e9e9ef;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-
-.wsp-slider {
-  /* Images default to Center Center. Maybe try 'center top'? */
-  background-position: center center;
-  display: block;
-  width: 100%;
-  height: 500px;
-  /* height: 100vh; */
-  /* If you want fullscreen */
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-  overflow: hidden;
-  -webkit-transition: transform 0.4s;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-}
-
-.wsp-slider > div {
-  /* Images default to Center Center. Maybe try 'center top'? */
-  background-position: center center;
-  display: block;
-  width: 100%;
-  height: 500px;
-  /* height: 100vh; */
-  /* If you want fullscreen */
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-  overflow: hidden;
-  -webkit-transition: transform 0.4s;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-  position: absolute;
-}
-
-.wsp-slider > .arrow {
-  position: absolute;
-  font-size: 1.5rem;
-  margin: 20px;
-  top: 40%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 30px;
-  padding: 10px 13px;
-  cursor: pointer;
-  line-height: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border-radius: 3px;
-  z-index: 4;
-}
-
-.wsp-slider > .arrow.left {
-  left: -100px;
-}
-
-.wsp-slider > .arrow.right {
-  right: -100px;
-}
-
-.wsp-slider:hover > .arrow.left {
-  left: 0;
-}
-
-.wsp-slider:hover > .arrow.right {
-  right: 0;
-}
-
-.wsp-slider:hover > div {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
-.wsp-slider > i:hover {
-  background: #fff;
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-transform: translateX(-2px);
-          transform: translateX(-2px);
-}
-
-.wsp-slider > i.right:hover {
-  -webkit-transform: translateX(2px);
-          transform: translateX(2px);
-}
-
-.wsp-slider > i.right:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-}
-
-.wsp-slider > i.left:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-}
-
-.hoverZoomOff:hover > div {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.wsp-slider > ul {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 4;
-  padding: 0;
-  margin: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.wsp-slider > ul > li {
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  list-style: none;
-  float: left;
-  margin: 10px 5px;
-  cursor: pointer;
-  border: 1px solid #171923;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.wsp-slider > ul > .showli {
-  background-color: #171923;
-  -webkit-animation: boing 0.5s forwards;
-  animation: boing 0.5s forwards;
-}
-
-.wsp-slider > ul > li:hover {
-  background-color: #171923;
-}
-
-.wsp-slider > .show {
-  z-index: 1;
-}
-
-.hideDots > ul {
-  display: none;
-}
-
-.showArrows > .left {
-  left: 0;
-}
-
-.showArrows > .right {
-  right: 0;
-}
-
-.titleBar {
-  z-index: 2;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  padding: 20px 30px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #fff;
-}
-
-.titleBar * {
-  -webkit-transform: translate(-20px, 30px);
-          transform: translate(-20px, 30px);
-  -webkit-transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
-  transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
-  opacity: 0;
-}
-
-.titleBarTop .titleBar * {
-  -webkit-transform: translate(-20px, -30px);
-          transform: translate(-20px, -30px);
-}
-
-.wsp-slider:hover .titleBar {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 1;
-}
-
-.wsp-slider:hover .titleBar * {
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  opacity: 1;
-}
-
-.titleBarTop .titleBar {
-  top: 0;
-  bottom: initial;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.wsp-slider > div span {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-}
-
-@-webkit-keyframes boing {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  40% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  60% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  80% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes boing {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  40% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  60% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  80% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 
 .header {

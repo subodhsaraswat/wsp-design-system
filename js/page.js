@@ -62,10 +62,17 @@ class MySidebar extends HTMLElement {
                 <a href="avatar.html">Avatar</a>
                 </li>
                 <li class="wsp-nav-link">
+                <a href="breadcrumb.html">Breadcrumbs</a>
+                </li>
+                <li class="wsp-nav-link">
                 <a href="button.html">Button</a>
                 </li>
                 <li class="wsp-nav-link">
                 <a href="card.html">Card</a>
+                </li>
+
+                <li class="wsp-nav-link">
+                <a href="carousel.html">Carousel</a>
                 </li>
                 <li class="wsp-nav-link">
                 <a href="collapse.html">Collapse</a>
