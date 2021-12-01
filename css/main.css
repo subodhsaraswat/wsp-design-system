@@ -8835,6 +8835,10 @@ input::-moz-focus-outer {
   padding-top: 7rem;
 }
 
+.wsp-content .wsp-content-wrap .wsp-banner .wsp-info-wrap img {
+  max-width: 100%;
+}
+
 .wsp-content .wsp-content-wrap .wsp-card-wrap {
   padding: 1.875rem;
 }
@@ -8898,6 +8902,15 @@ input::-moz-focus-outer {
 @media (min-width: 769px) {
   #sideBar {
     display: block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wsp-card-wrap .wsp-card {
+    margin-bottom: 1rem;
+  }
+  .wsp-info-wrap {
+    padding-top: 0 !important;
   }
 }
 

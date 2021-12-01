@@ -138,6 +138,9 @@
                 align-items: flex-end;
                 justify-content: flex-end;
                 padding-top: 7rem;
+                img{
+                    max-width: 100%;
+                }
             }
         }
 
@@ -202,5 +205,15 @@
 @media (min-width: 769px) {
     #sideBar {
         display: block !important;
+    }
+}
+@media (max-width: 1200px) {
+    .wsp-card-wrap{
+        .wsp-card{
+            margin-bottom: 1rem;
+        }
+    }
+    .wsp-info-wrap{
+        padding-top: 0 !important;
     }
 }
