@@ -1,0 +1,27 @@
+.wsp-breadcrumb {
+  margin: 10px 0;
+  ol,
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: $text-body;
+        &:hover {
+          color: $primary;
+        }
+        &[aria-current='page'] {
+          color: $primary;
+        }
+      }
+      & + li::before {
+        content: ' / ';
+        color: $text-body;
+        white-space: pre;
+      }
+    }
+  }
+}
