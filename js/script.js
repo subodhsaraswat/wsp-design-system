@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(this).parents(".wsp-navbar-vertical").find('.wsp-nav-link').removeClass('active'); // Just remove class from all folder  
     isActive ? $(this).removeClass('active') : $(this).addClass('active')
   })
-  $('.wsp-submenu a').each(function() {
+  $('.wsp-submenu a, .wsp-nav-link a').each(function() {
     if (this.href === path) {
      $(this).addClass('active');
      $(this).closest(".wsp-has-dropdown").addClass("active");

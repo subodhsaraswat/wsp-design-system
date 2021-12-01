@@ -148,7 +148,7 @@ class MySidebar extends HTMLElement {
             </a>
             </li>
             <li class="wsp-nav-link">
-            <a href="#">
+            <a href="about.html">
                 <span class="wsp-link-text">About</span>
             </a>
             </li>
