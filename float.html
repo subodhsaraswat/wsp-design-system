@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Float :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Float</h1>
+              <p>These utility classes float an element to the left or right, or disable floating, based on the viewport size using the <span class="wsp-cls-name">CSS float property. !important </span> is included to avoid specificity issues.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Example</h3>
+                <div class="demo wsp-text-wrap">
+                  <p class="wsp-float-left">Cras mattis iudicium purus sit amet fermentum.</p><br>
+                  <p class="wsp-float-right">Cras mattis iudicium purus sit amet fermentum.</p><br>
+                  <p class="wsp-float-none">Cras mattis iudicium purus sit amet fermentum.</p>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(floatWrap)">
+                    Copy
+                  </span>
+                  <code id="floatWrap" class="language-html">
+                    &lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-float-left"</span>&gt;Cras mattis iudicium purus sit amet fermentum.&lt;/p&gt;<br>
+                    &lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-float-right"</span>&gt;Cras mattis iudicium purus sit amet fermentum.&lt;/p&gt;<br>
+                    &lt;p <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-float-none"</span>&gt;Cras mattis iudicium purus sit amet fermentum.&lt;/p&gt;<br>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
