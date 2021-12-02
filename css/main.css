@@ -9317,4 +9317,8 @@ input::-moz-focus-outer {
   max-width: 100%;
   max-height: 700px;
 }
+
+.wsp-bg-color-wrap p {
+  padding: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */

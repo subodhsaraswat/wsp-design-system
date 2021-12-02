@@ -149,10 +149,15 @@ class MySidebar extends HTMLElement {
                 </li>
             </ul>
             </li>
-            <li class="wsp-nav-link">
+            <li class="wsp-nav-link wsp-has-dropdown">
             <a href="#">
                 <span class="wsp-link-text">Utilities</span>
             </a>
+            <ul class="wsp-submenu">
+                <li class="wsp-nav-link">
+                <a href="colors.html">Colors</a>
+                </li>
+            </ul>
             </li>
             <li class="wsp-nav-link">
             <a href="about.html">
