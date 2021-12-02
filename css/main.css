@@ -305,23 +305,59 @@ progress {
 }
 
 .wsp-border-top-0 {
+  border: 1px solid #CCCCCC;
   border-top: 0;
 }
 
 .wsp-border-right-0 {
+  border: 1px solid #CCCCCC;
   border-right: 0;
 }
 
 .wsp-border-bottom-0 {
+  border: 1px solid #CCCCCC;
   border-bottom: 0;
 }
 
 .wsp-border-left-0 {
+  border: 1px solid #CCCCCC;
   border-left: 0;
+}
+
+.wsp-border-primary {
+  border-color: #5156BE;
+}
+
+.wsp-border-secondary {
+  border-color: #74788D;
+}
+
+.wsp-border-success {
+  border-color: #2AB57D;
+}
+
+.wsp-border-danger {
+  border-color: #FD625E;
+}
+
+.wsp-border-warning {
+  border-color: #ffbf53;
+}
+
+.wsp-border-info {
+  border-color: #4ba6ef;
+}
+
+.wsp-border-light {
+  border-color: #e9e9ef;
 }
 
 .wsp-border-white {
   border-color: #ffffff;
+}
+
+.wsp-border-dark {
+  border-color: #343a40;
 }
 
 .wsp-rounded {
@@ -3943,7 +3979,7 @@ h6 {
   text-align: center;
 }
 
-.wsp-.text-lowercase {
+.wsp-text-lowercase {
   text-transform: lowercase;
 }
 
@@ -9227,7 +9263,6 @@ input::-moz-focus-outer {
   padding: 1.5rem 0;
   margin-right: 0;
   margin-left: 0;
-  border-width: 0.2rem;
 }
 
 .ex-wrapper .demo .wsp-form-control + .wsp-form-control {
@@ -9320,5 +9355,37 @@ input::-moz-focus-outer {
 
 .wsp-bg-color-wrap p {
   padding: 0.5rem;
+}
+
+.wsp-border-wrap span {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.625rem;
+  display: inline-block;
+  background: #e9ecef;
+}
+
+.wsp-border-radius-wrap span {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.625rem;
+  display: inline-block;
+  background: #6c757d;
+}
+
+.wsp-text-wrap {
+  padding: 0.5rem !important;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 1rem;
+}
+
+.wsp-text-align-wrap {
+  border: 1px solid #CCCCCC;
+  margin-bottom: 1rem;
+}
+
+.wsp-text-align-wrap span {
+  padding: 0 0.5rem;
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,30 +18,59 @@
 .wsp-border-left {
     border-left: $border-width solid $border-color;
 }
-
+// Border-Sub
 .wsp-border-0 {
     border: 0;
 }
 
 .wsp-border-top-0 {
+    border: $border-width solid $border-color;
     border-top: 0;
 }
 
 .wsp-border-right-0 {
+    border: $border-width solid $border-color;
     border-right: 0;
 }
 
 .wsp-border-bottom-0 {
+    border: $border-width solid $border-color;
     border-bottom: 0;
 }
 
 .wsp-border-left-0 {
+    border: $border-width solid $border-color;
     border-left: 0;
 }
-
+// Border-color
+.wsp-border-primary{
+    border-color: $primary;
+}
+.wsp-border-secondary{
+    border-color: $secondary;
+}
+.wsp-border-success {
+    border-color: $success;
+}
+.wsp-border-danger {
+    border-color: $danger;
+}
+.wsp-border-warning {
+    border-color: $warning;
+}
+.wsp-border-info {
+    border-color: $info;
+}
+.wsp-border-light{
+    border-color: $light;
+}
 .wsp-border-white {
     border-color: $white;
 }
+.wsp-border-dark {
+    border-color: $dark;
+}
+
 
 // Border-radius
 .wsp-rounded {

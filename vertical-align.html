@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Vertical-align :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Vertical-align</h1>
+              <p>Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Text alignment</h3>
+                <p>Easily realign text to components with text alignment classes.</p>
+                <div class="demo wsp-text-align-wrap">
+                  <span class="wsp-align-baseline">baseline</span>
+                  <span class="wsp-align-top">top</span>
+                  <span class="wsp-align-middle">middle</span>
+                  <span class="wsp-align-bottom">bottom</span>
+                  <span class="wsp-align-text-bottom">text-bottom</span>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(valignwrap)">
+                    Copy
+                  </span>
+                  <code id="valignwrap" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-align-baseline"</span>&gt;baseline&lt;/p&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-align-top"</span>&gt;top&lt;/p&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-align-middle"</span>&gt;middle&lt;/p&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-align-bottom"</span>&gt;bottom&lt;/p&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-align-text-bottom"</span>&gt;text-bottom&lt;/p&gt;
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
