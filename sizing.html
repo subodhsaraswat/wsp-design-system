@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Sizing :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Sizing</h1>
+              <p>Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Width Example</h3>
+                <div class="demo wsp-width-wrap">
+                  <div class="wsp-w-25">25%</div>
+                  <div class="wsp-w-50">50%</div>
+                  <div class="wsp-w-75">75%</div>
+                  <div class="wsp-w-100">100%</div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(widthWrap)">
+                    Copy
+                  </span>
+                  <code id="widthWrap" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-w-25"</span>&gt;25%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-w-50"</span>&gt;50%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-w-75"</span>&gt;75%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-w-100"</span>&gt;100%&lt;/div&gt;<br>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Height Example</h3>
+                <div class="demo wsp-height-wrap">
+                  <div class="wsp-h-25">25%</div>
+                  <div class="wsp-h-50">50%</div>
+                  <div class="wsp-h-75">75%</div>
+                  <div class="wsp-h-100">100%</div>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(heightWrap)">
+                    Copy
+                  </span>
+                  <code id="heightWrap" class="language-html">
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-h-25"</span>&gt;25%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-h-50"</span>&gt;50%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-h-75"</span>&gt;75%&lt;/div&gt;<br>
+                    &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-h-100"</span>&gt;100%&lt;/div&gt;<br>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
