@@ -155,7 +155,40 @@ class MySidebar extends HTMLElement {
             </a>
             <ul class="wsp-submenu">
                 <li class="wsp-nav-link">
+                <a href="border.html">Borders</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="clearfix.html">Clearfix</a>
+                </li>
+                <li class="wsp-nav-link">
                 <a href="colors.html">Colors</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="display.html">Display</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="flex.html">Flex</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="float.html">Float</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="position.html">Position</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="sizing.html">Sizing</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="spacing.html">Spacing</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="text.html">Text</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="vertical-align.html">Vertical-align</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="visibility.html">Visibility</a>
                 </li>
             </ul>
             </li>
