@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>DateTimepicker:: WSP-Design System</title>
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+        <!-- side-bar starts -->
+        <div class="wsp-nav-wrap" id="sideBar">
+          <my-sidebar></my-sidebar>
+        </div>
+        <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Datepicker</h1>
+              <div class="ex-wrapper wsp-mb-5">
+                <div class="demo">
+                  <form>
+                    <div class="wsp-form-group">
+                      <label for="datePicker">Date</label>
+                      <input type="date" class="wsp-form-control" id="datePicker">
+                    </div>
+                    <div class="wsp-form-group">
+                        <label for="timePicker">Time</label>
+                        <input type="time" class="wsp-form-control" id="timePicker">
+                      </div>
+                  </form>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(input)">
+                    Copy
+                  </span>
+                  <code id="input" class="language-html">
+                &lt;form&gt;<br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="datePicker"&gt;Date&lt;/label&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="date" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="datePicker" &gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/><br/>
+                &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-group"</span>&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="timePicker"&gt;Time&lt;/label&gt;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="time" <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> id="timePicker" &gt;<br/>
+                &nbsp;&nbsp;&lt;/div&gt;<br/>
+                &lt;/form&gt;
+                </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Sizing</h3>
+                <p>Set heights using classes like <span class="wsp-cls-name">.wsp-form-control-lg</span> and <span
+                    class="wsp-cls-name">.wsp-form-control-sm</span> .</p>
+                <div class="demo">
+                  <input class="wsp-form-control wsp-form-control-lg" type="date" placeholder=".wsp-form-control-lg">
+                  <input class="wsp-form-control" type="date" placeholder="Default input">
+                  <input class="wsp-form-control wsp-form-control-sm" type="date" placeholder=".wsp-form-control-sm">
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(inputSize)">
+                    Copy
+                  </span>
+                  <code id="inputSize" class="language-html">
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-lg"</span> type="date" placeholder=".wsp-form-control-lg"&gt;<br/>
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> type="date" placeholder="Default input"&gt;<br/>
+                    &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span> type="date" placeholder=".wsp-form-control-sm"&gt;
+                  </code>
+                </div>
+
+                <div class="demo">
+                    <input class="wsp-form-control wsp-form-control-lg" type="time" placeholder=".wsp-form-control-lg">
+                    <input class="wsp-form-control" type="time" placeholder="Default input">
+                    <input class="wsp-form-control wsp-form-control-sm" type="time" placeholder=".wsp-form-control-sm">
+                  </div>
+                  <div class="code">
+                    <span class="copy-clipboard" onclick="copyToClipboard(inputSize)">
+                      Copy
+                    </span>
+                    <code id="inputSize" class="language-html">
+                      &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-lg"</span> type="time" placeholder=".wsp-form-control-lg"&gt;<br/>
+                      &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control"</span> type="time" placeholder="Default input"&gt;<br/>
+                      &lt;input <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-form-control wsp-form-control-sm"</span> type="time" placeholder=".wsp-form-control-sm"&gt;
+                    </code>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>
