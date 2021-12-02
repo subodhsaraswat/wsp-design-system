@@ -78,6 +78,9 @@ class MySidebar extends HTMLElement {
                 <a href="collapse.html">Collapse</a>
                 </li>
                 <li class="wsp-nav-link">
+                <a href="datepicker.html">DateTimePicker</a>
+                </li>
+                <li class="wsp-nav-link">
                 <a href="dropdown.html">Dropdown</a>
                 </li>
                 <li class="wsp-nav-link">
