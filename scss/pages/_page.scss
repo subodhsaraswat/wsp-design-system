@@ -9,7 +9,6 @@
     padding: 1.5rem 0;
     margin-right: 0;
     margin-left: 0;
-    border-width: 0.2rem;
     .wsp-form-control + .wsp-form-control {
       margin-top: 0.5rem;
     }
@@ -93,5 +92,37 @@
 .wsp-bg-color-wrap{
   p{
     padding: 0.5rem;
+  }
+}
+.wsp-border-wrap{
+  span{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.625rem;
+    display: inline-block;
+    background: $gray-200;
+  }
+}
+.wsp-border-radius-wrap{
+  span{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.625rem;
+    display: inline-block;
+    background: $gray-800;
+  }
+}
+.wsp-text-wrap{
+  padding: 0.5rem !important;
+  border:1px solid #CCCCCC;
+  margin-bottom: 1rem;
+}
+.wsp-text-align-wrap{
+  border:1px solid #CCCCCC;
+  margin-bottom: 1rem;
+  span{
+    padding: 0 0.5rem;
+    display: inline-block;
+    
   }
 }

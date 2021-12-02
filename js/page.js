@@ -158,7 +158,7 @@ class MySidebar extends HTMLElement {
             </a>
             <ul class="wsp-submenu">
                 <li class="wsp-nav-link">
-                <a href="border.html">Borders</a>
+                <a href="borders.html">Borders</a>
                 </li>
                 <li class="wsp-nav-link">
                 <a href="clearfix.html">Clearfix</a>

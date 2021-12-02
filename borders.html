@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Borders :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Borders</h1>
+              <p>Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Border</h3>
+                <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h5>Additive</h5>
+                <div class="demo wsp-border-wrap">
+                  <span class="wsp-border"></span>
+                  <span class="wsp-border-top"></span>
+                  <span class="wsp-border-right"></span>
+                  <span class="wsp-border-bottom"></span>
+                  <span class="wsp-border-left"></span>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(additiveBorder)">
+                    Copy
+                  </span>
+                  <code id="additiveBorder" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-top"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-right"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-bottom"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-left"</span>&gt;...&lt;/span&gt;<br>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h5>Subtractive</h5>
+                <div class="demo wsp-border-wrap">
+                  <span class="wsp-border-0"></span>
+                  <span class="wsp-border-top-0"></span>
+                  <span class="wsp-border-right-0"></span>
+                  <span class="wsp-border-bottom-0"></span>
+                  <span class="wsp-border-left-0"></span>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(subtractiveBorder)">
+                    Copy
+                  </span>
+                  <code id="subtractiveBorder" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-0"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-top-0"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-right-0"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-bottom-0"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border-left-0"</span>&gt;...&lt;/span&gt;<br>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h5>Border Color</h5>
+                <div class="demo wsp-border-wrap">
+                  <span class="wsp-border wsp-border-primary"></span>
+                  <span class="wsp-border wsp-border-secondary"></span>
+                  <span class="wsp-border wsp-border-success"></span>
+                  <span class="wsp-border wsp-border-danger"></span>
+                  <span class="wsp-border wsp-border-warning"></span>
+                  <span class="wsp-border wsp-border-info"></span>
+                  <span class="wsp-border wsp-border-light"></span>
+                  <span class="wsp-border wsp-border-dark"></span>
+                  <span class="wsp-border wsp-border-white"></span>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(colorBorder)">
+                    Copy
+                  </span>
+                  <code id="colorBorder" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-primary"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-secondary"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-success"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-danger"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-warning"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-info"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-success"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-dark"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-border wsp-border-white"</span>&gt;...&lt;/span&gt;<br>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Border-radius</h3>
+                <p>Add classes to an element to easily round its corners.</p>
+                <div class="demo wsp-border-radius-wrap">
+                  <span class="wsp-rounded"></span>
+                  <span class="wsp-rounded-top"></span>
+                  <span class="wsp-rounded-right"></span>
+                  <span class="wsp-rounded-bottom"></span>
+                  <span class="wsp-rounded-left"></span>
+                  <span class="wsp-rounded-circle"></span>
+                  <span class="wsp-rounded-0"></span>
+                </div>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(radiusBorder)">
+                    Copy
+                  </span>
+                  <code id="radiusBorder" class="language-html">
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-top"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-right"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-bottom"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-left"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-circle"</span>&gt;...&lt;/span&gt;<br>
+                    &lt;span <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-rounded-0"</span>&gt;...&lt;/span&gt;<br> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
