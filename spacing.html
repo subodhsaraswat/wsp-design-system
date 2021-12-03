@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- WSP CSS -->
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Spacing :: WSP-Design System</title>
+
+</head>
+
+<body>
+  <div class="wsp-wrapper">
+    <!-- Header starts -->
+    <header>
+      <div class="header wsp-fixed-top">
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+              <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                <div class="wsp-logo-wrapper">
+                  <span class="wsp-logo-icon">
+                    <i class="wsp-icon wsp-icon-layers-o"></i>
+                  </span>
+                  <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main content starts -->
+    <div class="wsp-content wsp-d-flex">
+      <!-- side-bar starts -->
+      <div class="wsp-nav-wrap" id="sideBar">
+        <my-sidebar></my-sidebar>
+      </div>
+      <!-- side-bar ends -->
+      <div class="wsp-content-wrap" id="mainContent">
+        <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+          <span class="toggle-bar"></span>
+        </span>
+        <div class="wsp-container-fluid">
+          <div class="wsp-row">
+            <div class="wsp-col">
+              <h1>Spacing</h1>
+              <p>Assign responsive-friendly margin or padding values to an element or a subset of its sides with shorthand classes.</p>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Notation</h3>
+                <p>
+                    The classes are named using the format  <span class="wsp-cls-name">{property}{sides}-{size}</span> for xs and  <span class="wsp-cls-name">{property}{sides}-{breakpoint}-{size}</span> for sm, md, lg, and xl.
+                </p>
+                <p>Where <em>property</em> is one of:</p>
+                <ul>
+                    <li><span class="wsp-cls-name">m</span> - for classes that set <span class="wsp-cls-name">margin</span></li>
+                    <li><span class="wsp-cls-name">p</span> - for classes that set <span class="wsp-cls-name">padding</span></li>
+                  </ul>
+                  <p>Where <em>sides</em> is one of:</p>
+                  <ul>
+                    <li><span class="wsp-cls-name">t</span> - for classes that set <span class="wsp-cls-name">margin-top</span> or <span class="wsp-cls-name">padding-top</span></li>
+                    <li><span class="wsp-cls-name">b</span> - for classes that set <span class="wsp-cls-name">margin-bottom</span> or <span class="wsp-cls-name">padding-bottom</span></li>
+                    <li><span class="wsp-cls-name">l</span> - for classes that set <span class="wsp-cls-name">margin-left</span> or <span class="wsp-cls-name">padding-left</span></li>
+                    <li><span class="wsp-cls-name">r</span> - for classes that set <span class="wsp-cls-name">margin-right</span> or <span class="wsp-cls-name">padding-right</span></li>
+                    <li><span class="wsp-cls-name">x</span> - for classes that set both <span class="wsp-cls-name">*-left</span> and <span class="wsp-cls-name">*-right</span></li>
+                    <li><span class="wsp-cls-name">y</span> - for classes that set both <span class="wsp-cls-name">*-top</span> and <span class="wsp-cls-name">*-bottom</span></li>
+                    <li>blank - for classes that set a <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> on all 4 sides of the element</li>
+                  </ul>
+                  <p>Where <em>size</em> is one of:</p>
+                  <ul>
+                    <li><span class="wsp-cls-name">0</span> - for classes that eliminate the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> by setting it to <span class="wsp-cls-name">0</span></li>
+                    <li><span class="wsp-cls-name">1</span> - (by default) for classes that set the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> to <span class="wsp-cls-name">.25rem</span></li>
+                    <li><span class="wsp-cls-name">2</span> - (by default) for classes that set the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> to <span class="wsp-cls-name">.5rem</span></li>
+                    <li><span class="wsp-cls-name">3</span> - (by default) for classes that set the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> to <span class="wsp-cls-name">1rem</span></li>
+                    <li><span class="wsp-cls-name">4</span> - (by default) for classes that set the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> to <span class="wsp-cls-name">1.5rem</span></li>
+                    <li><span class="wsp-cls-name">5</span> - (by default) for classes that set the <span class="wsp-cls-name">margin</span> or <span class="wsp-cls-name">padding</span> to <span class="wsp-cls-name">3rem</span></li>
+                    <li><span class="wsp-cls-name">auto</span> - for classes that set the <span class="wsp-cls-name">margin</span> to auto</li>
+                  </ul>
+                <div class="code">
+                  <span class="copy-clipboard" onclick="copyToClipboard(spacing)">
+                    Copy
+                  </span>
+                  <code id="spacing" class="language-html">
+                    .mt-0 {<br>
+                        &nbsp;&nbsp;margin-top: 0;<br>
+                      }<br><br>
+                      
+                      .ml-1 {<br>
+                        &nbsp;&nbsp;margin-left: .25rem;<br>
+                      }<br><br>
+                      
+                      .px-2 {<br>
+                        &nbsp;&nbsp;padding-left: .5rem;<br>
+                        &nbsp;&nbsp;padding-right: .5rem;<br>
+                      }<br><br>
+                      
+                      .p-3 {<br>
+                        &nbsp;&nbsp;padding: 1rem;<br>
+                      }<br>
+                  </code>
+                </div>
+              </div>
+              <div class="ex-wrapper wsp-mb-5">
+                <h3>Horizontal centering</h3>
+                <p></p>
+                <div class="demo">
+                    <div class="wsp-mx-auto" style="width: 200px;">
+                        Centered element
+                      </div>
+                </div>
+                <div class="code">
+                    <span class="copy-clipboard" onclick="copyToClipboard(marginAuto)">
+                        Copy
+                      </span>
+                      <code id="marginAuto" class="language-html">
+                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-mx-auto"</span> style="width: 200px;"&gt;
+                            Centered element
+                          &lt;/div&gt;
+                      </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main content ends -->
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+</body>
+
+</html>
