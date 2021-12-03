@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Display :: WSP-Design System</title>
+
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Display property</h1>
+                            <p>Quickly and responsively toggle the display value of components and more with our display
+                                utilities. Includes support for some of the more common values.</p>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Example Display Inline</h3>
+                                <div class="demo">
+                                    <div class="wsp-d-inline wsp-p-2 wsp-bg-primary wsp-text-white">d-inline</div>
+                                    <div class="wsp-d-inline wsp-p-2 wsp-bg-dark wsp-text-white">d-inline</div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(displayInline)">
+                                        Copy
+                                    </span>
+                                    <code id="displayInline" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-inline wsp-p-2 wsp-bg-primary wsp-text-white"</span>&gt;d-inline&lt;/div&gt;<br>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-inline wsp-p-2 wsp-bg-dark wsp-text-white"</span>&gt;d-inline&lt;/div&gt;<br>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Example Display Block</h3>
+                                <div class="demo">
+                                    <div class="wsp-d-block wsp-p-2 wsp-bg-primary wsp-text-white">d-inline</div>
+                                    <div class="wsp-d-block wsp-p-2 wsp-bg-dark wsp-text-white">d-inline</div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(displayBlock)">
+                                        Copy
+                                    </span>
+                                    <code id="displayBlock" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-block wsp-p-2 wsp-bg-primary wsp-text-white"</span>&gt;d-inline&lt;/div&gt;<br>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-block wsp-p-2 wsp-bg-dark wsp-text-white"</span>&gt;d-inline&lt;/div&gt;<br>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Hiding elements</h3>
+                                <p>For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide element responsively for each screen size.<br><br>
+
+                                    To hide elements simply use the <span class="wsp-cls-name">.wsp-d-none</span> class or one of the <span class="wsp-cls-name">.wsp-d-{sm,md,lg,xl}-none</span> classes for any responsive screen variation.<br><br>
+                                    
+                                    To show an element only on a given interval of screen sizes you can combine one <span class="wsp-cls-name">.wsp-d-*-none</span> class with a <span class="wsp-cls-name">.wsp-d-*-*</span> class, for example <span class="wsp-cls-name">.wsp-d-none .wsp-d-md-block .wsp-d-xl-none</span> will hide the element for all screen sizes except on medium and large devices.</p>
+                                    <table class="wsp-table">
+                                        <thead>
+                                          <tr>
+                                            <th>Screen Size</th>
+                                            <th>Class</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>Hidden on all</td>
+                                            <td><span class="wsp-cls-name">.d-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hidden only on xs</td>
+                                            <td><span class="wsp-cls-name">.d-none .d-sm-block</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hidden only on sm</td>
+                                            <td><span class="wsp-cls-name">.d-sm-none .d-md-block</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hidden only on md</td>
+                                            <td><span class="wsp-cls-name">.d-md-none .d-lg-block</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hidden only on lg</td>
+                                            <td><span class="wsp-cls-name">.d-lg-none .d-xl-block</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hidden only on xl</td>
+                                            <td><span class="wsp-cls-name">.d-xl-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible on all</td>
+                                            <td><span class="wsp-cls-name">.d-block</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible only on xs</td>
+                                            <td><span class="wsp-cls-name">.d-block .d-sm-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible only on sm</td>
+                                            <td><span class="wsp-cls-name">.d-none .d-sm-block .d-md-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible only on md</td>
+                                            <td><span class="wsp-cls-name">.d-none .d-md-block .d-lg-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible only on lg</td>
+                                            <td><span class="wsp-cls-name">.d-none .d-lg-block .d-xl-none</span></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Visible only on xl</td>
+                                            <td><span class="wsp-cls-name">.d-none .d-xl-block</span></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <div class="demo">
+                                        <div class="wsp-d-md-none">hide on screens wider than md</div>
+                                        <div class="wsp-d-none wsp-d-md-block">hide on screens smaller than md</div>
+                                    </div>
+                                    <div class="code">
+                                        <span class="copy-clipboard" onclick="copyToClipboard(displayBlock)">
+                                            Copy
+                                        </span>
+                                        <code id="displayBlock" class="language-html">
+                                            &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-md-none"</span>&gt;hide on screens wider than md&lt;/div&gt;<br>
+                                            &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-none wsp-d-md-block"</span>&gt;hide on screens smaller than md&lt;/div&gt;<br>
+                                        </code>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>

@@ -1,37 +1,37 @@
-.wsp-d-none {
-    display: none;
-}
+//
+// Utilities for common `display` values
+//
 
-.wsp-d-inline {
-    display: inline;
-}
-
-.wsp-d-inline-block {
-    display: inline-block;
-}
-
-.wsp-d-block {
-    display: block;
-}
-
-.wsp-d-table {
-    display: table;
-}
-
-.wsp-d-table-row {
-    display: table-row;
-}
-
-.wsp-d-table-cell {
-    display: table-cell;
-}
-
-.wsp-d-flex {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.wsp-d-inline-flex {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-}
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+      .wsp-d#{$infix}-none         { display: none !important; }
+      .wsp-d#{$infix}-inline       { display: inline !important; }
+      .wsp-d#{$infix}-inline-block { display: inline-block !important; }
+      .wsp-d#{$infix}-block        { display: block !important; }
+      .wsp-d#{$infix}-table        { display: table !important; }
+      .wsp-d#{$infix}-table-row    { display: table-row !important; }
+      .wsp-d#{$infix}-table-cell   { display: table-cell !important; }
+      .wsp-d#{$infix}-flex         { display: flex !important; }
+      .wsp-d#{$infix}-inline-flex  { display: inline-flex !important; }
+    }
+  }
+  
+  
+  //
+  // Utilities for toggling `display` in print
+  //
+  
+  @media print {
+    .wsp-d-print-none         { display: none !important; }
+    .wsp-d-print-inline       { display: inline !important; }
+    .wsp-d-print-inline-block { display: inline-block !important; }
+    .wsp-d-print-block        { display: block !important; }
+    .wsp-d-print-table        { display: table !important; }
+    .wsp-d-print-table-row    { display: table-row !important; }
+    .wsp-d-print-table-cell   { display: table-cell !important; }
+    .wsp-d-print-flex         { display: flex !important; }
+    .wsp-d-print-inline-flex  { display: inline-flex !important; }
+  }
+  
