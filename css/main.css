@@ -772,13 +772,13 @@ progress {
           align-items: flex-end;
 }
 
-.align-items-center {
+.wsp-align-items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.align-items-baseline {
+.wsp-align-items-baseline {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;

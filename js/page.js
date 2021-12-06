@@ -70,7 +70,6 @@ class MySidebar extends HTMLElement {
                 <li class="wsp-nav-link">
                 <a href="card.html">Card</a>
                 </li>
-
                 <li class="wsp-nav-link">
                 <a href="carousel.html">Carousel</a>
                 </li>
@@ -85,6 +84,9 @@ class MySidebar extends HTMLElement {
                 </li>
                 <li class="wsp-nav-link">
                 <a href="flag.html">Flag</a>
+                </li>
+                <li class="wsp-nav-link">
+                <a href="flex.html">Flex</a>
                 </li>
                 <li class="wsp-nav-link">
                 <a href="list-group.html">List Group</a>

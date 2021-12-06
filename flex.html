@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- WSP CSS -->
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Flex :: WSP-Design System</title>
+
+</head>
+
+<body>
+    <div class="wsp-wrapper">
+        <!-- Header starts -->
+        <header>
+            <div class="header wsp-fixed-top">
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col-sm-12 wsp-col-md-12 wsp-col-lg-12">
+                            <div class="logo wsp-d-flex  align-items-center" onclick="location.href = 'index.html';">
+                                <div class="wsp-logo-wrapper">
+                                    <span class="wsp-logo-icon">
+                                        <i class="wsp-icon wsp-icon-layers-o"></i>
+                                    </span>
+                                    <h4 class="wsp-text-white wsp-mb-0">WSP Design System</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header ends -->
+
+        <!-- Main content starts -->
+        <div class="wsp-content wsp-d-flex">
+            <!-- side-bar starts -->
+            <div class="wsp-nav-wrap" id="sideBar">
+                <my-sidebar></my-sidebar>
+            </div>
+            <!-- side-bar ends -->
+            <div class="wsp-content-wrap" id="mainContent">
+                <span class="wsp-toggle-icon toggle-wrap" id="toogleMenu">
+                    <span class="toggle-bar"></span>
+                </span>
+                <div class="wsp-container-fluid">
+                    <div class="wsp-row">
+                        <div class="wsp-col">
+                            <h1>Flex</h1>
+                            <p>Quickly manage the layout, alignment, and sizing of grid columns, navigation, components,
+                                and more with a full suite of responsive flexbox utilities.</p>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Enable flex behaviors</h3>
+                                <p>
+                                    Apply display utilities to create a flexbox container and transform direct children
+                                    elements into flex items. Flex containers and items are able to be modified further
+                                    with additional flex properties.
+                                </p>
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-p-2 wsp-bg-light">I'm a flexbox container!</div><br />
+                                    <div class="wsp-d-inline-flex wsp-p-2 wsp-bg-light">I'm an inline flexbox container!
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(defaultFlex)">
+                                        Copy
+                                    </span>
+                                    <code id="defaultFlex" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-p-2 wsp-bg-light"</span>&gt;I'm a flexbox container!&lt;/div&gt;<br>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-inline-flex wsp-p-2 wsp-bg-light"</span>&gt;I'm an inline flexbox container!&lt;/div&gt;<br>
+                                    </code>
+                                </div>
+                                <br />
+                                <p>Responsive variations also exist for <span class="wsp-cls-name">.wsp-d-flex</span>
+                                    and <span class="wsp-cls-name">.wsp-d-inline-flex</span>.</p>
+                                <ul>
+                                    <li><span class="wsp-cls-name">.wsp-d-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-inline-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-sm-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-sm-inline-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-md-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-md-inline-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-lg-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-lg-inline-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-xl-flex</span></li>
+                                    <li><span class="wsp-cls-name">.wsp-d-xl-inline-flex</span></li>
+                                </ul>
+                            </div>
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Direction</h3>
+                                <p>
+                                    Use <span class="wsp-cls-name">.flex-row</span> to set a horizontal direction (the
+                                    browser default), or <span class="wsp-cls-name">.flex-row-reverse</span> to start
+                                    the horizontal direction from the opposite side.
+                                </p>
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-flex-row wsp-border wsp-mb-3">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 1</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 2</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 3</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-flex-row-reverse wsp-border">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 1</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 2</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item 3</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(directionFlex)">
+                                        Copy
+                                    </span>
+                                    <code id="directionFlex" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-flex-row wsp-border wsp-mb-3"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 1&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 2&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 3&lt;/div&gt;<br/>
+                                        &lt;/div&gt;<br/><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-flex-row-reverse wsp-border wsp-mb-3"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 1&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 2&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item 3&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                                <br />
+                                <p>Use <span class="wsp-cls-name">.wsp-flex-column</span> to set a vertical direction,
+                                    or <span class="wsp-cls-name">.wsp-flex-column-reverse</span> to start the vertical
+                                    direction from the opposite side.</p>
+                            </div>
+
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Justify content</h3>
+                                <p>Use <span class="wsp-cls-name">wsp-justify-content</span> utilities on flexbox containers
+                                    to change the alignment of flex items on the main axis (the x-axis to start, y-axis
+                                    if <span class="wsp-cls-name">wsp-flex-direction: column</span>). Choose from <span
+                                        class="wsp-cls-name">start</span> (browser default), <span
+                                        class="wsp-cls-name">end</span>, <span class="wsp-cls-name">center</span>, <span
+                                        class="wsp-cls-name">between</span>, or <span
+                                        class="wsp-cls-name">around</span>.</p>
+
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-flex-row wsp-border wsp-mb-3 wsp-justify-content-start">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-flex-row wsp-border wsp-mb-3 wsp-justify-content-end">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-flex-row wsp-border wsp-mb-3 wsp-justify-content-center">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div
+                                        class="wsp-d-flex wsp-flex-row wsp-border wsp-mb-3 wsp-justify-content-between">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-flex-row wsp-border wsp-justify-content-around">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(justifyContent)">
+                                        Copy
+                                    </span>
+                                    <code id="justifyContent" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-justify-content-start"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-justify-content-end"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-justify-content-center"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-justify-content-between"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-justify-content-around"</span>&gt;...&lt;/div&gt;<br/>
+                                    </code>
+                                </div>
+                            </div>
+
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Align items</h3>
+                                <p>Use <span class="wsp-cls-name">wsp-align-items</span> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <span class="wsp-cls-name">wsp-flex-direction: column</span>). Choose from <span
+                                        class="wsp-cls-name">start</span> (browser default), <span
+                                        class="wsp-cls-name">end</span>, <span class="wsp-cls-name">center</span>, <span
+                                        class="wsp-cls-name">baseline</span>, or <span
+                                        class="wsp-cls-name">stretch</span>.</p>
+
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-border wsp-mb-3 wsp-align-items-start" style="height: 100px">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-border wsp-mb-3 wsp-align-items-end" style="height: 100px">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-border wsp-mb-3 wsp-align-items-center" style="height: 100px">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div
+                                        class="wsp-d-flex wsp-border wsp-mb-3 wsp-align-items-baseline" style="height: 100px">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-border wsp-align-items-stretch" style="height: 100px">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(alignItems)">
+                                        Copy
+                                    </span>
+                                    <code id="alignItems" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-align-items-start"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-align-items-end"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-align-items-center"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-align-items-baseline"</span>&gt;...&lt;/div&gt;<br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-align-items-stretch"</span>&gt;...&lt;/div&gt;<br/>
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Auto margins</h3>
+                                <p>default (no auto margin), pushing two items to the right (<span class="wsp-cls-name">.wsp-mr-auto</span>), and pushing two items to the left (<span class="wsp-cls-name">.wsp-ml-auto</span>).</p>
+
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-border wsp-mb-3">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-border wsp-mb-3">
+                                        <div class="wsp-mr-auto wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                    <div class="wsp-d-flex wsp-border">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                        <div class="wsp-ml-auto wsp-p-2 wsp-border wsp-bg-light">Flex item</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(autoMargin)">
+                                        Copy
+                                    </span>
+                                    <code id="autoMargin" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-border wsp-mb-3"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &lt;/div&gt;<br/><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-border wsp-mb-3"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-mr-auto wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &lt;/div&gt;<br/><br/>
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-border"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-ml-auto wsp-p-2 wsp-border wsp-bg-light"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Fill</h3>
+                                <p>
+                                    Use the <span class="wsp-cls-name">.wsp-flex-fill</span> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.
+                                </p>
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-border">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill">Flex item with a lot of content</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill">Flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill">Flex item</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(fillFlex)">
+                                        Copy
+                                    </span>
+                                    <code id="fillFlex" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-border"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-flex-fill"</span>&gt;Flex item&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                            <div class="ex-wrapper wsp-mb-5">
+                                <h3>Order</h3>
+                                <p>
+                                    Change the visual order of specific flex items with a handful of <span class="wsp-cls-name">order</span> utilities.
+                                </p>
+                                <div class="demo">
+                                    <div class="wsp-d-flex wsp-flex-nowrap wsp-border">
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-order-3">First flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-order-2">Second flex item</div>
+                                        <div class="wsp-p-2 wsp-border wsp-bg-light wsp-order-1">Third flex item</div>
+                                    </div>
+                                </div>
+                                <div class="code">
+                                    <span class="copy-clipboard" onclick="copyToClipboard(fillFlex)">
+                                        Copy
+                                    </span>
+                                    <code id="fillFlex" class="language-html">
+                                        &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-d-flex wsp-flex-nowrap wsp-border"</span>&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-order-3"</span>&gt;First flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-order-2"</span>&gt;Second flex item&lt;/div&gt;<br/>
+                                        &nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-p-2 wsp-border wsp-bg-light wsp-order-1"</span>&gt;Third flex item&lt;/div&gt;<br/>
+                                        &lt;/div&gt;
+                                    </code>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main content ends -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/page.js"></script>
+</body>
+
+</html>
