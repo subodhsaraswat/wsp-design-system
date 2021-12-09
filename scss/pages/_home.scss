@@ -35,7 +35,7 @@
         display: block;
         z-index: $zindex-fixed;
         .wsp-navbar-vertical{
-            max-height: calc(100vh - 105px);
+            max-height: calc(100vh - 70px);
             overflow: auto;
         }
     }

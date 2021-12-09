@@ -9258,7 +9258,7 @@ input::-moz-focus-outer {
 }
 
 .wsp-content .wsp-nav-wrap .wsp-navbar-vertical {
-  max-height: calc(100vh - 105px);
+  max-height: calc(100vh - 70px);
   overflow: auto;
 }
 
@@ -9638,5 +9638,16 @@ input::-moz-focus-outer {
 
 .wsp-height-wrap div:last-child {
   margin-right: 0;
+}
+
+#sidebarSearch {
+  display: none;
+}
+
+.wsp-design-list {
+  margin: 0;
+  padding: 0;
+  list-style: disc;
+  padding-left: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
