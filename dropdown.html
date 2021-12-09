@@ -54,10 +54,10 @@
                 
                 <div class="demo">
                     <div class="wsp-dropdown">
-                        <button type="button" class="wsp-button button-primary wsp-dropdown-toggle" data-toggle="wsp-dropdown">
+                        <button onclick="dropdownFunction()" class="wsp-button button-primary wsp-dropdown-toggle" >
                           Dropdown button
                         </button>
-                        <div class="wsp-dropdown-menu">
+                        <div class="wsp-dropdown-menu" id="wsp-drop">
                           <a class="wsp-dropdown-item" href="#">Link 1</a>
                           <a class="wsp-dropdown-item" href="#">Link 2</a>
                           <a class="wsp-dropdown-item" href="#">Link 3</a>
@@ -70,8 +70,8 @@
                   </span>
                     <code id="input" class="language-html">
                     &lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown"</span>&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">type=</span><span class="wsp-cls-name">"button" </span><span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary wsp-dropdown-toggle" </span><span class="wsp-cls-text">data-toggle=</span><span class="wsp-cls-name">"wsp-dropdown"</span>&gt; Dropdown button &lt;/button&gt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown-menu"</span>&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&lt;button <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-button button-primary wsp-dropdown-toggle" </span><span class="wsp-cls-text">onclick=</span><span class="wsp-cls-name">"dropdownFunction()"</span>&gt; Dropdown button &lt;/button&gt;<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown-menu"</span><span class="wsp-cls-text"> id=</span><span class="wsp-cls-name">"wsp-drop"</span>&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown-item"</span> <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"#"</span>&gt;Link 1&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown-item"</span> <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"#"</span>&gt;Link 2&lt;/a&gt;<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a <span class="wsp-cls-text">class=</span><span class="wsp-cls-name">"wsp-dropdown-item"</span> <span class="wsp-cls-text">href=</span><span class="wsp-cls-name">"#"</span>&gt;Link 3&lt;/a&gt;<br/>                              
