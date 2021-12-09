@@ -2,7 +2,7 @@
 class MySidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="wsp-search-wrap">
+        <div class="wsp-search-wrap" id="sidebarSearch">
             <div class="wsp-input-group">
                 <div class="wsp-input-group-prepend">
                     <span class="wsp-input-group-text" id="basic-addon1">
@@ -16,6 +16,11 @@ class MySidebar extends HTMLElement {
             <li class="wsp-nav-link">
             <a href="#">
                 <span class="wsp-link-text">Getting started</span>
+            </a>
+            </li>
+            <li class="wsp-nav-link">
+            <a href="design-principles.html">
+                <span class="wsp-link-text">Design Principles</span>
             </a>
             </li>
             <li class="wsp-nav-link">
