@@ -9650,4 +9650,30 @@ input::-moz-focus-outer {
   list-style: disc;
   padding-left: 1rem;
 }
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap {
+  padding: 2rem 0;
+}
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap .wsp-card {
+  padding: 0.825rem;
+}
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap .wsp-card.wsp-design-pri-card {
+  height: 100%;
+  text-align: left;
+}
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap .wsp-card.wsp-design-pri-card h5 {
+  margin-bottom: 1rem;
+  color: #5156BE;
+}
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap .wsp-card.wsp-design-pri-card .wsp-design-list {
+  list-style: circle;
+}
+
+.wsp-content .wsp-content-wrap .wsp-design-pri-card-wrap .wsp-card.wsp-design-pri-card .wsp-design-list li {
+  margin-bottom: 0.825rem;
+}
 /*# sourceMappingURL=main.css.map */

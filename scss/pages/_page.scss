@@ -1,17 +1,21 @@
 .demo {
   margin: 0;
 }
+
 .wsp-cls-name {
   color: #FD625E;
 }
+
 .ex-wrapper {
   .demo {
     padding: 1.5rem 0;
     margin-right: 0;
     margin-left: 0;
-    .wsp-form-control + .wsp-form-control {
+
+    .wsp-form-control+.wsp-form-control {
       margin-top: 0.5rem;
     }
+
     .wsp-modal {
       position: relative;
       top: auto;
@@ -22,6 +26,7 @@
       display: block;
     }
   }
+
   .code {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -33,10 +38,12 @@
     color: lighten($warning-light, 5%);
     position: relative;
     border-radius: 0.5rem;
+
     .code-section {
       padding: 2rem 1.5rem;
       overflow: auto;
     }
+
     .language-html {
       white-space: nowrap;
       direction: ltr;
@@ -46,16 +53,20 @@
       letter-spacing: 0;
       -webkit-font-smoothing: subpixel-antialiased;
       padding: 0 5px;
+
       .wsp-cls-text {
         color: $success;
       }
+
       .wsp-cls-name {
         color: $danger;
       }
+
       .comment {
         color: $gray-800;
       }
     }
+
     .copy-clipboard {
       font-size: 0.75rem;
       position: absolute;
@@ -68,14 +79,17 @@
       border-radius: $border-radius;
     }
   }
+
   .wsp-list-group {
     max-width: 400px;
   }
 }
-.wsp-search-wrap{
-  margin: 0.825rem 0.825rem 0 ;
+
+.wsp-search-wrap {
+  margin: 0.825rem 0.825rem 0;
 }
-.wsp-intro{
+
+.wsp-intro {
   display: block;
   margin-bottom: 2rem;
   font-size: 1.5rem;
@@ -83,19 +97,22 @@
   line-height: 1.6;
   letter-spacing: -.01rem;
 }
-.wsp-team-wrap{
-  img{
+
+.wsp-team-wrap {
+  img {
     max-width: 100%;
     max-height: 700px;
   }
 }
-.wsp-bg-color-wrap{
-  p{
+
+.wsp-bg-color-wrap {
+  p {
     padding: 0.5rem;
   }
 }
-.wsp-border-wrap{
-  span{
+
+.wsp-border-wrap {
+  span {
     width: 5rem;
     height: 5rem;
     margin: 0.625rem;
@@ -103,8 +120,9 @@
     background: $gray-200;
   }
 }
-.wsp-border-radius-wrap{
-  span{
+
+.wsp-border-radius-wrap {
+  span {
     width: 5rem;
     height: 5rem;
     margin: 0.625rem;
@@ -112,60 +130,95 @@
     background: $gray-800;
   }
 }
-.wsp-text-wrap{
+
+.wsp-text-wrap {
   padding: 0.5rem !important;
-  border:1px solid #CCCCCC;
+  border: 1px solid #CCCCCC;
   margin-bottom: 1rem;
 }
-.wsp-text-align-wrap{
-  border:1px solid #CCCCCC;
+
+.wsp-text-align-wrap {
+  border: 1px solid #CCCCCC;
   margin-bottom: 1rem;
-  span{
+
+  span {
     padding: 0 0.5rem;
     display: inline-block;
-    
+
   }
 }
-.wsp-width-wrap{
-  border:1px solid #CCCCCC;
+
+.wsp-width-wrap {
+  border: 1px solid #CCCCCC;
   margin-bottom: 1rem;
-  div{
-    background:$secondary;
+
+  div {
+    background: $secondary;
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 0.25rem;
     color: $white;
   }
 }
-.wsp-height-wrap{
-  border:1px solid #CCCCCC;
+
+.wsp-height-wrap {
+  border: 1px solid #CCCCCC;
   margin-bottom: 1rem;
-  background:$light;
+  background: $light;
   height: 200px;
   padding: 0 !important;
   display: flex;
-  div{
+
+  div {
     width: 100%;
     display: inline-block;
     margin-right: 1rem;
-    background:$secondary;
+    background: $secondary;
     text-align: center;
     padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: $white;
-    &:last-child{
+
+    &:last-child {
       margin-right: 0;
     }
   }
 }
-#sidebarSearch{
+
+#sidebarSearch {
   display: none;
 }
-.wsp-design-list{
+
+.wsp-design-list {
   margin: 0;
   padding: 0;
   list-style: disc;
   padding-left: 1rem;
+}
+
+.wsp-content {
+  .wsp-content-wrap {
+    .wsp-design-pri-card-wrap {
+      padding: 2rem 0;
+      .wsp-card {
+        padding: 0.825rem;
+        &.wsp-design-pri-card {
+          height: 100%;
+          text-align: left;
+          h5{
+            margin-bottom: 1rem;
+            color: $primary;
+          }
+          .wsp-design-list{
+            list-style: circle;
+            li{
+              margin-bottom: 0.825rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
